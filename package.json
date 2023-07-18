@@ -1,0 +1,18 @@
+{
+  "name": "uno-ressources",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "^1.1.18",
+    "@unocss/preset-icons": "^0.53.5",
+    "@unocss/preset-mini": "^0.53.5",
+    "unocss": "^0.53.5",
+    "vite": "^4.4.0"
+  }
+}
