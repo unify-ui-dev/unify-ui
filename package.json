@@ -14,5 +14,8 @@
     "@unocss/preset-mini": "^0.53.5",
     "unocss": "^0.53.5",
     "vite": "^4.4.0"
+  },
+  "dependencies": {
+    "@unocss/reset": "^0.53.5"
   }
 }

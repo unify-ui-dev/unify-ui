@@ -1,20 +1,18 @@
 // uno.config.ts
 import {
-    defineConfig, presetAttributify, presetIcons,
-    presetTypography, presetUno, presetWebFonts,
-    transformerDirectives, transformerVariantGroup, presetMini
+    defineConfig, presetAttributify, presetIcons, presetUno, presetMini
   } from 'unocss'
   
   export default defineConfig({
-    shortcuts: [
-      // ...
-    ],
-    
-    theme: {
-      
-    },
-    extendTheme:{
 
+    content: {
+      pipeline: {
+        include: [
+          './ressources/**/*.html',
+          'index.html',
+          'assets/**/*.js',
+        ],
+      }
     },
     presets: [
       presetUno(),
@@ -29,14 +27,5 @@ import {
           }
         }
       ),
-  
-      presetTypography(),
-      presetWebFonts({ 
-        // default provider
-      }),
-    ],
-    transformers: [
-      transformerDirectives(),
-      transformerVariantGroup(),
     ],
   })
