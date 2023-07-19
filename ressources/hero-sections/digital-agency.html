@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Website</title>
+    <meta name="description" content="Grocery Store Website">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <style>
+        body {
+            font-family: "Raleway", sans-serif;
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-1 {
+            transform: translateY(0.375rem) rotate(40deg);
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-2 {
+            transform: scaleX(0);
+            opacity: 0;
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-3 {
+            transform: translateY(-0.375rem) rotate(-40deg);
+        }
+    </style>
+</head>
+
+<body class="overflow-hidden overflow-y-auto bg-white dark:bg-gray-950">
+
+
+    <header absolute inset-x-0 top-0 z-50 py-6>
+        <div mx-auto max-w-7xl w-full px="5 sm:10 md:12 lg:5">
+            <nav w-full flex justify-between gap-6 relative>
+                <!-- logo -->
+                <div min-w-max inline-flex relative>
+                    <a href="/" relative flex items-center gap-3>
+                        <div relative w-7 h-7 overflow-hidden flex rd-xl>
+                            <span absolute w4 h4 -top-1 -right-1 bg-green-500 rounded-md rotate-45></span>
+                            <span absolute w4 h4 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45></span>
+                            <span absolute w4 h4 -bottom-1 -left-1 bg-blue-600 rounded-md rotate-45></span>
+                            <span absolute w-2 h-2 rounded-full bg-gray-900 dark:bg-white
+                                class="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></span>
+                        </div>
+                        <div inline-flex text="lg gray-900 dark:white" font-semibold>
+                            AgenceX
+                        </div>
+                    </a>
+                </div>
+
+                <div data-nav-overlay aria-hidden="true" fixed bg="border-gray-800/50" inset-0 backdrop-filter
+                    backdrop-blur-xl class="hidden lg:!hidden">
+                </div>
+                <div data-navbar absolute lg-relative w-full flex overflow-hidden duration-300 ease-linear top-full
+                    lg-top-0 border-x border-x-box-border lg-border-x-0 flex-col lg-flex-row gap-y-6 gap-x-4
+                    lg-justify-between lg-items-center bg="white dark:bg-gray-950 lg:transparent"
+                    class="lg:scale-y-100 h0 lg:!h-auto">
+                    <ul
+                        class="border-t border-box-border lg:border-t-0 px-6 lg:px-0 pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-3 text-lg text-gray-700 dark:text-gray-300 w-full lg:justify-center lg:items-center">
+                        <li>
+                            <a href="#" class="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
+                                About us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
+                                Features
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div
+                        class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-box-bg lg:border-0 px-6 lg:px-0">
+                        <a href="#"
+                            class="flex justify-center items-center w-full sm:w-max px-6 h-12 rounded-full outline-none relative overflow-hidden border duration-300 ease-linear
+                        after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-[#172554] hover:after:opacity-100 hover:after:scale-[2.5] bg-blue-600 border-transparent hover:border-[#172554]">
+                            <span class="relative z-10 text-white">
+                                Get Started
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="min-w-max flex items-center gap-x-3">
+                    <button data-switch-theme
+                        class="outline-none flex relative text-gray-700 dark:text-gray-300 rounded-full p-2 lg:p-3 border border-gray-100 dark:border-gray-900 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 dark:flex hidden">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 dark:hidden">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                        </svg>
+
+                        <span class="sr-only">switch theme</span>
+                    </button>
+
+                    <button data-toggle-nav data-open-nav="false" lg-hidden lg-invisible outline-none w7 hauto flex flex-col relative bg-transparent>
+                        <span id="line-1" bg="gray-700 dark:gray-300" w6 h0.5 rd-full transition-all duration-300 ease-linear></span>
+                        <span id="line-2" bg="gray-700 dark:gray-300" w6 origin-center  mt1 h0.5 rd-ful transition-all duration-300 ease-linear></span>
+                        <span id="line-3" bg="gray-700 dark:gray-300" w6 mt1 h0.5 rd-ful transition-all duration-300 ease-linear></span>
+                        <span class="sr-only">togglenav</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- hero section -->
+
+    <section relative pt-32 lg-pt-36>
+        <div px="5 sm:10 md:12 lg:5" mx-auto max-w-7xl w-full flex flex-col lg-flex-row gap-10 lg-gap-12>
+            <div class="absolute w-full lg-w-1/2 inset-y-0 lg-right-0 ">
+                <span absolute -left-6 md-left-4 top-24 lg-top-28 w24 h24 rotate-90 skew-x-12 rd-3xl bg-green-400
+                    blur-xl opacity-60 lg-opacity-95 lg-block hidden></span>
+                <span absolute right-4 bottom-12 w24 h24 rd-3xl bg-blue-600 blur-xl opacity-80></span>
+            </div>
+            <span
+                class="w-4/12 lg:w-2/12 aspect-square bg-gradient-to-tr from-blue-600 to-green-400 absolute -top-5 lg-left-0 rd-full skew-y-12 blur-2xl opacity-40 skew-x-12 rotate-90"></span>
+            <div relative flex flex-col items-center text-center lg-text-left lg-py-7 xl-py-8 lg-items-start
+                lg-max-w-none max-w-3xl mx-auto lg-mx-0 lg-flex-1 class="lg-w-1/2">
+
+                <h1 text="3xl/tight sm:4xl/tight md:5xl/tight xl:6xl/tight" text="gray-900 dark:white" font-bold>
+                    Social Media <span text-transparent bg-clip-text class="bg-gradient-to-br from-indigo-600 from-20% via-blue-600 via-30% to-green-600">Marketing</span>
+                    is the Best Ever.
+                </h1>
+                <p mt-8 text="gray-700 dark:gray-300">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores repellat perspiciatis aspernatur
+                    quis voluptatum porro incidunt,
+                    libero sequi quos eos velit
+                </p>
+                <div mt-10  w-full flex max-w-md mx-auto lg-mx-0>
+                    <div flex sm-flex-row flex-col gap-5 w-full>
+                        <form action="#" py-1 pl-6 w-full pr-1 flex gap-3 items-center text="gray-600 dark:gray-400" shadow="lg shadow-gray-200/60 dark:none" bg="gray-100 dark:gray-900 focus-within:white dark:focus-within:gray-950"
+                               border="1 gray-200 dark:gray-800  focus-within:blue-600" rd-full ease-linear >
+                            <span min-w-max pr-2 border="r r-border-gray-200 dark:r-gray-800">
+                                <span i-carbon-email flex text-xl bg="gray-800 dark:gray-200"></span>
+                            </span>
+                            <input type="email" placeholder="johndoe@gmail.com" w-full py-3 outline-none bg-transparent>
+                            <button flex relative text-white justify-center items-center min-w-max 
+                            sm-w-max px-6 h-12 rounded-full outline-none relative overflow-hidden border duration-300 ease-linear
+                                    after="absolute  content-empty inset-x-0 aspect-square scale-0 opacity-70 origin-center duration-300 ease-linear rd-full top-0 left-0 bg-[#172554]" hover:after:opacity-100 hover:after:scale-[2.5] bg-blue-600 border-transparent hover:border-[#172554]>
+                                <span hidden sm-flex relative z-[5]>
+                                    Get Started
+                                </span>
+                                <span flex sm-hidden relative z-[5]>
+                                    <span i-carbon-send flex text-xl bg-white></span>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div flex flex-1 lg-h-auto relative lg-max-w-none mx-auto max-w-3xl class=" lg-w-1/2">
+                <img src="/images/image1.webp" alt="Hero image" width="2350" height="2359" rd-3xl object-cover lg="absolute w-full lg-h-full"
+                    class="lg:max-h-none max-h-96">
+            </div>
+        </div>
+
+        <ByNumber />
+    </section>
+
+    <script type="module" src="./../../main.js"></script>
+    <script>
+        const btnHumb = document.querySelector("[data-toggle-navbar]")
+        const navbar = document.querySelector("[data-navbar]")
+        const overlay = document.querySelector("[data-nav-overlay]")
+        if (btnHumb && navbar) {
+            const toggleBtnAttr = () => {
+                const isOpen = btnHumb.getAttribute("data-is-open")
+                btnHumb.setAttribute("data-is-open", isOpen === "true" ? "false" : "true")
+                if (isOpen === "false") {
+                    document.body.classList.toggle("overflow-y-auto")
+                    overlay.classList.toggle("hidden")
+                } else {
+                    document.body.classList.add("overflow-y-auto")
+                    overlay.classList.add("hidden")
+                }
+            }
+            btnHumb.addEventListener("click", () => {
+                navbar.classList.toggle("invisible")
+                navbar.classList.toggle("opacity-0")
+                navbar.classList.toggle("translate-y-10")
+                navbar.classList.toggle("skew-x-6")
+                toggleBtnAttr()
+            })
+
+            overlay.addEventListener("click", () => {
+                navbar.classList.add("invisible")
+                navbar.classList.add("opacity-0")
+                navbar.classList.add("translate-y-10")
+                navbar.classList.add("skew-x-6")
+                toggleBtnAttr()
+            })
+        }
+    </script>
+</body>
+
+</html>
