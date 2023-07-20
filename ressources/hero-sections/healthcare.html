@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthCare</title>
+    <meta name="description" content="Startup Website">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-1 {
+            transform: rotate(45deg) translateY(0.375rem);
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-2 {
+            transform: rotate(-45deg) translateY(-0.375rem);
+        }
+    </style>
+</head>
+
+<body class="bg-white dark-bg-gray-950 overflow-hidden overflow-y-auto">
+    <!-- navbar -->
+    <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-800/40 inset-0 z-30 hidden lg-hidden"></div>
+    <header absolute inset-x-0 top-0 flex items-center h-20 z-40>
+        <nav relative mx-auto max-w-7xl w-full px="5 sm:10 md:12 lg:5" flex gap-x-5 justify-between items-center>
+            <div flex items-center min-w-max>
+                <a href="#" text="xl gray-800 dark:gray-200" font-semibold>
+                    <span relative after="absolute content-empty inset-0 rotate-3 border border-blue-600"
+                        text-blue-600>Health</span>Care
+                </a>
+            </div>
+
+            <div data-navbar absolute top-full left-0 bg="white dark:gray-950 lg:!transparent"
+                border="b b-gray-200 dark:b-gray-800 lg:none" py="8 lg:0" px="5 sm:10 md:12 lg:0" w-full lg-top-0
+                lg-relative lg-w-max lg-flex duration-300 ease-linear gap-x-6
+                class="translate-y-10  skew-x-6 opacity-0 invisible lg-visible lg-skew-x-0 lg-translate-y-0 lg-opacity-100">
+                <ul flex flex-col lg-flex-row gap-6 lg-items-center text-gray-700 dark-text-gray-300 lg-w-full
+                    lg-justify-center>
+                    <li>
+                        <a href="#" duration-300 ease-linear hover-text-blue-600>Home</a>
+                    </li>
+                    <li>
+                        <a href="#" duration-300 ease-linear hover-text-blue-600>Portfolio</a>
+                    </li>
+                    <li class="">
+                        <a href="#" duration-300 ease-linear hover-text-blue-600>Services</a>
+                    </li>
+                </ul>
+                <div aria-hidden="true" flex flex-col sm-flex-row sm-items-center gap-4 lg-min-w-max mt="10 lg:0">
+                    <a href="#" relative px-6 py-3 flex justify-center items-center text-white rd-3xl transition
+                        ease-linear bg="blue-600 hover:blue-800 focus:blue-700">
+                        <span relative>
+                            Get Started
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div aria-hidden="true" flex items-center lg-hidden>
+                <button data-toggle-navbar data-is-open="false" outline-none border="l l-blue-100 dark:l-gray-800" pl-3
+                    relative py-3 bg-transparent>
+                    <span class="sr-only">Toggle navbar</span>
+                    <div id="line-1" aria-hidden="true" h0.5 w6 rd bg-gray-800 dark-bg-gray-300 transition duration-300>
+                    </div>
+                    <div id="line-2" aria-hidden="true" mt2 h0.5 w6 rd bg-gray-800 dark-bg-gray-300 transition
+                        duration-300></div>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex flex-col">
+
+        <section relative pt="20 lg:24" bg="blue-50 dark:gray-900">
+            <div class="absolute top-0 inset-x-0 h64 flex items-start">
+                <div
+                    class="h24 w-2/3 bg-gradient-to-br from-blue-500 opacity-20 blur-2xl dark:from-[#0c1cac] dark:invisible dark:opacity-40">
+                </div>
+                <div
+                    class="h20 w-3/5 bg-gradient-to-r from-[#488ad4] opacity-40 blur-2xl dark:from-[#0c1cac] dark:opacity-40">
+                </div>
+            </div>
+            <div px="5 sm:10 md:12 lg:5" relative mx-auto max-w-7xl w-full flex flex-col lg-flex-row
+                gap="8 lg:10 xl:12">
+
+                <div aria-hidden="true" absolute inset-y-0 w44 left-0 hidden dark-flex>
+                    <div
+                        class="h-full md:h-1/2 lg:h-full w-full bg-gradient-to-tr opacity-40 dark:blur-2xl dark:from-[#0c1cac] dark:opacity-20">
+                    </div>
+                </div>
+
+                <div mx-auto space-y-8 text-center flex flex-col max-w-3xl justify-center flex-1
+                    lg="flex justify-start py-8 w-1/2 max-w-none text-left">
+                    <h1 text="blue-950 dark:white 5xl/snug sm:6xl/tight lg:5xl/tight xl:[3.50rem]/tight" font-bold>
+                        We are providing best and affordable health care.
+                    </h1>
+                    <p text="gray-700 dark:gray-300 lg:lg" max-w-2xl lg-max-w-none mx-auto>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, fugit! Laborum quo maxime
+                        at sapiente
+                        quasi
+                    </p>
+                    <form action="#" flex max-w-[34rem] mx-auto w-full lg-max-w-none relative
+                        bg="gray-100 dark:gray-950/60" border="1 blue-100 dark:gray-950" overflow-hidden p0.5 rd-3xl
+                        before="absolute content-empty inset-1 bg-blue-50 dark:bg-gray-950 rd-[1.25rem]">
+                        <input type="text" placeholder="johndoe@gmail.com"
+                            class="peer relative w-full bg-white dark-bg-gray-950 px-5 py-3 rd-full outline-none text-gray-600 dark-text-gray-300">
+                        <button
+                            class="absolute inset-y-1.5 right-1.5 bg-blue-600 text-white p3 flex items-center rd-full">
+                            <span class="flex relative z-[5]">
+                                <span i-carbon-send text-2xl bg-white></span>
+                            </span>
+                        </button>
+                    </form>
+                    <div grid grid-cols-2 md-grid-cols-3 gap-4 max-w-[34rem] mx-auto lg-mx-0 w-full>
+                        <div relative text-center bg="white dark:gray-950/60" border="blue-100 dark:gray-950" p5 rd-3xl
+                            before="absolute content-empty inset-1 bg-blue-50 dark:bg-gray-950 rd-[1.25rem]">
+                            <span font-bold text="2xl gray-900 dark:gray-100" relative>
+                                450+
+                            </span>
+                            <h3 text="sm gray-700 dark:gray-300" relative>Diagnostic Weekly</h3>
+                        </div>
+                        <div relative text-center bg="white dark:gray-950/60" border="blue-100 dark:gray-950" p5 rd-3xl
+                            before="absolute content-empty inset-1 bg-blue-50 dark:bg-gray-950 rd-[1.25rem]">
+                            <span font-bold text="2xl gray-900 dark:gray-100" relative>
+                                450+
+                            </span>
+                            <h3 text="sm gray-700 dark:gray-300" relative>Diagnostic Weekly</h3>
+                        </div>
+                        <div relative text-center bg="white dark:gray-950/60" border="blue-100 dark:gray-950" p5 rd-3xl
+                            before="absolute content-empty inset-1 bg-blue-50 dark:bg-gray-950 rd-[1.25rem]">
+                            <span font-bold text="2xl gray-900 dark:gray-100" relative>
+                                450+
+                            </span>
+                            <h3 text="sm gray-700 dark:gray-300" relative>Diagnostic Weekly</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-1 lg:w-1/2 relative max-w-3xl mx-auto lg:max-w-none">
+
+                    <div sm="w-5/6" h-auto lg="h-full absolute right-0" bg-blue-100 overflow-hidden rd-b-full>
+                        <img src="/images/heroImg.webp" alt="happy team" width="1850" height="auto"
+                            class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="./../../main.js"></script>
+    <script>
+        const btnHumb = document.querySelector("[data-toggle-navbar]")
+        const navbar = document.querySelector("[data-navbar]")
+        const overlay = document.querySelector("[data-nav-overlay]")
+        if (btnHumb && navbar) {
+            const toggleBtnAttr = () => {
+                const isOpen = btnHumb.getAttribute("data-is-open")
+                btnHumb.setAttribute("data-is-open", isOpen === "true" ? "false" : "true")
+                if (isOpen === "false") {
+                    document.body.classList.toggle("overflow-y-auto")
+                    overlay.classList.toggle("hidden")
+                } else {
+                    document.body.classList.add("overflow-y-auto")
+                    overlay.classList.add("hidden")
+                }
+            }
+            btnHumb.addEventListener("click", () => {
+                navbar.classList.toggle("invisible")
+                navbar.classList.toggle("opacity-0")
+                navbar.classList.toggle("translate-y-10")
+                navbar.classList.toggle("skew-x-6")
+                toggleBtnAttr()
+            })
+
+            overlay.addEventListener("click", () => {
+                navbar.classList.add("invisible")
+                navbar.classList.add("opacity-0")
+                navbar.classList.add("translate-y-10")
+                navbar.classList.add("skew-x-6")
+                toggleBtnAttr()
+            })
+        }
+    </script>
+</body>
+
+</html>
