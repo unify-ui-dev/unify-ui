@@ -18,7 +18,7 @@ import {
       presetUno(),
       presetAttributify(),
       presetMini({
-        dark: "class"
+        dark: "media"
       }),
       presetIcons(
         {
