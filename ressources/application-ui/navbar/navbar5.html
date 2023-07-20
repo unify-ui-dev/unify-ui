@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <meta name="description" content="Startup Website">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-1 {
+            transform: rotate(45deg) translateY(0.375rem);
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-2 {
+            transform: rotate(-45deg) translateY(-0.375rem);
+        }
+    </style>
+</head>
+
+<body class="bg-white dark:bg-gray-950 overflow-hidden overflow-y-auto">
+    <!-- navbar -->
+    <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-800/40 inset-0 z-30 hidden lg:hidden"></div>
+    <header absolute inset-x-0 top-0 flex items-center h20 z40 pt4 px4>
+        <nav relative mx-auto max-w-7xl w-full border="gray-100 dark:gray-900" backdrop-filter backdrop-blur-sm
+            bg="white/70 dark:bg-gray-950" rd-xl h-full px4 flex gap-x-5 justify-between items-center>
+            <div flex items-center min-w-max>
+                <a href="#" font-semibold text="xl gray-800 dark:gray-200">
+                    <span relative
+                        after="absolute content-empty inset-0 rotate-3 border border-green-700 dark:border-green-600"
+                        text="green-700 dark:green-600">Medi</span>Care
+                </a>
+            </div>
+
+            <div data-navbar max-w-md lg-max-w-none w="10/12 lg:full" inset-y-0 lg-top-0 fixed lg-relative 
+                lg-flex lg-justify-between
+                bg="white dark:gray-950 lg:!transparent" border="b gray-200 dark:gray-800 lg:none"
+                px="5 sm:10 md:12 lg:0" transition-all duration-300 ease-linear gap-x-6
+                class="py-8 lg-py-0 -left-full lg:left-0">
+                <ul flex flex-col lg-flex-row gap-6 lg-items-center text="gray-700 dark:gray-300" lg-flex-1 lg-justify-center>
+                    <li>
+                        <a href="#" duration-300 ease-linear hover-text-green-600 flex items-center gap-1.5 justify-between class="group">
+                            Solutions
+                            <span>
+                                <span i-carbon-chevron-down flex text-xl bg="gray-700 dark:gray-300 group-hover:green-600"></span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" duration-300 ease-linear hover-text-green-600 flex items-center gap-1.5 justify-between class="group">
+                            Products
+                            <span>
+                                <span i-carbon-chevron-down flex text-xl bg="gray-700 dark:gray-300 group-hover:green-600"></span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" duration-300 ease-linear hover-text-green-600>Support</a>
+                    </li>
+                    <li class="">
+                        <a href="#" duration-300 ease-linear hover-text-green-600>Company</a>
+                    </li>
+                </ul>
+                <div aria-hidden="true" flex flex-col sm-flex-row sm-items-center gap-4  lg-min-w-max mt="10 lg:0">
+                    <a href="" px-6 h-10 text-sm flex items-center w-full 
+                    lg-w-max justify-center gap-x-3 
+                    border="gray-200 dark:gray-800" rd-lg text="green-700 dark:gray-100" bg="gray-100 dark:gray-900">
+                        Book Demo
+                    </a>
+                </div>
+            </div>
+            <div aria-hidden="true" flex items-center lg-hidden>
+                <button data-toggle-navbar data-is-open="false" outline-none border-l border-l-blue-100 dark-border-l-gray-800 pl3 relative py3 bg-transparent>
+                    <span class="sr-only">Toggle navbar</span>
+                    <div id="line-1" aria-hidden="true" h0.5 w6 rd bg-gray-800 dark-bg-gray-300 transition duration-300>
+                    </div>
+                    <div id="line-2" aria-hidden="true" mt2 h0.5 w6 rd bg="gray-800 dark:gray-300" transition duration-300></div>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <script type="module" src="./../../main.js"></script>
+    <script>
+        const btnHumb = document.querySelector("[data-toggle-navbar]")
+        const navbar = document.querySelector("[data-navbar]")
+        const overlay = document.querySelector("[data-nav-overlay]")
+        if (btnHumb && navbar) {
+            const toggleBtnAttr = () => {
+                const isOpen = btnHumb.getAttribute("data-is-open")
+                btnHumb.setAttribute("data-is-open", isOpen === "true" ? "false" : "true")
+                if (isOpen === "false") {
+                    document.body.classList.toggle("overflow-y-auto")
+                    overlay.classList.toggle("hidden")
+                    navbar.classList.remove("-left-full")
+                    navbar.classList.add("left-0")
+                } else {
+                    document.body.classList.add("overflow-y-auto")
+                    overlay.classList.add("hidden")
+                    navbar.classList.add("-left-full")
+                    navbar.classList.remove("left-0")
+                }
+            }
+
+            btnHumb.addEventListener("click", () => {
+                toggleBtnAttr()
+            })
+
+            overlay.addEventListener("click", () => {
+                navbar.classList.add("-left-full")
+                navbar.classList.remove("left-0")
+                toggleBtnAttr()
+            })
+        }
+    </script>
+</body>
+
+</html>
