@@ -1,6 +1,6 @@
 // uno.config.ts
 import {
-    defineConfig, presetAttributify, presetIcons, presetUno, presetMini
+    defineConfig, presetAttributify, presetIcons, presetUno, presetMini, presetWebFonts
   } from 'unocss'
   
   export default defineConfig({
@@ -19,6 +19,12 @@ import {
       presetAttributify(),
       presetMini({
         dark: "class"
+      }),
+      presetWebFonts({ // default provider
+        provider:"none",
+        fonts: {
+          display : ['Oswald', 'sans-serif']
+        },
       }),
       presetIcons(
         {
