@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/unify.css">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -43,12 +44,10 @@
                 </a>
             </div>
 
-            <div position="fixed lg:relative" top-full left-0 bg="white dark:gray-950 lg:transparent"
-                border="b b-gray-200 dark:b-gray-800" py="8 lg:0" px="5 sm:10 md:12 lg:0" lg:border-none w-full lg:top-0
-                lg:flex lg:justify-between duration-300 ease-linear class="translate-y-10 skew-x-6 opacity-0 invisible 
-            lg:visible lg:skew-x-0 lg:translate-y-0 lg:opacity-100" data-navbar>
-                <ul flex flex-col lg:flex-row gap-6 lg:items-center text="gray-700 dark:gray-300" lg:w-full
-                    lg:justify-center>
+            <div absolute lg-relative top="full lg:0" left-0 bg="white dark:gray-950 lg:transparent"
+                border="b b-gray-200 dark:b-gray-800" py="8 lg:0" px="5 sm:10 md:12 lg:0" lg:border-none w-full
+                lg:flex lg:justify-between duration-300 ease-linear class="translate-y-10 skew-x-6 opacity-0 invisible lg:visible lg:skew-x-0 lg:translate-y-0 lg:opacity-100" data-navbar>
+                <ul flex flex-col lg:flex-row gap-6 lg:items-center text="gray-700 dark:gray-300" lg-w-full lg-justify-center>
                     <li>
                         <a href="#" relative py-2.5 duration-300 ease-linear hover:text-sky-600
                             after="content-empty absolute w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-sky-600"
@@ -101,10 +100,10 @@
     </header>
 
     <!-- hero section -->
-    <section class="py-8 mt-24">
-        <div px="5 sm:10 md:12 lg:5" mxauto max-w-7xl w-full flex flex-col lg:flex-row lg:items-stretch gap-10>
-            <div class="lg:w-1/2 lg:py-10 xl:py-12 text-center lg:text-left max-w-2xl md:max-w-3xl mx-auto ">
-                <h1 text="teal-950 dark:white 3xl sm:4xl md:5xl lg:6xl" class="font-semibold leading-tight ">
+    <section class="py8 mt24">
+        <div px="5 sm:10 md:12 lg:5" mxauto max-w-7xl w-full flex flex-col lg-flex-row lg-items-stretch gap-10>
+            <div py="lg:10 xl:12" text="center lg:left" class="lg-w-1/2 max-w-2xl md-max-w-3xl mx-auto">
+                <h1 text="teal-950 dark:white 4xl md:5xl lg:6xl" class="font-semibold leading-tight ">
                     Find and listen in your favorite <div relative
                         after="content-empty absolute inset-x-0 h-3 bg-sky-100 dark:bg-sky-950 bottom-2" inline-block
                         px-2>
@@ -142,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            <div class="lg:w-1/2 relative lg:h-auto max-w-2xl md:max-w-3xl mx-auto">
+            <div class="lg-w-1/2 relative lg-h-auto max-w-2xl md-max-w-3xl mx-auto">
                 <div class="absolute left-1/2 -translate-x-1/2 
                     -top-8 px-10 py-1.5 bg-white text-center border border-gray-100 shadow-lg shadow-gray-200/40">
                     <span text="text-3xl text-sky-950" class="font-bold">+25</span>
@@ -153,40 +152,7 @@
         </div>
     </section>
 
-    <script type="module" src="./../../main.js"></script>
-    <script>
-        const btnHumb = document.querySelector("[data-toggle-navbar]")
-        const navbar = document.querySelector("[data-navbar]")
-        const overlay = document.querySelector("[data-nav-overlay]")
-        if (btnHumb && navbar) {
-            const toggleBtnAttr = () => {
-                const isOpen = btnHumb.getAttribute("data-is-open")
-                btnHumb.setAttribute("data-is-open", isOpen === "true" ? "false" : "true")
-                if (isOpen === "false") {
-                    document.body.classList.toggle("overflow-y-auto")
-                    overlay.classList.toggle("hidden")
-                } else {
-                    document.body.classList.add("overflow-y-auto")
-                    overlay.classList.add("hidden")
-                }
-            }
-            btnHumb.addEventListener("click", () => {
-                navbar.classList.toggle("invisible")
-                navbar.classList.toggle("opacity-0")
-                navbar.classList.toggle("translate-y-10")
-                navbar.classList.toggle("skew-x-6")
-                toggleBtnAttr()
-            })
-
-            overlay.addEventListener("click", () => {
-                navbar.classList.add("invisible")
-                navbar.classList.add("opacity-0")
-                navbar.classList.add("translate-y-10")
-                navbar.classList.add("skew-x-6")
-                toggleBtnAttr()
-            })
-        }
-    </script>
+    <script" src="js/unify.js"></script>
 </body>
 
 </html>
