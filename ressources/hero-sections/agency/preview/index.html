@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startup Website</title>
+    <meta name="description" content="hero section">
+    <link rel="stylesheet" href="css/unify.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "DM Sans", sans-serif;
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-1 {
+            transform: rotate(45deg) translateY(0.375rem);
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-2 {
+            transform: rotate(-45deg) translateY(-0.375rem);
+        }
+    </style>
+</head>
+<body>
+     <!-- navbar -->
+     <div fixed bg="gray-800/40" inset-0 z30 class="hidden lg-hidden" data-nav-overlay aria-hidden="true"></div>
+
+     <header sticky top-0 w-full flex items-center h20 border="b b-gray-100 dark:b-gray-900" z40
+         bg="white/80 dark:gray-950/80" backdrop-filter backdrop-blur-xl>
+         <nav relative mxauto max-w-7xl w-full px5 sm-px10 md-px12 lg-px5 flex gap-x-5 justify-between items-center>
+             <div class="flex items-center min-w-max">
+                 <a href="/" class="relative flex items-center gap-2.5">
+                     <span class="flex">
+                         <span w3 h6 rd-l-full flex bg-blue-400></span>
+                         <span w3 h6 rd-r-full flex bg-indigo-600 mt2></span>
+                     </span>
+                     <span inline-flex text-lg font-bold text="indigo-950 dark:white">
+                         Estam
+                     </span>
+                 </a>
+             </div>
+ 
+             <div fixed top-full left-0 lg="top-0 relative w-max flex" bg="white dark:gray-950 lg:transparent"
+                 border="b b-gray-200 dark:b-gray-800 lg:none" py="8 lg:0" px="5 sm:10 md:12 lg:px-0" w-full duration-300
+                 ease-linear gap-x-6
+                 class="translate-y-10 lg:translate-y-0 skew-x-6 lg-skew-x-0 op-0 lg:op-100 invisible lg-visible"
+                 data-navbar>
+                 <ul flex flex-col lg-flex-row gap-6 lg-items-center text="gray-700 dark:gray-300"
+                     lg="w-full justify-center">
+                     <li>
+                         <a href="#" relative py-2.5 duration-300 ease-linear text-indigo-600 hover-text-indigo-600
+                             after="absolute content-empty
+                         w-full left-0 bottom-0 h-px rd-md 
+                         origin-left ease-linear after-duration-300 after-scale-x-0" hover-after-scale-x-100
+                             after-bg-indigo-600>Home</a>
+                     </li>
+                     <li>
+                         <a href="#" relative py-2.5 duration-300 ease-linear hover-text-indigo-600
+                             after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-indigo-600"
+                             hover-after-scale-x-100>Portfolio</a>
+                     </li>
+                     <li>
+                         <a href="#" relative py-2.5 duration-300 ease-linear hover-text-indigo-600
+                             after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-indigo-600"
+                             hover-after-scale-x-100>Services</a>
+                     </li>
+                     <li>
+                         <a href="#" relative py-2.5 duration-300 ease-linear hover-text-indigo-600
+                             after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-indigo-600"
+                             hover-after-scale-x-100>Company</a>
+                     </li>
+                     <li>
+                         <a href="#" relative py-2.5 duration-300 ease-linear hover-text-indigo-600
+                             after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-indigo-600"
+                             hover-after-scale-x-100>Contact</a>
+                     </li>
+                 </ul>
+                 <div flex flex-col sm-flex-row sm-items-center gap-4 lg-min-w-max mt="10 lg:0" aria-hidden="true">
+                     <a href="#" flex justify-center relative px6 py3 before-absolute before-content-empty before-inset-0
+                         before-rd-lg before-transition before-bg-gray-100 dark-before-bg-gray-900 text-indigo-600
+                         dark-text-white hover-before-scale-105>
+                         <span class="relative">
+                             Book a call
+                         </span>
+                     </a>
+                 </div>
+             </div>
+             <div flex items-center lg-hidden>
+                 <button data-toggle-navbar data-is-open="false" outline-none border-l
+                     border-l="indigo-100 dark:gray-800" p-3 relative bg-transparent>
+                     <span class="sr-only">Toggle navbar</span>
+                     <div h0.5 w6 rd bg="gray-800 dark:gray-300" transition duration-300 id="line-1" aria-hidden="true">
+                     </div>
+                     <div mt2 h0.5 w6 rd bg="gray-800 dark:gray-300" transition duration-300 id="line-2"
+                         aria-hidden="true"></div>
+                 </button>
+             </div>
+         </nav>
+     </header>
+ 
+     <main flex flex-col>
+ 
+         <section relative pt="10 xl:14">
+             <div mx-auto max-w-7xl w-full px="5 sm:10 md:12 lg:5" flex flex-col lg-flex-row gap="8 lg:10 xl:12">
+                 <div
+                     class="mx-auto text-center lg-text-left flex flex-col max-w-3xl justify-center lg-justify-start lg-py-8 flex-1 lg-w-1/2 lg-max-w-none">
+                     <h1 text="indigo-950 dark:white"
+                         class=" text-5xl/snug sm-text-6xl/tight lg-text-5xl/tight xl-text-6xl/tight font-semibold text">
+                         Build Your Online Platform with best <span
+                             class="bg-indigo-50 dark-bg-gray-900 dark-text-indigo-600 inline-block border border-dashed border-indigo-600 px-3">Digital
+                             Agency</span>
+                     </h1>
+                     <p mt10 text="gray-700 dark:gray-300" lg-text-lg max-w-2xl lg-max-w-none mx-auto>
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, fugit! Laborum quo maxime
+                         at sapiente
+                         quasi
+                     </p>
+                     <div mt10 flex gap-4 justify-center lg-justify-start flex-wrap>
+                         <a href="#" relative px-6 py-3 active-before-bg-indigo-700 text-white
+                             before="absolute inset-0 content-empty rd-lg transition bg-indigo-600"
+                             hover-before-scale-105 hover-before-bg-indigo-800>
+                             <span class="relative">
+                                 Get Started
+                             </span>
+                         </a>
+                         <a href="#" relative px-6 py-3
+                             before="absolute inset-0 content-empty rd-lg transition bg-gray-100 dark:gray-900"
+                             text="indigo-600 dark:white" hover-before-scale-105>
+                             <span class="relative">
+                                 Get Started
+                             </span>
+                         </a>
+                     </div>
+                 </div>
+                 <div class="flex flex-1 lg-w-1/2 relative max-w-3xl mx-auto lg-max-w-none">
+                     <img src="/images/heroImg.webp" alt="happy team" width="1850" height="auto"
+                         class="lg-absolute w-full lg-inset-x-0 object-cover lg-h-full">
+                     <div bg="white dark:gray-950"
+                         class="absolute left-1/2 -translate-x-1/2 lg--translate-x-0 -bottom-10 w-60 p-4 rd-lg  border dark-border-gray-800">
+                         <div flex justify-center>
+                             <img src="/images/creative-agency-production.webp" alt="employee image" width="1920"
+                                 height="1320" !-ml-0 w-9 h-9 ring-4 ring="white dark:gray-950" object-cover rd-full>
+                             <img src="/images/creative-agency-production.webp" alt="employee image" width="1920"
+                                 height="1320" w-9 h-9 ring-4 ring="white dark:gray-950" object-cover rd-full -ml-1>
+                             <img src="/images/creative-agency-production.webp" alt="employee image" width="1920"
+                                 height="1320" w-9 h-9 ring-4 ring="white dark:gray-950" object-cover rd-full -ml-1>
+                             <img src="/images/creative-agency-production.webp" alt="employee image" width="1920"
+                                 height="1320" w-9 h-9 ring-4 ring="white dark:gray-950" object-cover rd-full -ml-1>
+                         </div>
+                         <div>
+                             <p text="indigo-950 dark:white" text-lg font-semibold>45+ employees</p>
+                             <p text="gray-700 dark:gray-300" flex>
+                                 <span class="text-yellow-500 text-xl">&starf;</span> 5.0 (2.5k reviews)
+                             </p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+     </main>
+    <script src="js/unify.js"></script>
+</body>
+</html>
