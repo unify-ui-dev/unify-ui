@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery</title>
+    <meta name="description" content="Grocery Store Hero">
+    <link rel="stylesheet" href="css/unify.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            width: 100%;
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-1 {
+            transform: rotate(45deg) translateY(0.375rem);
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-2 {
+            transform: rotate(-45deg) translateY(-0.375rem);
+        }
+    </style>
+</head>
+
+<body bg="orange-50 dark:gray-950" class="overflow-hidden overflow-y-auto">
+    <!-- navbar -->
+    <div data-nav-overlay aria-hidden="true" fixed bg="gray-800/40" inset-0 z-30 class="hidden lg:hidden"></div>
+    <header bg="orange-50 dark:gray-950" fixed left-0 top-0 z-40 w-full flex items-center h-20 border="b gray-100 dark:gray-800">
+        <nav relative mx-auto max-w-7xl w-full px="5 sm:10 md:12 lg:5" flex gap-x-5 justify-between items-center>
+            <div flex items-center min-w-max>
+                <a href="#" font-semibold text="xl gray-800 dark:gray-200">
+                    <span relative text-orange-600 after="absolute content-empty inset-0 rotate-3 border border-orange-600">Grocy</span>Mart
+                </a>
+            </div>
+
+            <div data-navbar bg="white dark:gray-950 lg:transparent" border="b b-gray-200 dark:b-gray-800 lg:none" py="8 lg:0" px="5 sm:10 md:12 lg:0" absolute left-0 top-full lg-top-0 w-full lg-relative  lg-flex lg-justify-between duration-300 ease-linear
+                class="translate-y-10 -rotate-12 opacity-0 invisible lg-visible lg-rotate-0 lg-translate-y-0 lg-op-100">
+                <ul flex flex-col lg-flex-row gap-6 lg-items-center text="gray-700 dark:gray-300" lg-w-full lg-justify-center>
+                    <li>
+                        <a href="#" relative py-2.5 duration-300 ease-linear hover:text-orange-600 
+                        after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-orange-600" hover:after:scale-100>Home</a>
+                    </li>
+                    <li>
+                        <a href="#" relative py-2.5 duration-300 ease-linear hover:text-orange-600 
+                        after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-orange-600" hover:after:scale-100>Categories</a>
+                    </li>
+                    <li>
+                        <a href="#" relative py-2.5 duration-300 ease-linear hover:text-orange-600 
+                        after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-orange-600" hover:after:scale-100>Sales</a>
+                    </li>
+                    <li>
+                        <a href="#" relative py-2.5 duration-300 ease-linear hover:text-orange-600 
+                        after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-orange-600" hover:after:scale-100>About</a>
+                    </li>
+                    <li>
+                        <a href="#" relative py-2.5 duration-300 ease-linear hover:text-orange-600 
+                        after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-orange-600" hover:after:scale-100>Contact</a>
+                    </li>
+                </ul>
+                <div aria-hidden="true"
+                   flex flex-col sm-flex-row sm-items-center gap-4  lg-min-w-max mt-10 lg-mt-0>
+                    <div aria-hidden="true" hidden lg-flex lg-items-center>
+                        <a href="#" class="relative px-1.5">
+                            <span class="sr-only">cart</span>
+                            <span absolute top-0 right-0 bg-orange-600 w2 h2 rd-full></span>
+                            <span i-carbon-shopping-cart bg="gray-700 dark:gray-300" flex text-2xl></span>
+                        </a>
+                    </div>
+                    <a href="#" px5 py2.5 rd-md text-orange-600 underline flex justify-center>
+                        Signin
+                    </a>
+                    <a href="#" px-5 py-2.5 rounded-md bg="orange-600 hover:orange-700" text-white flex justify-center duration-300 ease-linear>
+                        Signup
+                    </a>
+                </div>
+            </div>
+            <div aria-hidden="true" flex items-center lg-hidden gap-x-4>
+                <div aria-hidden="true" class="flex items-center gap-x-4 lg:hidden">
+                    <a href="#" relative px-1.5>
+                        <span class="sr-only">cart</span>
+                        <span absolute top-0 right-0 bg-orange-600 w-2 h-2 rounded-full></span>
+                        <span i-carbon-shopping-cart bg="gray-700 dark:gray-300" flex text-2xl></span>
+                    </a>
+                    <div class="flex">
+                        <button data-toggle-navbar data-is-open="false"
+                            outline-none border="l l-orange-100 dark:l-gray-800" pl-3 relative py-3 bg-transparent>
+                            <span class="sr-only">Toggle navbar</span>
+                            <div id="line-1" aria-hidden="true" bg="gray-800 dark:gray-200" h0.5 w6 rd  transition duration-300></div>
+                            <div id="line-2" aria-hidden="true" bg="gray-800 dark:gray-200" mt2 h0.5 w6 rd transition duration-300></div>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <section py-8 mt-20>
+        <div mx-auto max-w-7xl w-full px="5 sm:10 md:12 lg:5" flex flex-col lg-flex-row gap-x-6>
+            <div py="4 lg:8 xl:12" space-y-7 w="lg:[45%]">
+                <h1 text="gray-900 dark:white 3xl sm:4xl md:5xl xl:6xl" font-bold>
+                    Let your <span text-orange-600>groceries</span> come to you
+                </h1>
+                <p text="gray-700 dark:gray-300">
+                    Get fresh groceries online without stepping out to make delicious food with the freshest ingredients
+                </p>
+                <div max-w-md w-full>
+                    <form flex w-full text="gray-700 dark:gray-400">
+                        <input type="text" px5 py2.5 border="orange-200 dark:gray-800 r-0" rd-l-md flex w-full outline-none bg="orange-200/10 dark:gray-900">
+                        <button outline-none text-white bg-orange-600 px3 py2.5 rounded-r-md min-w-max>
+                            <span class="sr-only">search btn</span>
+                            <span i-carbon-search bg-white text-xl flex></span>
+                        </button>
+                    </form>
+                </div>
+                <div grid grid-cols-2 gap-x-6 sm-gap-x-8 gap-y-4>
+                    <div text="gray-700 dark:gray-300" flex gap-x-3>
+                        <span w-7 h-7 max-h-7 min-w-[1.75rem] bg="orange-100 dark:gray-900"  text="orange-600 dark:gray-300" rd-md flex items-center justify-center>
+                            &checkmark;
+                        </span>
+                        Fresh Vegetables
+                    </div>
+                    <div text="gray-700 dark:gray-300" flex gap-x-3>
+                        <span
+                            w-7 h-7 max-h-7 min-w-[1.75rem] bg="orange-100 dark:gray-900"  text="orange-600 dark:gray-300" rd-md flex items-center justify-center>
+                            &checkmark;
+                        </span>
+                        100% Guarantee
+                    </div>
+                    <div text="gray-700 dark:gray-300" flex gap-x-3>
+                        <span
+                            w-7 h-7 max-h-7 min-w-[1.75rem] bg="orange-100 dark:gray-900"  text="orange-600 dark:gray-300" rd-md flex items-center justify-center>
+                            &checkmark;
+                        </span>
+                        Cash on Delivery
+                    </div>
+                    <div text="gray-700 dark:gray-300" flex gap-x-3>
+                        <span
+                            w-7 h-7 max-h-7 min-w-[1.75rem] bg="orange-100 dark:gray-900"  text="orange-600 dark:gray-300" rd-md flex items-center justify-center>
+                            &checkmark;
+                        </span>
+                        Fast Delivery
+                    </div>
+                </div>
+            </div>
+            <div flex flex-1 relative lg-h-auto>
+                <div relative h-max lg-absolute left-0 top-0 flex lg-h-full  w="11/12 lg:auto">
+                    <span absolute top-0 left-32 w="3/5" aspect-square rd-md -rotate-[30deg] translate-y-20 origin-center border="orange-200 dark:gray-800"></span>
+                    <span absolute top="1/2" right-16 w="2/5" aspect-square rd-md rotate-12 -translate-y="1/2" origin-center border="orange-200 dark:gray-800"></span>
+                    <img src="/images/delivery-concept.png" width="1284" height="1264" alt=""
+                        lg-w-auto lg-h-full relative>
+                </div>
+                <div aria-hidden="true" absolute right-0 top-0 hidden sm-flex flex-col gap-2 md-gap-4>
+                    <div w36 border="orange-200 dark:gray-800" rd-md p2 bg="orange-200/10 dark:gray-900" text-center flex flex-col>
+                        <div rd flex justify-center items-center p1 h20 bg-white>
+                            <img src="/images/icons/spinach-PVB3BJ8.png" alt="icon" w-full h-auto max-h-full>
+                        </div>
+                        <div flex flex-col>
+                            <h2 text="sm gray-800 dark:text-gray-200" font-semibold>Fresh Spinach</h2>
+                            <span text-orange-600>$12.00</span>
+                        </div>
+                    </div>
+                    <div w36 border="orange-200 dark:gray-800" rd-md p2 bg="orange-200/10 dark:gray-900" text-center flex flex-col>
+                        <div rd flex justify-center items-center p1 h20 bg-white>
+                            <img src="/images/icons/fresh-carrots-QEAUF2R.png" alt="icon" w-full h-auto max-h-full>
+                        </div>
+                        <div flex flex-col>
+                            <h2 text="sm gray-800 dark:text-gray-200" font-semibold>Fresh Spinach</h2>
+                            <span text-orange-600>$12.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div mx-auto max-w-7xl mt4 w-full px="5 sm:10 md:12 lg:5" grid grid-cols-2 sm-grid-cols-3 lg-grid-cols-5 gap-5>
+            <div space-y-2 sm-p-4 sm-rd-md sm="bg-orange-200/10 dark:bg-gray-900">
+                <img src="/images/icons/Dairy.png" alt="icon food" width="96" height="96"  w14 h14 md-w-20 md-h-20>
+                <h2 font-semibold text="gray-800 dark:gray-200">Dairy Products</h2>
+                <p text="gray-700 dark:gray-300">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+
+            <div space-y-2 sm-p-4 sm-rd-md sm="bg-orange-200/10 dark:bg-gray-900">
+                <img src="/images/icons/Fruitsandvegetables.png" alt="icon food" width="96" height="96" w14 h14 md-w-20 md-h-20>
+                <h2 font-semibold text="gray-800 dark:gray-200">Vegetables & Fruits</h2>
+                <p text="gray-700 dark:gray-300">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+
+            <div space-y-2 sm-p-4 sm-rd-md sm="bg-orange-200/10 dark:bg-gray-900">
+                <img src="/images/icons/Condiments.png" alt="icon food" width="96" height="96" w14 h14 md-w-20 md-h-20>
+                <h2 font-semibold text="gray-800 dark:gray-200">Spices & Seasonings</h2>
+                <p text="gray-700 dark:gray-300">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+
+            <div space-y-2 sm-p-4 sm-rd-md sm="bg-orange-200/10 dark:bg-gray-900">
+                <img src="/images/icons/Babyfood.png" alt="icon food" width="96" height="96" w14 h14 md-w-20 md-h-20>
+                <h2 font-semibold text="gray-800 dark:gray-200">Honey</h2>
+                <p text="gray-700 dark:gray-300">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+
+            <div space-y-2 sm-p-4 sm-rd-md sm="bg-orange-200/10 dark:bg-gray-900">
+                <img src="/images/icons/Grainandpasta.png" alt="icon food" width="96" height="96" w14 h14 md-w-20 md-h-20>
+                <h2 font-semibold text="gray-800 dark:gray-200">Flour</h2>
+                <p text="gray-700 dark:gray-300">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+
+            <div space-y-2 p4 rd-md bg="orange-200/10 dark:gray-900"  flex flex-col items-center justify-center border="orange-100 dark:gray-800" lg-hidden>
+                <button rd-full outline-none border="dashed orange-300 dark:gray-800" p3>
+                    <span class="sr-only">Know more</span>
+                    <span i-carbon-add bg-orange-600 text-xl></span>
+                </button>
+                <span class="text-gray-800 dark:text-gray-200">Know more</span>
+            </div>
+        </div>
+    </section>
+    <script src="js/unify.js"></script>
+</body>
+
+</html>
