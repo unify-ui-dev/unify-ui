@@ -3,8 +3,8 @@ import {
     defineConfig, presetAttributify, presetIcons, presetUno, presetMini, presetWebFonts
   } from 'unocss'
   
+  
   export default defineConfig({
-
     content: {
       pipeline: {
         include: [
