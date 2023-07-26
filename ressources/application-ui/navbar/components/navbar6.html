@@ -39,7 +39,7 @@
                 </button>
             </div>
             <div data-navbar absolute lg-relative lg-flex w-full top-full lg-top-0 left-0 bg="white  dark:gray-950 lg:transparent dark:lg:transparent"  border="b b-gray-200 dark:b-gray-800 lg:b-0" ease-linear duration-300 
-            class="invisible opacity-0 lg-visible lg-opacity-100">
+            class="invisible op-0 lg-visible lg-op-100">
                 <ul px="5 sm:10 md:12 lg:0" flex flex-col lg:flex-row lg:items-center  py="4 lg:0" gap="y-6 lg:x-5" text="gray-700 dark:gray-300">
                     <li>
                         <a href="#" relative py-3 after="absolute content-empty bottom-0 left-0 h-0.5 rd-lg bg-gray-600 w-4">
@@ -127,13 +127,13 @@
             }
             btnHumb.addEventListener("click", () => {
                 navbar.classList.toggle("invisible")
-                navbar.classList.toggle("opacity-0")
+                navbar.classList.toggle("op-0")
                 toggleBtnAttr()
             })
 
             overlay.addEventListener("click", () => {
                 navbar.classList.add("invisible")
-                navbar.classList.add("opacity-0")
+                navbar.classList.add("op-0")
                 toggleBtnAttr()
             })
         }

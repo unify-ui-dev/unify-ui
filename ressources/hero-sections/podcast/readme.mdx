@@ -25,7 +25,7 @@ require_js: true
 
         <div absolute lg-relative top="full lg:0" left-0 bg="white dark:gray-950 lg:transparent"
             border-b="~ gray-200 dark:gray-800" py="8 lg:0" px="5 sm:10 md:12 lg:0" lg:border-none w-full
-            lg:flex lg:justify-between duration-300 ease-linear class="translate-y-10 skew-x-6 opacity-0 invisible lg:visible lg:skew-x-0 lg:translate-y-0 lg:opacity-100" data-navbar>
+            lg:flex lg:justify-between duration-300 ease-linear class="translate-y-10 skew-x-6 op-0 invisible lg:visible lg:skew-x-0 lg:translate-y-0 lg:op-100" data-navbar>
             <ul flex flex-col lg:flex-row gap-6 lg:items-center text="gray-700 dark:gray-300" lg-w-full lg-justify-center>
                 <li>
                     <a href="#" relative py-2.5 duration-300 ease-linear hover:text-sky-600
@@ -150,7 +150,7 @@ if (btnHumb && navbar) {
     }
     btnHumb.addEventListener("click", () => {
         navbar.classList.toggle("invisible")
-        navbar.classList.toggle("opacity-0")
+        navbar.classList.toggle("op-0")
         navbar.classList.toggle("translate-y-10")
         navbar.classList.toggle("skew-x-6")
         toggleBtnAttr()
@@ -158,7 +158,7 @@ if (btnHumb && navbar) {
 
     overlay.addEventListener("click", () => {
         navbar.classList.add("invisible")
-        navbar.classList.add("opacity-0")
+        navbar.classList.add("op-0")
         navbar.classList.add("translate-y-10")
         navbar.classList.add("skew-x-6")
         toggleBtnAttr()

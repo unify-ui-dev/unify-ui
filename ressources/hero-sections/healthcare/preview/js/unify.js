@@ -17,7 +17,7 @@ if (btnHumb && navbar) {
   };
   btnHumb.addEventListener("click", () => {
     navbar.classList.toggle("invisible");
-    navbar.classList.toggle("opacity-0");
+    navbar.classList.toggle("op-0");
     navbar.classList.toggle("translate-y-10");
     navbar.classList.toggle("skew-x-6");
     toggleBtnAttr();
@@ -25,7 +25,7 @@ if (btnHumb && navbar) {
 
   overlay.addEventListener("click", () => {
     navbar.classList.add("invisible");
-    navbar.classList.add("opacity-0");
+    navbar.classList.add("op-0");
     navbar.classList.add("translate-y-10");
     navbar.classList.add("skew-x-6");
     toggleBtnAttr();

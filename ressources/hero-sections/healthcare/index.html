@@ -40,7 +40,7 @@
             <div data-navbar absolute top-full left-0 bg="white dark:gray-950 lg:!transparent"
                 border-b="~ gray-200 dark:gray-800 lg:none" py="8 lg:0" px="5 sm:10 md:12 lg:0" w-full lg-top-0
                 lg-relative lg-w-max lg-flex duration-300 ease-linear gap-x-6
-                class="translate-y-10 opacity-0 invisible lg-visible lg-translate-y-0 lg-opacity-100">
+                class="translate-y-10 op-0 invisible lg-visible lg-translate-y-0 lg-op-100">
                 <ul flex flex-col lg-flex-row gap-6 lg-items-center text-gray-700 dark-text-gray-300 lg-w-full
                     lg-justify-center>
                     <li>
@@ -79,10 +79,10 @@
         <section relative bg="blue-50 dark:gray-900" lg="flex items-center min-h-max">
             <div class="absolute top-0 inset-x-0 h64 flex items-start">
                 <div
-                    class="h24 w-2/3 bg-gradient-to-br from-blue-500 opacity-20 blur-2xl dark:from-[#0c1cac] dark:invisible dark:opacity-40">
+                    class="h24 w-2/3 bg-gradient-to-br from-blue-500 op-20 blur-2xl dark:from-[#0c1cac] dark:invisible dark:op-40">
                 </div>
                 <div
-                    class="h20 w-3/5 bg-gradient-to-r from-[#488ad4] opacity-40 blur-2xl dark:from-[#0c1cac] dark:opacity-40">
+                    class="h20 w-3/5 bg-gradient-to-r from-[#488ad4] op-40 blur-2xl dark:from-[#0c1cac] dark:op-40">
                 </div>
             </div>
             <div px="5 sm:10 md:12 lg:5" relative mx-auto max-w-7xl w-full flex flex-col lg-flex-row
@@ -90,7 +90,7 @@
 
                 <div aria-hidden="true" absolute inset-y-0 w44 left-0 hidden dark-flex>
                     <div
-                        class="h-full md:h-1/2 lg:h-full w-full bg-gradient-to-tr opacity-40 dark:blur-2xl dark:from-[#0c1cac] dark:opacity-20">
+                        class="h-full md:h-1/2 lg:h-full w-full bg-gradient-to-tr op-40 dark:blur-2xl dark:from-[#0c1cac] dark:op-20">
                     </div>
                 </div>
 
@@ -172,14 +172,14 @@
             }
             btnHumb.addEventListener("click", () => {
                 navbar.classList.toggle("invisible")
-                navbar.classList.toggle("opacity-0")
+                navbar.classList.toggle("op-0")
                 navbar.classList.toggle("translate-y-10")
                 toggleBtnAttr()
             })
 
             overlay.addEventListener("click", () => {
                 navbar.classList.add("invisible")
-                navbar.classList.add("opacity-0")
+                navbar.classList.add("op-0")
                 navbar.classList.add("translate-y-10")
                 toggleBtnAttr()
             })
