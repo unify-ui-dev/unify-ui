@@ -29,9 +29,8 @@
     </style>
 </head>
 
-<body class="overflow-hidden overflow-y-auto lg-overflow-y-auto bg-white dark-bg-gray-950">
-
-
+<body class="overflow-x-hidden overflow-y-auto lg-overflow-y-auto bg-white dark-bg-gray-950">
+    <!-- navbar -->
     <header absolute inset-x-0 top-0 z-50 py-6>
         <div mx-auto max-w-7xl w-full px="5 sm:10 md:12 lg:5">
             <nav w-full flex justify-between gap-6 relative>
@@ -57,7 +56,7 @@
                 <div absolute lg-relative w-full flex overflow-hidden duration-300 ease-linear top-full
                     lg-top-0 border="~ gray-200 dark:gray-800 lg:0" flex-col lg-flex-row gap-y-6 gap-x-4
                     lg-justify-between lg-items-center bg="white dark:gray-950 lg:!transparent"
-                    class="translate-y-10 invisible skew-x-6 opacity-0 lg-opacity-100 lg-skew-x-0 lg-visible lg-translate-y-0" data-navbar>
+                    class="translate-y-10 invisible opacity-0 lg-opacity-100 lg-visible lg-translate-y-0" data-navbar>
                     <ul  px="6 lg:0" pt="6 lg:0" flex flex-col lg-flex-row gap-y-4 gap-x-3 text="lg gray-700 dark:gray-300" w-full lg-justify-center lg-items-center>
                         <li>
                             <a href="#" duration-300 font-medium ease-linear hover-text-blue-600 py-3>
@@ -116,17 +115,16 @@
         </div>
     </header>
 
-    <!-- hero section -->
 
+    <!-- hero section -->
     <section relative pt-32 lg-pt-36>
         <div px="5 sm:10 md:12 lg:5" mx-auto max-w-7xl w-full flex flex-col lg-flex-row gap-10 lg-gap-12>
-            <div class="absolute w-full lg-w-1/2 inset-y-0 lg-right-0 ">
+            <div class="absolute w-full lg-w-1/2 inset-y-0 lg-right-0 hidden lg-block">
                 <span absolute -left-6 md-left-4 top-24 lg-top-28 w24 h24 rotate-90 skew-x-12 rd-3xl bg-green-400
                     blur-xl opacity-60 lg-opacity-95 lg-block hidden></span>
                 <span absolute right-4 bottom-12 w24 h24 rd-3xl bg-blue-600 blur-xl opacity-80></span>
             </div>
-            <span
-                class="w-4/12 lg:w-2/12 aspect-square bg-gradient-to-tr from-blue-600 to-green-400 absolute -top-5 lg-left-0 rd-full skew-y-12 blur-2xl opacity-40 skew-x-12 rotate-90"></span>
+            <span  class="w-4/12 lg:w-2/12 aspect-square bg-gradient-to-tr from-blue-600 to-green-400 absolute -top-5 lg-left-0 rd-full skew-y-12 blur-2xl opacity-40 skew-x-12 rotate-90"></span>
             <div relative flex flex-col items-center text-center lg-text-left lg-py-7 xl-py-8 lg-items-start
                 lg-max-w-none max-w-3xl mx-auto lg-mx-0 lg-flex-1 class="lg-w-1/2">
 
@@ -171,7 +169,6 @@
                     lg="absolute w-full lg-h-full" class="lg:max-h-none max-h-96">
             </div>
         </div>
-
     </section>
 
     <script type="module" src="./../../../main.js"></script>
@@ -184,10 +181,12 @@
                 const isOpen = btnHumb.getAttribute("data-is-open")
                 btnHumb.setAttribute("data-is-open", isOpen === "true" ? "false" : "true")
                 if (isOpen === "false") {
-                    document.body.classList.toggle("overflow-y-auto")
+                    document.body.classList.remove("overflow-y-auto")
+                    document.body.classList.add("overflow-hidden")
                     overlay.classList.toggle("hidden")
                 } else {
                     document.body.classList.add("overflow-y-auto")
+                    document.body.classList.remove("overflow-hidden")
                     overlay.classList.add("hidden")
                 }
             }
@@ -195,7 +194,6 @@
                 navbar.classList.toggle("invisible")
                 navbar.classList.toggle("opacity-0")
                 navbar.classList.toggle("translate-y-10")
-                navbar.classList.toggle("skew-x-6")
                 toggleBtnAttr()
             })
 
@@ -203,7 +201,6 @@
                 navbar.classList.add("invisible")
                 navbar.classList.add("opacity-0")
                 navbar.classList.add("translate-y-10")
-                navbar.classList.add("skew-x-6")
                 toggleBtnAttr()
             })
         }

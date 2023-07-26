@@ -25,18 +25,17 @@
     </style>
 </head>
 
-<body class="overflow-hidden overflow-y-auto lg-overflow-y-auto bg-white dark:bg-gray-950">
-
+<body class="overflow-x-hidden overflow-y-auto lg-overflow-y-auto bg-white dark:bg-gray-950">
     <!-- navbar -->
     <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-800/40 inset-0 z-30 hidden lg:hidden"></div>
     <header sticky left-0 top-0 w-full flex items-center h20 bg="white dark:gray-950" 
-        border="b b-gray-200 dark:b-gray-800" z-40>
+        border-b="~ gray-200 dark:gray-800" z-40>
         <nav relative mx-auto max-w-7xl w-full px="5 sm:10 md:12 lg:5" flex gap-x-5 justify-between items-center>
             <div aria-hidden="true" class="w-full flex items-center lg:hidden">
-                <button data-toggle-navbar data-is-open="false" outline-none bg-transparent border="r r-gray-200 dark:r-gray-800" pr-3 relative py-3>
+                <button data-toggle-navbar data-is-open="false" outline-none bg-transparent border-r="~ gray-200 dark:gray-800" pr-3 relative py-3>
                     <span class="sr-only">Toggle navbar</span>
-                    <div id="line-1" aria-hidden="true" h-0.5 w-6 rd  transition duration-300 bg="gray-800 dark:bg-gray-200"></div>
-                    <div id="line-2" aria-hidden="true" mt2 h0.5 w6 rd transition duration-300 bg="gray-800 dark:bg-gray-200"></div>
+                    <div id="line-1" aria-hidden="true" h-0.5 w-6 rd  transition duration-300 bg="gray-800 dark:gray-200"></div>
+                    <div id="line-2" aria-hidden="true" mt2 h0.5 w6 rd transition duration-300 bg="gray-800 dark:gray-200"></div>
                 </button>
             </div>
             <div data-navbar absolute lg-relative lg-flex w-full top-full lg-top-0 left-0 bg="white  dark:gray-950 lg:transparent dark:lg:transparent"  border="b b-gray-200 dark:b-gray-800 lg:b-0" ease-linear duration-300 
@@ -117,9 +116,11 @@
                 const isOpen = btnHumb.getAttribute("data-is-open")
                 btnHumb.setAttribute("data-is-open", isOpen === "true" ? "false" : "true")
                 if (isOpen === "false") {
-                    document.body.classList.toggle("overflow-y-auto")
+                    document.body.classList.add("overflow-hidden")
+                    document.body.classList.remove("overflow-y-auto")
                     overlay.classList.toggle("hidden")
                 } else {
+                    document.body.classList.remove("overflow-hidden")
                     document.body.classList.add("overflow-y-auto")
                     overlay.classList.add("hidden")
                 }

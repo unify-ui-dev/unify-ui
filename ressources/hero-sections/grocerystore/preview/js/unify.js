@@ -6,10 +6,12 @@ if (btnHumb && navbar) {
     const isOpen = btnHumb.getAttribute("data-is-open");
     btnHumb.setAttribute("data-is-open", isOpen === "true" ? "false" : "true");
     if (isOpen === "false") {
-      document.body.classList.toggle("overflow-y-auto");
+      document.body.classList.remove("overflow-y-auto");
+      document.body.classList.add("overflow-hidden");
       overlay.classList.toggle("hidden");
     } else {
       document.body.classList.add("overflow-y-auto");
+      document.body.classList.remove("overflow-hidden");
       overlay.classList.add("hidden");
     }
   };

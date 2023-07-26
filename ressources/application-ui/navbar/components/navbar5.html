@@ -25,12 +25,12 @@
     </style>
 </head>
 
-<body class="bg-white dark:bg-gray-950 overflow-hidden overflow-y-auto lg-overflow-y-auto">
+<body class="bg-white dark:bg-gray-950 overflow-x-hidden overflow-y-auto lg-overflow-y-auto">
     <!-- navbar -->
     <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-800/40 inset-0 z-30 hidden lg:hidden"></div>
     <header absolute inset-x-0 top-0 flex items-center h20 z40 pt4 px4>
-        <nav relative mx-auto max-w-7xl w-full border="gray-100 dark:gray-900" backdrop-filter backdrop-blur-sm
-            bg="white/70 dark:bg-gray-950" rd-xl h-full px4 flex gap-x-5 justify-between items-center>
+        <nav relative mx-auto max-w-7xl w-full border="~ gray-100 dark:gray-900"
+            bg="white/70 dark:gray-950" rd-xl h-full px4 flex gap-x-5 justify-between items-center>
             <div flex items-center min-w-max>
                 <a href="#" font-semibold text="xl gray-800 dark:gray-200">
                     <span relative
@@ -39,9 +39,9 @@
                 </a>
             </div>
 
-            <div data-navbar max-w-md lg-max-w-none w="10/12 lg:full" inset-y-0 lg-top-0 fixed lg-relative 
+            <div data-navbar max-w-md lg-max-w-none w="10/12 lg:full" h-[100dvh] lg-h-max inset-y-0 fixed lg-relative 
                 lg-flex lg-justify-between
-                bg="white dark:gray-950 lg:!transparent" border="b gray-200 dark:gray-800 lg:none"
+                bg="white dark:gray-950 lg:!transparent" border-b="~ gray-200 dark:gray-800 lg:none"
                 px="5 sm:10 md:12 lg:0" transition-all duration-300 ease-linear gap-x-6
                 class="py-8 lg-py-0 -left-full lg:left-0">
                 <ul flex flex-col lg-flex-row gap-6 lg-items-center text="gray-700 dark:gray-300" lg-flex-1 lg-justify-center>
@@ -97,12 +97,14 @@
                 const isOpen = btnHumb.getAttribute("data-is-open")
                 btnHumb.setAttribute("data-is-open", isOpen === "true" ? "false" : "true")
                 if (isOpen === "false") {
-                    document.body.classList.toggle("overflow-y-auto")
+                    document.body.classList.remove("overflow-y-auto")
+                    document.body.classList.add("overflow-hidden")
                     overlay.classList.toggle("hidden")
                     navbar.classList.remove("-left-full")
                     navbar.classList.add("left-0")
                 } else {
                     document.body.classList.add("overflow-y-auto")
+                    document.body.classList.remove("overflow-hidden")
                     overlay.classList.add("hidden")
                     navbar.classList.add("-left-full")
                     navbar.classList.remove("left-0")

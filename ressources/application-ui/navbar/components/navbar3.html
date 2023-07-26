@@ -26,11 +26,11 @@
     </style>
 </head>
 
-<body bg="orange-50 dark:gray-950" class="overflow-hidden overflow-y-auto lg-overflow-y-auto">
+<body bg="orange-50 dark:gray-950" class="overflow-x-hidden overflow-y-auto lg-overflow-y-auto">
 
     <!-- navbar -->
     <div data-nav-overlay aria-hidden="true" fixed bg="gray-800/40" inset-0 z-30 class="hidden lg:hidden"></div>
-    <header bg="orange-50 dark:gray-950" relative z-40 w-full flex items-center h-20 border="b gray-100 dark:gray-800">
+    <header bg="orange-50 dark:gray-950" fixed left-0 top-0 z-40 w-full flex items-center h-20 border-b="~ gray-100 dark:gray-800">
         <nav relative mx-auto max-w-7xl w-full px="5 sm:10 md:12 lg:5" flex gap-x-5 justify-between items-center>
             <div flex items-center min-w-max>
                 <a href="#" font-semibold text="xl gray-800 dark:gray-200">
@@ -88,7 +88,7 @@
                     </a>
                     <div class="flex">
                         <button data-toggle-navbar data-is-open="false"
-                            outline-none border-l border-l-orange-100 pl-3 relative py-3>
+                            outline-none border="l l-orange-100 dark:l-gray-800" pl-3 relative py-3 bg-transparent>
                             <span class="sr-only">Toggle navbar</span>
                             <div id="line-1" aria-hidden="true" bg="gray-800 dark:gray-200" h0.5 w6 rd  transition duration-300></div>
                             <div id="line-2" aria-hidden="true" bg="gray-800 dark:gray-200" mt2 h0.5 w6 rd transition duration-300></div>
@@ -111,12 +111,14 @@
                 const isOpen = btnHumb.getAttribute("data-is-open")
                 btnHumb.setAttribute("data-is-open", isOpen === "true" ? "false" : "true")
                 if (isOpen === "false") {
-                    document.body.classList.toggle("overflow-y-auto")
-                    overlay.classList.toggle("hidden")
-                } else {
-                    document.body.classList.add("overflow-y-auto")
-                    overlay.classList.add("hidden")
-                }
+      document.body.classList.remove("overflow-y-auto");
+      document.body.classList.add("overflow-hidden");
+      overlay.classList.toggle("hidden");
+    } else {
+      document.body.classList.add("overflow-y-auto");
+      document.body.classList.remove("overflow-hidden");
+      overlay.classList.add("hidden");
+    }
             }
             btnHumb.addEventListener("click", () => {
                 navbar.classList.toggle("invisible")

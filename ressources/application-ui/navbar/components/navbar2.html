@@ -22,77 +22,92 @@
     </style>
 </head>
 
-<body bgwhite dark-bg-gray950 class="overflow-hidden overflow-y-auto lg-overflow-y-auto">
+<body bgwhite dark-bg-gray950 class="overflow-x-hidden overflow-y-auto lg-overflow-y-auto">
     <!-- navbar -->
-    <div fixed bg="gray-800/40" inset-0 z30 class="hidden lg-hidden" data-nav-overlay aria-hidden="true"></div>
-    <header relative w-full flex items-center h20 border="b b-gray-100 dark:b-gray-900" z40
-        bg="white/80 dark:gray-950/80" backdrop-filter backdrop-blur-xl>
-        <nav relative mxauto max-w-7xl w-full px5 sm-px10 md-px12 lg-px5 flex gap-x-5 justify-between items-center>
-            <div class="flex items-center min-w-max">
-                <a href="/" class="relative flex items-center gap-2.5">
-                    <span class="flex">
-                        <span w3 h6 rd-l-full flex bg-blue-400></span>
-                        <span w3 h6 rd-r-full flex bg-indigo-600 mt2></span>
+    <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-800/40 inset-0 z-30 hidden lg-hidden"></div>
+    <div mx-auto max-w-7xl w-full px="5 sm:10 md:12 lg:5">
+        <div class="w-full flex justify-between h14 items-center">
+            <div  text="gray-700 dark:gray-300" class="hfull flex items-center gap-x-4">
+                <a href="tel:" flex gap-1 text-sm>
+                    <span i-carbon-phone text-xl bg="gray-700 dark:gray-300"></span>
+                    <span hidden sm-flex>+243 97 24 44 966</span>
+                </a>
+                <a href="mailto:" flex items-center min-w-max>
+                    <span i-carbon-email bg="gray-700 dark:gray-300" text-xl></span>
+                    <span hidden sm-flex>johndoe@info.com</span>
+                </a>
+            </div>
+            <div flex items-center gap-x-2.5 -mx-2 text="gray-700 dark:gray-300">
+                <a href="#facebook" p1 border="~ gray-200 dark:gray-800" bg="gray-100 dark:gray-900" rd-md>
+                    <span class="sr-only">facebook</span>
+                    <span i-carbon-logo-facebook flex text-2xl bg="gray-700 dark:gray-300 hover:pink-700" transition ease-linear></span>
+                </a>
+
+                <a href="#twitter" p1 border="~ gray-200 dark:gray-800" bg="gray-100 dark:gray-900" rd-md>
+                    <span class="sr-only">Twitter</span>
+                    <span i-carbon-logo-twitter flex text-2xl bg="gray-700 dark:gray-300 hover:pink-700" transition ease-linear></span>
+                </a>
+
+                <a href="#linkedin" p1 border="~ gray-200 dark:gray-800" bg="gray-100 dark:gray-900" rd-md>
+                    <span class="sr-only">linkedin</span>
+                    <span i-carbon-logo-linkedin flex text-2xl bg="gray-700 dark:gray-300 hover:pink-700" transition ease-linear></span>
+                </a>
+
+                <a href="#instagram" p1 border="~ gray-200 dark:gray-800" bg="gray-100 dark:gray-900" rd-md>
+                    <span class="sr-only">instagram</span>
+                    <span i-carbon-logo-instagram flex text-2xl bg="gray-700 dark:gray-300 hover:pink-700" transition ease-linear></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <header sticky left-0 top-0 w-full flex 
+    items-center h20 border-b="~ gray-100 dark:gray-900" z-40 bg="white dark:gray-950 opacity-80" backdrop-filter backdrop-blur-xl>
+        <nav px="5 sm:10 md:12 lg:5" mx-auto max-w-7xl w-full flex gap-x-5 justify-between items-center>
+            <div flex items-center min-w-max>
+                <a href="#" text-xl font-semibold flex items-center gap-x-2>
+                    <span flex>
+                        <span w3 h6 rd-l-full flex bg-red-500></span>
+                        <span w3 h6 rd-r-full flex bg-pink-700 mt2></span>
                     </span>
-                    <span inline-flex text-lg font-bold text="indigo-950 dark:white">
-                        Estam
-                    </span>
+                    <span text="lg gray-700 dark:gray-300">Archix</span>
                 </a>
             </div>
 
-            <div fixed top-full left-0 lg="top-0 relative w-max flex" bg="white dark:gray-950 lg:transparent"
-                border="b b-gray-200 dark:b-gray-800 lg:none" py="8 lg:0" px="5 sm:10 md:12 lg:px-0" w-full duration-300
-                ease-linear gap-x-6
-                class="translate-y-10 lg:translate-y-0 skew-x-6 lg-skew-x-0 op-0 lg:op-100 invisible lg-visible"
-                data-navbar>
-                <ul flex flex-col lg-flex-row gap-6 lg-items-center text="gray-700 dark:gray-300"
-                    lg="w-full justify-center">
-                    <li>
-                        <a href="#" relative py-2.5 duration-300 ease-linear text-indigo-600 hover-text-indigo-600
-                            after="absolute content-empty
-                        w-full left-0 bottom-0 h-px rd-md 
-                        origin-left ease-linear after-duration-300 after-scale-x-0" hover-after-scale-x-100
-                            after-bg-indigo-600>Home</a>
+            <div data-navbar fixed top-20  left-0 bg="white dark:gray-950  lg:transparent" border="b b-gray-200 dark:b-border-gray-800 lg:none" 
+            py="8 lg:0" px="5 sm:10 md:12 lg:0" w-full 
+            lg-top-0 lg-relative  lg-flex lg-justify-between duration-300 ease-linear
+                class=" translate-y-10 opacity-0 invisible lg:visible lg:translate-y-0 lg:opacity-100">
+                <ul flex flex-col lg-flex-row gap-6 lg-items-center text="gray-700 dark:gray-300" lg-w-full lg-justify-center>
+                    <li >
+                        <a href="#" py2.5 duration-300 ease-linear hover-text-pink-600>Home</a>
                     </li>
                     <li>
-                        <a href="#" relative py-2.5 duration-300 ease-linear hover-text-indigo-600
-                            after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-indigo-600"
-                            hover-after-scale-x-100>Portfolio</a>
+                        <a href="#" py2.5 duration-300 ease-linear hover-text-pink-600>About</a>
                     </li>
                     <li>
-                        <a href="#" relative py-2.5 duration-300 ease-linear hover-text-indigo-600
-                            after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-indigo-600"
-                            hover-after-scale-x-100>Services</a>
+                        <a href="#" py2.5 duration-300 ease-linear hover-text-pink-600>Services</a>
                     </li>
                     <li>
-                        <a href="#" relative py-2.5 duration-300 ease-linear hover-text-indigo-600
-                            after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-indigo-600"
-                            hover-after-scale-x-100>Company</a>
+                        <a href="#" py2.5 duration-300 ease-linear hover-text-pink-600>Work</a>
                     </li>
                     <li>
-                        <a href="#" relative py-2.5 duration-300 ease-linear hover-text-indigo-600
-                            after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-indigo-600"
-                            hover-after-scale-x-100>Contact</a>
+                        <a href="#" py2.5 duration-300 ease-linear hover-text-pink-600>Pricing</a>
                     </li>
                 </ul>
-                <div flex flex-col sm-flex-row sm-items-center gap-4 lg-min-w-max mt="10 lg:0" aria-hidden="true">
-                    <a href="#" flex justify-center relative px6 py3 before-absolute before-content-empty before-inset-0
-                        before-rd-lg before-transition before-bg-gray-100 dark-before-bg-gray-900 text-indigo-600
-                        dark-text-white hover-before-scale-105>
-                        <span class="relative">
-                            Book a call
-                        </span>
+                <div flex sm-items-center lg-min-w-max mt-10 lg-mt-0>
+                    <a href="#" px-6 items-center h-12 rd-3xl text="pink-700 dark:white" order="gray-100 dark:gray-800"  bg="gray-100 dark:gray-900" duration-300 ease-linear flex justify-center w-full sm-w-auto>
+                        Book a call
                     </a>
                 </div>
             </div>
-            <div flex items-center lg-hidden>
-                <button data-toggle-navbar data-is-open="false" outline-none border-l
-                    border-l="indigo-100 dark:gray-800" p-3 relative bg-transparent>
+            <div aria-hidden="true" class="flex items-center lg:hidden">
+                <button data-toggle-navbar data-is-open="false" outline-none bg-transparent border-l="~ gray-100 dark:l-gray-900" pl-3 relative py-3>
                     <span class="sr-only">Toggle navbar</span>
-                    <div h0.5 w6 rd bg="gray-800 dark:gray-300" transition duration-300 id="line-1" aria-hidden="true">
+                    <div id="line-1" aria-hidden="true"
+                        h0.5 w6 rd bg-gray-800 dark-bg-gray-200 transition duration-300>
                     </div>
-                    <div mt2 h0.5 w6 rd bg="gray-800 dark:gray-300" transition duration-300 id="line-2"
-                        aria-hidden="true"></div>
+                    <div id="line-2" aria-hidden="true"
+                        mt-2 h-0.5 w-6 rd bg-gray-800 dark-bg-gray-200 transition duration-300></div>
                 </button>
             </div>
         </nav>
@@ -119,7 +134,6 @@
                 navbar.classList.toggle("invisible")
                 navbar.classList.toggle("op-0")
                 navbar.classList.toggle("translate-y-10")
-                navbar.classList.toggle("skew-x-6")
                 toggleBtnAttr()
             })
 
@@ -127,7 +141,6 @@
                 navbar.classList.add("invisible")
                 navbar.classList.add("op-0")
                 navbar.classList.add("translate-y-10")
-                navbar.classList.add("skew-x-6")
                 toggleBtnAttr()
             })
         }

@@ -10,7 +10,7 @@ require_js: true
 ```html
 <!-- navbar -->
 <div data-nav-overlay aria-hidden="true" fixed bg="gray-800/40" inset-0 z-30 class="hidden lg:hidden"></div>
-<header bg="orange-50 dark:gray-950" fixed left-0 top-0 z-40 w-full flex items-center h-20 border="b gray-100 dark:gray-800">
+<header bg="orange-50 dark:gray-950" fixed left-0 top-0 z-40 w-full flex items-center h-20 border-b="~ gray-100 dark:gray-800">
     <nav relative mx-auto max-w-7xl w-full px="5 sm:10 md:12 lg:5" flex gap-x-5 justify-between items-center>
         <div flex items-center min-w-max>
             <a href="#" font-semibold text="xl gray-800 dark:gray-200">
@@ -83,7 +83,7 @@ require_js: true
 <!-- hero section -->
 <section py-8 mt-20>
     <div mx-auto max-w-7xl w-full px="5 sm:10 md:12 lg:5" flex flex-col lg-flex-row gap-x-6>
-        <div py="4 lg:8 xl:12" space-y-7 w="lg:[45%]">
+        <div py="4 lg:8 xl:12" space-y-7 w="lg:[45%]" max-w-2xl lg-max-w-none>
             <h1 text="gray-900 dark:white 3xl sm:4xl md:5xl xl:6xl" font-bold>
                 Let your <span text-orange-600>groceries</span> come to you
             </h1>
@@ -221,10 +221,12 @@ if (btnHumb && navbar) {
         const isOpen = btnHumb.getAttribute("data-is-open")
         btnHumb.setAttribute("data-is-open", isOpen === "true" ? "false" : "true")
         if (isOpen === "false") {
-            document.body.classList.toggle("overflow-y-auto")
+            document.body.classList.remove("overflow-y-auto")
+            document.body.classList.add("overflow-hidden")
             overlay.classList.toggle("hidden")
         } else {
             document.body.classList.add("overflow-y-auto")
+            document.body.classList.remove("overflow-hidden")
             overlay.classList.add("hidden")
         }
     }

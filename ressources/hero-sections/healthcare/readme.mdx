@@ -8,8 +8,7 @@ require_js: true
 
 
 ```html
-
- <!-- navbar -->
+<!-- navbar -->
 <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-800/40 inset-0 z-30 hidden lg-hidden"></div>
 <header absolute inset-x-0 top-0 flex items-center h-20 z-40>
     <nav relative mx-auto max-w-7xl w-full px="5 sm:10 md:12 lg:5" flex gap-x-5 justify-between items-center>
@@ -21,9 +20,9 @@ require_js: true
         </div>
 
         <div data-navbar absolute top-full left-0 bg="white dark:gray-950 lg:!transparent"
-            border="b b-gray-200 dark:b-gray-800 lg:none" py="8 lg:0" px="5 sm:10 md:12 lg:0" w-full lg-top-0
+            border-b="~ gray-200 dark:gray-800 lg:none" py="8 lg:0" px="5 sm:10 md:12 lg:0" w-full lg-top-0
             lg-relative lg-w-max lg-flex duration-300 ease-linear gap-x-6
-            class="translate-y-10  skew-x-6 opacity-0 invisible lg-visible lg-skew-x-0 lg-translate-y-0 lg-opacity-100">
+            class="translate-y-10 opacity-0 invisible lg-visible lg-translate-y-0 lg-opacity-100">
             <ul flex flex-col lg-flex-row gap-6 lg-items-center text-gray-700 dark-text-gray-300 lg-w-full
                 lg-justify-center>
                 <li>
@@ -58,8 +57,8 @@ require_js: true
     </nav>
 </header>
 
-<main class="flex flex-col">
-    <section relative pt="20 lg:24" bg="blue-50 dark:gray-900">
+<main>
+    <section relative bg="blue-50 dark:gray-900" lg="flex items-center min-h-max">
         <div class="absolute top-0 inset-x-0 h64 flex items-start">
             <div
                 class="h24 w-2/3 bg-gradient-to-br from-blue-500 opacity-20 blur-2xl dark:from-[#0c1cac] dark:invisible dark:opacity-40">
@@ -69,7 +68,7 @@ require_js: true
             </div>
         </div>
         <div px="5 sm:10 md:12 lg:5" relative mx-auto max-w-7xl w-full flex flex-col lg-flex-row
-            gap="8 lg:10 xl:12">
+            gap="8 lg:10 xl:12" py="24 xl:28" >
 
             <div aria-hidden="true" absolute inset-y-0 w44 left-0 hidden dark-flex>
                 <div
@@ -77,9 +76,9 @@ require_js: true
                 </div>
             </div>
 
-            <div mx-auto space-y-8 text-center flex flex-col max-w-3xl justify-center flex-1
-                lg="flex justify-start py-8 w-1/2 max-w-none text-left">
-                <h1 text="blue-950 dark:white 5xl/snug sm:6xl/tight lg:5xl/tight xl:[3.50rem]/tight" font-bold>
+            <div mx-auto space-y-8 text-center flex flex-col max-w-2xl justify-center flex-1
+                lg="flex justify-start py-2 w-1/2 max-w-none text-left">
+                <h1 text="blue-950 dark:white 3xl/snug sm:5xl/tight lg:4xl/tight xl:[3.50rem]/tight" font-bold>
                     We are providing best and affordable health care.
                 </h1>
                 <p text="gray-700 dark:gray-300 lg:lg" max-w-2xl lg-max-w-none mx-auto>
@@ -93,8 +92,9 @@ require_js: true
                     <input type="text" placeholder="johndoe@gmail.com"
                         class="peer relative w-full bg-white dark-bg-gray-950 px-5 py-3 rd-full outline-none text-gray-600 dark-text-gray-300">
                     <button
-                        class="absolute inset-y-1.5 right-1.5 bg-blue-600 text-white p3 flex items-center rd-full">
-                        <span class="flex relative z-[5]">
+                        class="absolute inset-y-1.5 right-1.5 bg-blue-600 text-white p3 sm-px-6 flex items-center rd-full">
+                        <span hidden sm-flex relative z-[5]>Get Started</span>
+                        <span flex sm-hidden relative z-[5]>
                             <span i-carbon-send text-2xl bg-white></span>
                         </span>
                     </button>
@@ -123,8 +123,8 @@ require_js: true
                     </div>
                 </div>
             </div>
-            <div class="hidden md-flex flex-1 lg:w-1/2 relative max-w-3xl mx-auto lg:max-w-none">
-                <div sm="w-5/6" h-auto lg="h-full absolute right-0" bg-blue-100 overflow-hidden rd-b-full>
+            <div class="hidden md-flex flex-1 justify-center  lg:w-1/2 relative w-full max-w-3xl mx-auto lg:max-w-none">
+                <div md="w-5/6 h-auto" lg="w-full h-full absolute right-0" bg-blue-100 overflow-hidden rd-b-24>
                     <img src="/images/heroImg.webp" alt="happy team" width="1850" height="auto"
                         class="w-full h-full object-cover">
                 </div>
@@ -144,10 +144,12 @@ if (btnHumb && navbar) {
         const isOpen = btnHumb.getAttribute("data-is-open")
         btnHumb.setAttribute("data-is-open", isOpen === "true" ? "false" : "true")
         if (isOpen === "false") {
-            document.body.classList.toggle("overflow-y-auto")
+            document.body.classList.remove("overflow-y-auto")
+            document.body.classList.add("overflow-hidden")
             overlay.classList.toggle("hidden")
         } else {
             document.body.classList.add("overflow-y-auto")
+            document.body.classList.remove("overflow-hidden")
             overlay.classList.add("hidden")
         }
     }
