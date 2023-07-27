@@ -15,13 +15,13 @@ if (btnHumb && navbar) {
     }
     btnHumb.addEventListener("click", () => {
         navbar.classList.toggle("invisible")
-        navbar.classList.toggle("op-0")
+        navbar.classList.toggle("op0")
         toggleBtnAttr()
     })
 
     overlay.addEventListener("click", () => {
         navbar.classList.add("invisible")
-        navbar.classList.add("op-0")
+        navbar.classList.add("op0")
         toggleBtnAttr()
     })
 }

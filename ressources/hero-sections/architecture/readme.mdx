@@ -153,6 +153,17 @@ require_js: true
     </div>
 </section>
 
+<!-- styles -->
+<style> 
+    button[data-toggle-navbar][data-is-open="true"] #line-1 {
+        transform: rotate(45deg) translateY(0.375rem);
+    }
+
+    button[data-toggle-navbar][data-is-open="true"] #line-2 {
+        transform: rotate(-45deg) translateY(-0.375rem);
+    }
+</style>
+
 <!-- script -->
 <script>
 const btnHumb = document.querySelector("[data-toggle-navbar]")
