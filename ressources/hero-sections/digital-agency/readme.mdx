@@ -148,6 +148,22 @@ require_js: true
     </div>
 </section>
 
+<!-- styles  -->
+<style>
+    button[data-toggle-navbar][data-is-open="true"] #line-1 {
+        transform: translateY(0.375rem) rotate(40deg);
+    }
+
+    button[data-toggle-navbar][data-is-open="true"] #line-2 {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+
+    button[data-toggle-navbar][data-is-open="true"] #line-3 {
+        transform: translateY(-0.375rem) rotate(-40deg);
+    }
+</style>
+
 
 <!-- script -->
 <script>
