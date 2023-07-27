@@ -28,66 +28,65 @@
 </head>
 
 <body class="overflow-hidden overflow-y-auto lg-overflow-y-auto bg-white dark:bg-gray-950">
-
     <!-- navbar -->
-    <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-8/40 inset-0 z-30 hidden lg:hidden"></div>
+    <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-8/40 inset-0 z30 hidden lg-hidden"></div>
     <header fixed inset-x-0 top-0 w-full flex items-center h20 border-b="~ gray-1 dark:gray-9" z40
         bg="white/80 dark:gray-950/80" backdrop-filter backdrop-blur-xl>
         <nav relative mxauto max-w-7xl wfull px="5 sm:10 md:12 lg:5" flex gap-x-5 justify-between items-center>
             <div flex items-center min-w-max>
                 <a href="#" text-xl font-semibold flex items-center gap-x-2>
                     <span class="flex">
-                        <span w3 h6 rd-l-full flex bg-sky-600></span>
-                        <span w3 h6 rd-r-full flex bg-teal-400 mt2></span>
+                        <span w3 h6 rd-l-full flex bg-sky-6></span>
+                        <span w3 h6 rd-r-full flex bg-teal-4 mt2></span>
                     </span>
-                    <span text="lg gray-7 dark:gray-300">Podux</span>
+                    <span text="lg gray-7 dark:gray-3">Podux</span>
                 </a>
             </div>
 
-            <div absolute lg-relative top="full lg:0" left-0 bg="white dark:gray-950 lg:transparent"
-                border-b="~ gray-2 dark:gray-7" py="8 lg:0" px="5 sm:10 md:12 lg:0" lg:border-none w-full
-                lg:flex lg:justify-between duration-300 ease-linear class="translate-y-10 skew-x-6 op-0 invisible lg:visible lg:skew-x-0 lg:translate-y-0 lg:op-100" data-navbar>
-                <ul flex flex-col lg:flex-row gap-6 lg:items-center text="gray-7 dark:gray-300" lg-w-full lg-justify-center>
+            <div lg-relative top="full lg:0" bg="white dark:gray-950 lg:transparent"
+                border-b="~ gray-2 dark:gray-7 lg:none" left-0 absolute py="8 lg:0" px="5 sm:10 md:12 lg:0"
+                class="translate-y-10 skew-x-6 op0 invisible lg-visible lg-skew-x-0 lg-translate-y-0 lg-op100 lg-flex lg-justify-between duration-300 ease-linear w-full" data-navbar>
+                <ul flex flex-col lg-flex-row gap-6 lg-items-center text="gray-7 dark:gray-3" lg-w-full lg-justify-center>
                     <li>
-                        <a href="#" relative py-2.5 duration-300 ease-linear hover:text-sky-600
-                            after="content-empty absolute w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-sky-600"
+                        <a href="#" relative py2.5 duration-300 ease-linear hover-text-sky-6
+                            after="content-empty absolute w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-sky-6"
                             hover:after:scale-100>Home</a>
                     </li>
                     <li>
-                        <a href="#" relative py-2.5 duration-300 ease-linear hover:text-sky-600
-                            after="content-empty absolute w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-sky-600"
+                        <a href="#" relative py2.5 duration-300 ease-linear hover-text-sky-6
+                            after="content-empty absolute w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-sky-6"
                             hover:after:scale-100>Features</a>
                     </li>
                     <li>
-                        <a href="#" relative py-2.5 duration-300 ease-linear hover:text-sky-600
-                            after="content-empty absolute w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-sky-600"
+                        <a href="#" relative py2.5 duration-300 ease-linear hover-text-sky-6
+                            after="content-empty absolute w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-sky-6"
                             hover:after:scale-100>Episodes</a>
                     </li>
                     <li>
-                        <a href="#" relative py-2.5 duration-300 ease-linear hover:text-sky-600
-                            after="content-empty absolute w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-sky-600"
+                        <a href="#" relative py2.5 duration-300 ease-linear hover-text-sky-6
+                            after="content-empty absolute w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-sky-6"
                             hover:after:scale-100>About</a>
                     </li>
                     <li>
-                        <a href="#" relative py-2.5 duration-300 ease-linear hover:text-sky-600
-                            after="content-empty absolute w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-sky-600"
+                        <a href="#" relative py2.5 duration-300 ease-linear hover-text-sky-6
+                            after="content-empty absolute w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-sky-6"
                             hover:after:scale-100>Pricing</a>
                     </li>
                 </ul>
-                <div aria-hidden="true" flex flex-col sm:flex-row sm:items-center gap-4 lg:min-w-max mt="10 lg:0">
-                    <a href="#" px5 py2.5 border border-gray-2 dark:border-gray-7 text-sky-700 dark:text-white flex
-                        justify-center w="full sm:auto">
+                <div aria-hidden="true" flex flex-col sm-flex-row sm-items-center gap-4 lg-min-w-max mt="10 lg:0">
+                    <a href="#" px5 py2.5 border="gray-2 dark:gray-8" text-sky-7 dark-text-white flex
+                        justify-center w="full sm-auto">
                         Signin
                     </a>
-                    <a href="#" px5 py2.5 bg-sky-600 text-white duration-300 ease-linear flex justify-center
-                        w="full sm:auto">
+                    <a href="#" px5 py2.5 bg-sky-6 text-white duration-300 ease-linear flex justify-center
+                        w="full sm-auto">
                         Signup
                     </a>
                 </div>
             </div>
             <div aria-hidden="true" class="flex items-center lg:hidden">
-                <button data-toggle-navbar data-is-open="false" outline-none border="l l-sky-100 dark:l-gray-7"
-                    bg-transparent pl-3 relative py-3>
+                <button data-toggle-navbar data-is-open="false" outline-none border-l="gray-2 dark:gray-8"
+                    bg-transparent pl3 relative py3>
                     <span class="sr-only">Toggle navbar</span>
                     <div id="line-1" aria-hidden="true" h0.5 w6 rd-full bg="gray-8 dark:gray-2" transition
                         duration-300>
@@ -105,45 +104,45 @@
             <div py="lg:10 xl:12" text="center lg:left" class="lg-w-1/2 max-w-2xl md-max-w-3xl mx-auto">
                 <h1 text="teal-950 dark:white 4xl md:5xl lg:6xl" class="font-semibold leading-tight">
                     Find and listen in your favorite <div relative
-                        after="content-empty absolute inset-x-0 h-3 bg-sky-100 dark:bg-sky-950 bottom-2" inline-block
+                        after="content-empty absolute inset-x-0 h3 bg-sky-1 dark:bg-sky-950 bottom-2" inline-block
                         px-2>
-                        <span relative z10 text-transparent bg-clip-text bg-gradient-to-tr from-sky-800
-                            to-teal-400>Podcasts</span>
+                        <span relative z10 text-transparent bg-clip-text bg-gradient-to-tr from-sky-8
+                            to-teal-4>Podcasts</span>
                     </div>!
                 </h1>
-                <p mt8 text-gray-7 dark-text-gray-300 max-w-lg lg-max-w-none mx-auto>
+                <p mt8 text-gray-7 dark-text-gray-3 max-w-lg lg-max-w-none mx-auto>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, beatae omnis ipsa magnam neque ut
                 </p>
-                <div mt-8 flex flex-col sm:flex-row justify-center lg:justify-start gap-4>
-                    <a href="#" flex items-center justify-center gap-x-2 px-5 py-2.5 border border-transparent
-                        bg-sky-600 text-white>
+                <div mt-8 flex flex-col sm-flex-row justify-center lg-justify-start gap-4>
+                    <a href="#" flex items-center justify-center gap-x-2 px-5 py2.5
+                        bg-sky-6 text-white>
                         Start Listening
                         <span i-carbon-arrow-right bg-white text-xl flex></span>
                     </a>
-                    <a href="#" flex items-center justify-center gap-x-2 px-5 py-2.5 border
-                        border-gray-2 dark-border-gray-8 text="sky-700 dark:white">
+                    <a href="#" flex items-center justify-center gap-x-2 px-5 py2.5
+                        border="~ gray-2 dark:gray-8" text="sky-7 dark:white">
                         Explore channels
-                        <span i-carbon-explore bg="sky-700 dark:white" text-xl></span>
+                        <span i-carbon-explore bg="sky-7 dark:white" text-xl></span>
                     </a>
                 </div>
-                <div flex items-center gap-1 mt-10 justify-center lg-justify-start gap-x-3>
+                <div flex items-center gap-1 mt10 justify-center lg-justify-start gap-x-3>
                     <div flex items-center -space-x-2>
                         <img src="/images/podCast.webp" width="2250" alt="listener avatar"
-                            class="w-10 h-10 object-cover rd-full ring-4 ring-white dark:ring-gray-950">
+                            class="w10 h10 object-cover rd-full ring-4 ring-white dark:ring-gray-950">
                         <img src="/images/podCast.webp" width="2250" alt="listener avatar"
-                            class="w-10 h-10 object-cover rd-full ring-4 ring-white dark:ring-gray-950">
+                            class="w10 h10 object-cover rd-full ring-4 ring-white dark:ring-gray-950">
                         <img src="/images/podCast.webp" width="2250" alt="listener avatar"
-                            class="w-10 h-10 object-cover rd-full ring-4 ring-white dark:ring-gray-950">
+                            class="w10 h10 object-cover rd-full ring-4 ring-white dark:ring-gray-950">
                     </div>
                     <div class="flex flex-col justify-start items-start">
                         <span font-semibold text="lg gray-8 dark:gray-2">+12k</span>
-                        <span text="gray-6 sm dark:gray-300">WordWide listners</span>
+                        <span text="gray-6 sm dark:gray-3">WordWide listners</span>
                     </div>
                 </div>
             </div>
             <div class="lg-w-1/2 relative lg-h-auto max-w-2xl md-max-w-3xl mx-auto">
                 <div class="absolute left-1/2 -translate-x-1/2 
-                    -top-8 px-10 py-1.5 bg-white text-center border border-gray-1 shadow-lg shadow-gray-2/40">
+                    -top-8 px-10 py1.5 bg-white text-center border border-gray-1 shadow-lg shadow-gray-2/40">
                     <span text="text-3xl text-sky-950" class="font-bold">+25</span>
                     <p class="text-gray-6">Podcasts</p>
                 </div>
