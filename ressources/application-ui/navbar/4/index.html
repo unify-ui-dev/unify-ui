@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grocery</title>
-    <meta name="description" content="Grocery Store Website">
+    <title>Navbar example</title>
+    <meta name="description" content="Navbar example">
     <link
-        href="https://fonts.googleapis.com/family=Poppins:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <style>
         body {
@@ -29,76 +29,76 @@
 <body bg="orange-50 dark:gray-950" class="overflow-x-hidden overflow-y-auto lg-overflow-y-auto">
 
     <!-- navbar -->
-    <div data-nav-overlay aria-hidden="true" fixed bg="gray-8/40" inset-0 z-30 class="hidden lg:hidden"></div>
-    <header bg="orange-50 dark:gray-950" fixed left-0 top-0 z-40 w-full flex items-center h-20 border-b="~ gray-1 dark:gray-9">
+    <div data-nav-overlay aria-hidden="true" fixed bg="gray-8/40" class="inset-0 z30 hidden lg-hidden"></div>
+    <header bg="orange-50 dark:gray-950" fixed left-0 top-0 z40 w-full flex items-center h20 border-b="~ gray-1 dark:gray-9">
         <nav relative mx-auto max-w-7xl w-full px="5 sm:10 md:12 lg:5" flex gap-x-5 justify-between items-center>
             <div flex items-center min-w-max>
                 <a href="#" font-semibold text="xl gray-8 dark:gray-2">
-                    <span relative text-orange-600 after="absolute content-empty inset-0 rotate-3 border border-orange-600">Grocy</span>Mart
+                    <span relative text-orange-6 after="absolute content-empty inset-0 rotate-3 border border-orange-6">Grocy</span>Mart
                 </a>
             </div>
 
             <div data-navbar bg="white dark:gray-950 lg:transparent" border-b="~ gray-2 dark:gray-8 lg:none" py="8 lg:0" px="5 sm:10 md:12 lg:0" absolute left-0 top-full lg-top-0 w-full lg-relative  lg-flex lg-justify-between duration-300 ease-linear
                 class="translate-y-10 -rotate-12 op-0 invisible lg-visible lg-rotate-0 lg-translate-y-0 lg-op-100">
-                <ul flex flex-col lg-flex-row gap-6 lg-items-center text="gray-7 dark:gray-300" lg-w-full lg-justify-center>
+                <ul flex flex-col lg-flex-row gap-6 lg-items-center text="gray-7 dark:gray-3" lg-w-full lg-justify-center>
                     <li>
-                        <a href="#" relative py-2.5 duration-300 ease-linear hover:text-orange-600 
-                        after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-orange-600" hover:after:scale-100>Home</a>
+                        <a href="#" relative py2.5 duration-300 ease-linear hover-text-orange-6 
+                        after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-orange-6 hover:scale-100">Home</a>
                     </li>
                     <li>
-                        <a href="#" relative py-2.5 duration-300 ease-linear hover:text-orange-600 
-                        after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-orange-600" hover:after:scale-100>Categories</a>
+                        <a href="#" relative py2.5 duration-300 ease-linear hover-text-orange-6 
+                        after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-orange-6 hover:scale-100">Categories</a>
                     </li>
                     <li>
-                        <a href="#" relative py-2.5 duration-300 ease-linear hover:text-orange-600 
-                        after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-orange-600" hover:after:scale-100>Sales</a>
+                        <a href="#" relative py2.5 duration-300 ease-linear hover-text-orange-6 
+                        after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-orange-6 hover:scale-100">Sales</a>
                     </li>
                     <li>
-                        <a href="#" relative py-2.5 duration-300 ease-linear hover:text-orange-600 
-                        after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-orange-600" hover:after:scale-100>About</a>
+                        <a href="#" relative py2.5 duration-300 ease-linear hover-text-orange-6 
+                        after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-orange-6 hover:scale-100">About</a>
                     </li>
                     <li>
-                        <a href="#" relative py-2.5 duration-300 ease-linear hover:text-orange-600 
-                        after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-orange-600" hover:after:scale-100>Contact</a>
+                        <a href="#" relative py-2.5 duration-300 ease-linear hover:text-orange-6 
+                        after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-orange-6 hover:scale-100">Contact</a>
                     </li>
                 </ul>
                 <div aria-hidden="true"
-                   flex flex-col sm-flex-row sm-items-center gap-4  lg-min-w-max mt-10 lg-mt-0>
+                   flex flex-col sm-flex-row sm-items-center gap-4  lg-min-w-max mt10 lg-mt-0>
                     <div aria-hidden="true" hidden lg-flex lg-items-center>
                         <a href="#" class="relative px-1.5">
                             <span class="sr-only">cart</span>
-                            <span absolute top-0 right-0 bg-orange-600 w2 h2 rd-full></span>
-                            <span i-carbon-shopping-cart bg="gray-7 dark:gray-300" flex text-2xl></span>
+                            <span absolute top-0 right-0 bg-orange-6 w2 h2 rd-full></span>
+                            <span i-carbon-shopping-cart bg="gray-7 dark:gray-3" flex text-2xl></span>
                         </a>
                     </div>
-                    <a href="#" px5 py2.5 rd-md text-orange-600 underline flex justify-center>
+                    <a href="#" px5 py2.5 rd-md text-orange-6 underline flex justify-center>
                         Signin
                     </a>
-                    <a href="#" px-5 py-2.5 rd-md bg="orange-600 hover:orange-700" text-white flex justify-center duration-300 ease-linear>
+                    <a href="#" px5 py2.5 rd-md bg="orange-6 hover:orange-7" text-white flex justify-center duration-300 ease-linear>
                         Signup
                     </a>
                 </div>
             </div>
             <div aria-hidden="true" flex items-center lg-hidden gap-x-4>
-                <div aria-hidden="true" class="flex items-center gap-x-4 lg:hidden">
-                    <a href="#" relative px-1.5>
+                <div aria-hidden="true" class="flex items-center gap-x-4 lg-hidden">
+                    <a href="#" relative px1.5>
                         <span class="sr-only">cart</span>
-                        <span absolute top-0 right-0 bg-orange-600 w-2 h-2 rd-full></span>
-                        <span i-carbon-shopping-cart bg="gray-7 dark:gray-300" flex text-2xl></span>
+                        <span absolute top-0 right-0 bg-orange-6 w-2 h-2 rd-full></span>
+                        <span i-carbon-shopping-cart bg="gray-7 dark:gray-3" flex text-2xl></span>
                     </a>
                     <div class="flex">
                         <button data-toggle-navbar data-is-open="false"
-                            outline-none border="l l-orange-100 dark:l-gray-7" pl-3 relative py-3 bg-transparent>
+                            outline-none border-l="~ orange-1 dark:gray-7" pl3 relative py3 bg-transparent>
                             <span class="sr-only">Toggle navbar</span>
                             <div id="line-1" aria-hidden="true" bg="gray-8 dark:gray-2" h0.5 w6 rd  transition duration-300></div>
                             <div id="line-2" aria-hidden="true" bg="gray-8 dark:gray-2" mt2 h0.5 w6 rd transition duration-300></div>
                         </button>
-
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+
 
     <script type="module" src="./../../../../main.js"></script>
 
@@ -111,14 +111,12 @@
                 const isOpen = btnHumb.getAttribute("data-is-open")
                 btnHumb.setAttribute("data-is-open", isOpen === "true" ? "false" : "true")
                 if (isOpen === "false") {
-      document.body.classList.remove("overflow-y-auto");
-      document.body.classList.add("overflow-hidden");
-      overlay.classList.toggle("hidden");
-    } else {
-      document.body.classList.add("overflow-y-auto");
-      document.body.classList.remove("overflow-hidden");
-      overlay.classList.add("hidden");
-    }
+                    document.body.classList.remove("overflow-y-auto")
+                    overlay.classList.toggle("hidden")
+                } else {
+                    document.body.classList.add("overflow-y-auto")
+                    overlay.classList.add("hidden")
+                }
             }
             btnHumb.addEventListener("click", () => {
                 navbar.classList.toggle("invisible")
@@ -138,5 +136,4 @@
         }
     </script>
 </body>
-
 </html>
