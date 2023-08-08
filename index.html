@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
-  <meta name="description" content="Startup Website">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
-    <style>
-        body {
-            font-family: "DM Sans", sans-serif;
-        }
-    </style>
+  <title>Unify-Ui</title>
+  <meta name="description" content="Build with modern look your website in seconds using UnoCSS">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "DM Sans", sans-serif;
+    }
+  </style>
 </head>
 
 <body bg="white dark:gray-950" overflow-x-hidden>
@@ -24,74 +24,298 @@
         type="checkbox" role="switch" />
     </div>
   </div>
-  <section px-4 mx-auto max-w-6xl space-y-10 py12>
-    <h1 text-gray-8 dark-text-white text-4xl font-semibold>
-      Hero Sections
-    </h1>
-    <div mx-auto grid grid-cols-2 md-grid-cols-4 gap-6>
-      <a href="ressources/hero-sections/agency/" p6 rd-md text="gray-8 dark:gray-2" bg="white dark:gray-8"
-        border="~ gray-2 dark:gray-8" shadow="lg gray-2/40 dark:transparent">
-        Agency Website
-      </a>
-      <a href="ressources/hero-sections/architecture/" p6 rd-md text="gray-8 dark:gray-2" bg="white dark:gray-8"
-        border="~ gray-2 dark:gray-8" shadow="lg gray-2/40 dark:transparent">
-        Architecture
-      </a>
-      <a href="ressources/hero-sections/digital-agency/" p6 rd-md text="gray-8 dark:gray-2" bg="white dark:gray-8"
-        border="~ gray-2 dark:gray-8" shadow="lg gray-2/40 dark:transparent">
-        Digital Agency
-      </a>
-      <a href="ressources/hero-sections/grocerystore/" p6 rd-md text="gray-8 dark:gray-2" bg="white dark:gray-8"
-        border="~ gray-2 dark:gray-8" shadow="lg gray-2/40 dark:transparent">
-        Grocery Store
-      </a>
-      <a href="ressources/hero-sections/healthcare/" p6 rd-md text="gray-8 dark:gray-2" bg="white dark:gray-8"
-        border="~ gray-2 dark:gray-8" shadow="lg gray-2/40 dark:transparent">
-        Healthcare
-      </a>
-      <a href="ressources/hero-sections/medcare/" p6 rd-md text="gray-8 dark:gray-2" bg="white dark:gray-8"
-        border="~ gray-2 dark:gray-8" shadow="lg gray-2/40 dark:transparent">
-        Medcare
-      </a>
-      <a href="ressources/hero-sections/personnal-porfolio/" p6 rd-md text="gray-8 dark:gray-2"
-        bg="white dark:gray-8" border="~ gray-2 dark:gray-8" shadow="lg gray-2/40 dark:transparent">
-        Personnal Portfolio
-      </a>
-      <a href="ressources/hero-sections/podcast/" p6 rd-md text="gray-8 dark:gray-2" bg="white dark:gray-8"
-        border="~ gray-2 dark:gray-8" shadow="lg gray-2/40 dark:transparent">
-        Podcast
-      </a>
-      <a href="ressources/hero-sections/podcast-agency/" p6 rd-md text="gray-8 dark:gray-2" bg="white dark:gray-8"
-        border="~ gray-2 dark:gray-8" shadow="lg gray-2/40 dark:transparent">
-        Podcast agency
-      </a>
-      <a href="ressources/hero-sections/saas/" p6 rd-md text="gray-8 dark:gray-2" bg="white dark:gray-8"
-        border="~ gray-2 dark:gray-8" shadow="lg gray-2/40 dark:transparent">
-        Saas
-      </a>
+  <section>
+    <div class="mx-auto max-w-7xl py-10 px-5 space-y-10">
+      <h1 text-2xl font-semibold text-gray-9 dark-text-white>
+        Hero sections
+      </h1>
+      <div grid grid-cols-2 md:grid-cols-4 gap-6 children:p-6 children:rounded-md children:bg-gray-100
+        dark:children:bg-gray-900 children:border children:border-gray-200 dark:children:border-gray-800 text-gray-800
+        dark:text-gray-200>
+        <a href="ressources/hero-sections/agency/">
+          Agency Website
+        </a>
+        <a href="ressources/hero-sections/architecture/">
+          Architecture
+        </a>
+        <a href="ressources/hero-sections/creative-agency/">
+          Creative Agency
+        </a>
+        <a href="ressources/hero-sections/digital-agency/">
+          Digital Agency
+        </a>
+        <a href="ressources/hero-sections/grocerystore/">
+          Grocery Store
+        </a>
+        <a href="ressources/hero-sections/healthcare/">
+          Healthcare
+        </a>
+        <a href="ressources/hero-sections/hero-section/">
+          Hero Section
+        </a>
+        <a href="ressources/hero-sections/medcare/">
+          Medcare
+        </a>
+        <a href="ressources/hero-sections/personnal-porfolio/">
+          Personnal Portfolio
+        </a>
+        <a href="ressources/hero-sections/podcast/">
+          Podcast
+        </a>
+        <a href="ressources/hero-sections/podcast-agency/">
+          Podcast agency
+        </a>
+        <a href="ressources/hero-sections/saas/">
+          Saas
+        </a>
+        <a href="ressources/hero-sections/saas-product/">
+          Saas Product
+        </a>
+        <a href="ressources/hero-sections/software-agency/">
+          Software Agency
+        </a>
+        <a href="ressources/hero-sections/with-slider/">
+          With Slider
+        </a>
+      </div>
     </div>
-  </section>
-  <section px-4 mx-auto max-w-6xl space-y-10 py12>
-    <h1 text-gray-8 dark-text-white text-4xl font-semibold>
-      Pricing sections
-    </h1>
-    <div mx-auto grid grid-cols-2 md-grid-cols-4 gap-6>
-      <a href="ressources/pricing-section/1/" p6 rd-md text="gray-8 dark:gray-2" bg="white dark:gray-8"
-        border="~ gray-2 dark:gray-8" shadow="lg gray-2/40 dark:transparent">
-        Example 1
-      </a>
-      <a href="ressources/pricing-section/2/" p6 rd-md text="gray-8 dark:gray-2" bg="white dark:gray-8"
-        border="~ gray-2 dark:gray-8" shadow="lg gray-2/40 dark:transparent">
-        Example 2
-      </a>
-      <a href="ressources/pricing-section/3/" p6 rd-md text="gray-8 dark:gray-2" bg="white dark:gray-8"
-        border="~ gray-2 dark:gray-8" shadow="lg gray-2/40 dark:transparent">
-        Example 3
-      </a>
-      <a href="ressources/pricing-section/4/" p6 rd-md text="gray-8 dark:gray-2" bg="white dark:gray-8"
-        border="~ gray-2 dark:gray-8" shadow="lg gray-2/40 dark:transparent">
-        Example 4
-      </a>
+
+    <div class="mx-auto max-w-7xl py-10 px-5 space-y-10">
+      <h1 text-2xl font-semibold text-gray-9 dark-text-white>
+        Pricing sections
+      </h1>
+      <div grid grid-cols-2 md:grid-cols-4 gap-6 children:p-6 children:rounded-md children:bg-gray-100
+        dark:children:bg-gray-900 children:border children:border-gray-200 dark:children:border-gray-800 text-gray-800
+        dark:text-gray-200>
+        <a href="ressources/pricing-section/1/">
+          Example 1
+        </a>
+        <a href="ressources/pricing-section/2/">
+          Example 2
+        </a>
+        <a href="ressources/pricing-section/3/">
+          Example 3
+        </a>
+        <a href="ressources/pricing-section/4/">
+          Example 4
+        </a>
+        <a href="ressources/pricing-section/5/">
+          Example 5
+        </a>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl py-10 px-5 space-y-10">
+      <h1 class="text-2xl font-semibold text-gray-900 dark:text-white">
+        Feature & service sections
+      </h1>
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-6 children:p-6 children:rounded-md children:bg-gray-100 dark:children:bg-gray-900 children:border children:border-gray-200 dark:children:border-gray-800 text-gray-800 dark:text-gray-200">
+        <a href="ressources/features_services/1/">
+          Example 1
+        </a>
+        <a href="ressources/features_services/2/">
+          Example 2
+        </a>
+        <a href="ressources/features_services/3/">
+          Example 3
+        </a>
+        <a href="ressources/features_services/4/">
+          Example 4
+        </a>
+        <a href="ressources/features_services/5/">
+          Example 5
+        </a>
+        <a href="ressources/features_services/6/">
+          Example 6
+        </a>
+        <a href="ressources/features_services/7/">
+          Example 7
+        </a>
+        <a href="ressources/features_services/8/">
+          Example 8
+        </a>
+        <a href="ressources/features_services/9/">
+          Example 9
+        </a>
+        <a href="ressources/features_services/10/">
+          Example 10
+        </a>
+        <a href="ressources/features_services/11/">
+          Example 11
+        </a>
+        <a href="ressources/features_services/12/">
+          Example 12
+        </a>
+        <a href="ressources/features_services/13/">
+          Example 13
+        </a>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl py-10 px-5 space-y-10">
+      <h1 class="text-2xl font-semibold text-gray-900 dark:text-white">
+        Blog sections
+      </h1>
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-6 children:p-6 children:rounded-md children:bg-gray-100 dark:children:bg-gray-900 children:border children:border-gray-200 dark:children:border-gray-800 text-gray-800 dark:text-gray-200">
+        <a href="ressources/blog-sections/1/">
+          Example 1
+        </a>
+        <a href="ressources/blog-sections/2/">
+          Example 2
+        </a>
+        <a href="ressources/blog-sections/3/">
+          Example 3
+        </a>
+        <a href="ressources/blog-sections/4/">
+          Example 4
+        </a>
+        <a href="ressources/blog-sections/5/">
+          Example 5
+        </a>
+        <a href="ressources/blog-sections/6/">
+          Example 6
+        </a>
+        <a href="ressources/blog-sections/7/">
+          Example 7
+        </a>
+        <a href="ressources/blog-sections/8/">
+          Example 8
+        </a>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl py-10 px-5 space-y-10">
+      <h1 class="text-2xl font-semibold text-gray-900 dark:text-white">
+        Testimonial and Success Story sections
+      </h1>
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-6 children:p-6 children:rounded-md children:bg-gray-100 dark:children:bg-gray-900 children:border children:border-gray-200 dark:children:border-gray-800 text-gray-800 dark:text-gray-200">
+        <a href="ressources/testimonial_success/1/">
+          Example 1
+        </a>
+        <a href="ressources/testimonial_success/2/">
+          Example 2
+        </a>
+        <a href="ressources/testimonial_success/3/">
+          Example 3
+        </a>
+        <a href="ressources/testimonial_success/4/">
+          Example 4
+        </a>
+        <a href="ressources/testimonial_success/5/">
+          Example 5
+        </a>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl py-10 px-5 space-y-10">
+      <h1 class="text-2xl font-semibold text-gray-900 dark:text-white">
+        Sidebars
+      </h1>
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-6 children:p-6 children:rounded-md children:bg-gray-100 dark:children:bg-gray-900 children:border children:border-gray-200 dark:children:border-gray-800 text-gray-800 dark:text-gray-200">
+        <a href="ressources/application-ui/sidebar/1/">
+          Example 1
+        </a>
+        <a href="ressources/application-ui/sidebar/2/">
+          Example 2
+        </a>
+        <a href="ressources/application-ui/sidebar/3/">
+          Example 3
+        </a>
+        <a href="ressources/application-ui/sidebar/4/">
+          Example 4
+        </a>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl py-10 px-5 space-y-10">
+      <h1 class="text-2xl font-semibold text-gray-900 dark:text-white">
+        CTA
+      </h1>
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-6 children:p-6 children:rounded-md children:bg-gray-100 dark:children:bg-gray-900 children:border children:border-gray-200 dark:children:border-gray-800 text-gray-800 dark:text-gray-200">
+        <a href="ressources/cta/1/">
+          Example 1
+        </a>
+        <a href="ressources/cta/2/">
+          Example 2
+        </a>
+        <a href="ressources/cta/3/">
+          Example 3
+        </a>
+        <a href="ressources/cta/4/">
+          Example 4
+        </a>
+        <a href="ressources/cta/5/">
+          Example 5
+        </a>
+        <a href="ressources/cta/6/">
+          Example 6
+        </a>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl py-10 px-5 space-y-10">
+      <h1 class="text-2xl font-semibold text-gray-900 dark:text-white">
+        Footer
+      </h1>
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-6 children:p-6 children:rounded-md children:bg-gray-100 dark:children:bg-gray-900 children:border children:border-gray-200 dark:children:border-gray-800 text-gray-800 dark:text-gray-200">
+        <a href="ressources/footer/1/">
+          Example 1
+        </a>
+        <a href="ressources/footer/2/">
+          Example 2
+        </a>
+        <a href="ressources/footer/3/">
+          Example 3
+        </a>
+        <a href="ressources/footer/4/">
+          Example 4
+        </a>
+        <a href="ressources/footer/5/">
+          Example 5
+        </a>
+        <a href="ressources/footer/6/">
+          Example 6
+        </a>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl py-10 px-5 space-y-10">
+      <h1 class="text-2xl font-semibold text-gray-900 dark:text-white">
+        Navbars
+      </h1>
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-6 children:p-6 children:rounded-md children:bg-gray-100 dark:children:bg-gray-900 children:border children:border-gray-200 dark:children:border-gray-800 text-gray-800 dark:text-gray-200">
+        <a href="ressources/application-ui/navbar/1/">
+          Example 1
+        </a>
+        <a href="ressources/application-ui/navbar/2/">
+          Example 2
+        </a>
+        <a href="ressources/application-ui/navbar/3/">
+          Example 3
+        </a>
+        <a href="ressources/application-ui/navbar/4/">
+          Example 4
+        </a>
+        <a href="ressources/application-ui/navbar/5/">
+          Example 5
+        </a>
+        <a href="ressources/application-ui/navbar/6/">
+          Example 6
+        </a>
+        <a href="ressources/application-ui/navbar/7/">
+          Example 7
+        </a>
+        <a href="ressources/application-ui/navbar/8/">
+          Example 8
+        </a>
+      </div>
     </div>
   </section>
   <script type="module" src="/main.js"></script>
