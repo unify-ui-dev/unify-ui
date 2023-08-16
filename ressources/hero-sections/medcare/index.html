@@ -26,7 +26,6 @@
 </head>
 
 <body class="bg-white dark-bg-gray-950 overflow-x-hidden overflow-y-auto lg-overflow-y-auto">
-    <!-- navbar -->
     <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-8/40 inset-0 z30 hidden lg-hidden"></div>
     <header absolute inset-x-0 top-0 flex items-center h20 z40 pt4 px4>
         <nav relative mx-auto max-w-7xl w-full border="~ gray-1 dark:gray-8"
@@ -42,14 +41,14 @@
             <div data-navbar w="10/12 lg:full" h-[100dvh] lg-h-max inset-y-0 fixed lg-relative 
                 lg-flex lg-justify-between
                 bg="white dark:gray-950 lg:!transparent" border-b="~ gray-2 dark:gray-8 lg:none"
-                px="5 sm:10 md:12 lg:0" transition-all duration-300 ease-linear gap-x-6
+                px="5 sm:10 md:12 lg:0" transition-all duration-300 ease-linear lg-transition-none gap-x-6
                 class="py-8 lg-py-0 -left-full lg-left-0 max-w-md lg-max-w-none">
                 <ul flex flex-col lg-flex-row gap-6 lg-items-center text="gray-7 dark:gray-3" lg-flex-1 lg-justify-center>
                     <li>
                         <a href="#" duration-300 ease-linear hover-text-green-6 flex items-center gap-1.5 justify-between class="group">
                             Solutions
                             <span>
-                                <span i-carbon-chevron-down flex text-xl bg="gray-7 dark:gray-3 group-hover:green-6"></span>
+                                <span i-carbon-chevron-down flex text-xl></span>
                             </span>
                         </a>
                     </li>
@@ -57,7 +56,7 @@
                         <a href="#" duration-300 ease-linear hover-text-green-6 flex items-center gap-1.5 justify-between class="group">
                             Products
                             <span>
-                                <span i-carbon-chevron-down flex text-xl bg="gray-7 dark:gray-3 group-hover:green-6"></span>
+                                <span i-carbon-chevron-down flex text-xl></span>
                             </span>
                         </a>
                     </li>
@@ -68,17 +67,16 @@
                         <a href="#" duration-300 ease-linear hover-text-green-6>Company</a>
                     </li>
                 </ul>
-                <div aria-hidden="true" flex flex-col sm-flex-row sm-items-center gap-4  lg-min-w-max mt="10 lg:0">
-                    <a href="" px6 h10 text-sm flex items-center w-full 
+                <div flex flex-col sm-flex-row sm-items-center gap-4  lg-min-w-max mt="10 lg:0">
+                    <a href="#" px6 h10 text-sm flex items-center w-full 
                     lg-w-max justify-center gap-x-3 
                     border="gray-2 dark:gray-7" rd-lg text="green-7 dark:gray-1" bg="gray-1 dark:gray-9">
                         Book Demo
                     </a>
                 </div>
             </div>
-            <div aria-hidden="true" flex items-center lg-hidden>
-                <button data-toggle-navbar data-is-open="false" border-l="~ gray-3 dark:gray-7" outline-none pl3 relative py3 bg-transparent>
-                    <span class="sr-only">Toggle navbar</span>
+            <div flex items-center lg-hidden>
+                <button data-toggle-navbar data-is-open="false" border-l="~ gray-3 dark:gray-7" outline-none pl3 relative py3 bg-transparent aria-label="toggle navbar">
                     <div id="line-1" aria-hidden="true" h0.5 w6 rd bg-gray-7 dark-bg-gray-3 transition duration-300>
                     </div>
                     <div id="line-2" aria-hidden="true" mt2 h0.5 w6 rd bg="gray-7 dark:gray-3" transition duration-300></div>
@@ -125,8 +123,8 @@
                                     </svg>
                                 </span>
                                 <div flex-1 flex flex-col text-sm>
-                                    <h4 text="gray-7 dark:gray-3" font-semibold>4.5 Stars</h4>
-                                    <span text="gray-4 sm">430 Reviews</span>
+                                    <p text="gray-7 dark:gray-3" font-semibold>4.5 Stars</p>
+                                    <span text="gray-6 dark:gray-4 sm">430 Reviews</span>
                                 </div>
                             </div>
 
@@ -140,8 +138,8 @@
                                     </svg>
                                 </span>
                                 <div flex-1 flex flex-col text-sm>
-                                    <h4 text="gray-7 dark:gray-3" font-semibold>H 24/24</h4>
-                                    <span text="gray-4 sm">Support</span>
+                                    <p text="gray-7 dark:gray-3" font-semibold>H 24/24</p>
+                                    <span text="gray-6 dark:gray-4 sm">Support</span>
                                 </div>
                             </div>
 
@@ -155,8 +153,8 @@
                                     </svg>
                                 </span>
                                 <div flex-1 flex flex-col text-sm>
-                                    <h4 text="gray-7 dark:gray-3" font-semibold>+ 5k</h4>
-                                    <span text="gray-4 sm">Clients</span>
+                                    <p text="gray-7 dark:gray-3" font-semibold>+ 5k</p>
+                                    <span text="gray-6 dark:gray-4 sm">Clients</span>
                                 </div>
                             </div>
                         </div>
@@ -164,7 +162,7 @@
                     <div aria-hidden="true" class="lg-w-1/2 relative hidden lg-flex justify-end pr8">
                         <div rd-lg absolute right-0 bottom-0 w="11/12" h="2/5" bg="gradient-to-tr dark:bg-gradient-to-tr" from="green-50 dark:gray-950" to="sky-1 dark:gray-7">
                         </div>
-                        <img src="/images/portrait-of-smiling-medical-worker-girl-doctor.png" width="3200"
+                        <img src="/images/portrait-of-smiling-med.webp" width="703"  height="693"
                             class="w11/12 h-auto relative" alt="portrait-of-smiling-medical-worker-girl-doctor">
                     </div>
                 </div>

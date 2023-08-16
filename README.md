@@ -7,7 +7,7 @@
 2. vite ^4.4.0
 
 ## Contributing
-If you're interested in contributing to Unify-UI (Uno-CSS), please read our [contributing docs](CONTRIBUTING.md) before submitting a pull request.
+If you're interested in contributing to Unify-UI (Uno-CSS), please read our [contributing docs](CONTRIBUTING.MD) before submitting a pull request.
 
 
 ## Request Component/Block

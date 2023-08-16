@@ -27,8 +27,6 @@
 </head>
 
 <body class="overflow-hidden overflow-y-auto lg-overflow-y-auto bg-white dark-bg-gray-950">
-
-    <!-- navbar -->
     <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-8/40 inset-0 z30 hidden lg-hidden"></div>
     <header fixed inset-x-0 top-0 w-full flex items-center h20 border-b="~ gray-1 dark:gray-9" z40
         bg="white/80 dark:gray-950/80" backdrop-filter backdrop-blur-xl>
@@ -73,32 +71,28 @@
                             hover:after:scale-100>Pricing</a>
                     </li>
                 </ul>
-                <div aria-hidden="true" flex flex-col sm-flex-row sm-items-center gap-4 lg-min-w-max mt="10 lg:0">
+                <div flex flex-col sm-flex-row sm-items-center gap-4 lg-min-w-max mt="10 lg:0">
                     <a href="#" px5 py2.5 border="gray-2 dark:gray-8" text-sky-7 dark-text-white flex
                         justify-center w="full sm-auto">
                         Signin
                     </a>
-                    <a href="#" px5 py2.5 bg-sky-6 text-white duration-300 ease-linear flex justify-center
+                    <a href="#" px5 py2.5 bg-sky-7 text-white duration-300 ease-linear flex justify-center
                         w="full sm-auto">
                         Signup
                     </a>
                 </div>
             </div>
-            <div aria-hidden="true" class="flex items-center lg:hidden">
-                <button data-toggle-navbar data-is-open="false" outline-none border-l="gray-2 dark:gray-8"
+            <div class="flex items-center lg:hidden">
+                <button data-toggle-navbar aria-label="toggle navbar" data-is-open="false" outline-none border-l="gray-2 dark:gray-8"
                     bg-transparent pl3 relative py3>
-                    <span class="sr-only">Toggle navbar</span>
-                    <div id="line-1" aria-hidden="true" h0.5 w6 rd-full bg="gray-8 dark:gray-2" transition
-                        duration-300>
+                    <div id="line-1" aria-hidden="true" h0.5 w6 rd-full bg="gray-8 dark:gray-2" transition duration-300>
                     </div>
-                    <div id="line-2" aria-hidden="true" mt2 h0.5 w6 rd-full bg="gray-8 dark:gray-2" transition
-                        duration-300></div>
+                    <div id="line-2" aria-hidden="true" mt2 h0.5 w6 rd-full bg="gray-8 dark:gray-2" transition duration-300></div>
                 </button>
             </div>
         </nav>
     </header>
 
-    <!-- hero section -->
     <section class="py8 mt24">
         <div px="5 sm:10 md:12 lg:5" mxauto max-w-7xl w-full flex flex-col lg-flex-row lg-items-stretch gap-10>
             <div py="lg:10 xl:12" text="center lg:left" class="lg-w-1/2 max-w-2xl md-max-w-3xl mx-auto">
@@ -115,7 +109,7 @@
                 </p>
                 <div mt-8 flex flex-col sm-flex-row justify-center lg-justify-start gap-4>
                     <a href="#" flex items-center justify-center gap-x-2 px-5 py2.5
-                        bg-sky-6 text-white>
+                        bg-sky-7 text-white>
                         Start Listening
                         <span i-carbon-arrow-right bg-white text-xl flex></span>
                     </a>
