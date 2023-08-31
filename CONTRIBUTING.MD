@@ -1,7 +1,7 @@
-# Unify-UI (UnoCSS) Contributing Guide
+# Unify-UI Contributing Guide
 Every contribution is welcome to this open source project. However, before submitting your contribution, be sure to take a moment and read the following guidelines.
 
-- [Unify-UI (UnoCSS) Contributing Guide](#unify-ui-unocss-contributing-guide)
+- [Unify-UI Contributing Guide](#unify-ui-contributing-guide)
   - [Commit Convention](#commit-convention)
   - [Pull Request Guidelines](#pull-request-guidelines)
     - [Steps to PR](#steps-to-pr)
@@ -23,7 +23,7 @@ Every contribution is welcome to this open source project. However, before submi
 2. Create a new branch out of the `main` branch. .
 
 3. Make and commit your changes following the
-   [commit convention](https://github.com/unify-ressources/unify-unocss/blob/main/CONTRIBUTING.md#commit-convention).
+   [commit convention](https://github.com/unify-ressources/unify-ui/blob/main/CONTRIBUTING.MD#commit-convention).
    
 ## Local Development
 

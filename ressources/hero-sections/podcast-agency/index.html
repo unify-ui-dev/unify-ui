@@ -30,7 +30,6 @@
 </head>
 
 <body class="overflow-x-hidden overflow-y-auto lg-overflow-y-auto bg-white dark-bg-gray-950">
-    <!-- navbar -->
     <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-8/40 inset-0 z30 hidden lg-hidden"></div>
     <header class="absolute inset-x-0 top-0 h20 flex items-center z50">
         <div px="5 sm:p10 md:12 lg:5" class="mx-auto max-w-7xl w-full relative z50">
@@ -104,7 +103,6 @@
         </div>
     </header>
 
-    <!-- hero section -->
     <section class="relative w-full">
         <div class="absolute top-0 inset-x-0 h64 flex items-start">
             <div
@@ -124,8 +122,8 @@
                 class="grid lg-grid-cols-2 gap-10 xl-gap-14 relative pt24 lg-max-w-none max-w-2xl md-max-w-4xl mx-auto">
                 <div class="lg-py-6">
                     <div text="center lg:left">
-                        <span bg="gray-1 dark:gray-8" text-emerald-5 px2 py1 rd-md>
-                            New season available <a href="#" underline text="emerald-8 dark:emerald-2" font-semibold>here</a>
+                        <span bg="gray-1 dark:gray-9" text="gray-8 dark:gray-2" px2 py1 rd-md>
+                            New season available <a href="#" underline text="emerald-7 dark:white" font-semibold>here</a>
                         </span>
                         <h1 text="gray-7 dark:white 4xl md:5xl xl:6xl" class="pt-8 font-bold">
                             Find and listen <br> Favorite
@@ -204,7 +202,7 @@
         const btnHumb = document.querySelector("[data-toggle-navbar]")
         const navbar = document.querySelector("[data-navbar]")
         const overlay = document.querySelector("[data-nav-overlay]")
-        // !visible !op-100 !translate-y-0
+        
         if (btnHumb && navbar) {
             const toggleBtnAttr = () => {
                 const isOpen = btnHumb.getAttribute("data-is-open")

@@ -26,8 +26,6 @@
 </head>
 
 <body class="overflow-hidden overflow-y-auto lg-overflow-y-auto bg-white dark:bg-gray-950">
-
-    <!-- navbar -->
     <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-8/40 inset-0 z30 hidden lg-hidden"></div>
     <header sticky top-0 w-full flex items-center h20 z40 border-b="~ gray-1 dark:gray-9"
         bg="white/80 dark:gray-950/80" backdrop-filter backdrop-blur-xl>
@@ -68,7 +66,7 @@
                             class="relative py2.5 duration-300 ease-linear hover-text-blue-6">Contact</a>
                     </li>
                 </ul>
-                <div aria-hidden="true" mt="10 lg:0"
+                <div mt="10 lg:0"
                     class="flex flex-col sm-flex-row sm-items-center gap-4 lg-min-w-max">
                     <a href="#" border="~ blue-6 dark:gray-8" text="blue-6 hover:white dark:white"
                         bg="hover:blue-7 dark:gray-9 dark:hover:gray-950"
@@ -77,10 +75,9 @@
                     </a>
                 </div>
             </div>
-            <div aria-hidden="true" class="flex items-center lg-hidden">
-                <button data-toggle-navbar data-is-open="false" border-l="~ gray-3 dark:gray-7"
+            <div class="flex items-center lg-hidden">
+                <button data-toggle-navbar aria-label="toggle navbar" data-is-open="false" border-l="~ gray-3 dark:gray-7"
                     class="outline-none pl3 relative py3 bg-transparent">
-                    <span class="sr-only">Toggle navbar</span>
                     <div id="line-1" aria-hidden="true" bg="gray-7 dark:gray-3"
                         class="h0.5 w6 rd transition duration-300">
                     </div>
@@ -91,15 +88,13 @@
         </nav>
     </header>
 
-    <!-- hero section -->
-    <section min-h-max bg="blue-50 dark:gray-950">
+    <section lg-min-h-max bg="blue-50 dark:gray-950">
         <div
-            class="absolute left-0 top-20 w40 aspect-video bg-gradient-to-br from-blue-6 to-sky-400 rd-full blur-3xl op60">
+            class="absolute left-0 top-20 w40 aspect-video bg-gradient-to-br from-blue-6 to-sky-4 rd-full blur-3xl op60">
         </div>
-        <div class="h-[calc(100dvh-5rem)]" min-max w-full flex items-center>
-            <div px="5 sm:10 md:12 lg:5"
-                class="relative py24 mx-auto max-w-7xl w-full flex flex-col lg-flex-row lg-items-stretch gap-10">
-                <div text="center lg:left" class="lg-w-1/2 max-w-2xl md-max-w-3xl mx-auto ">
+        <div p="x5 sm:x10 md:x12 lg:x5 y24 lg:y4 lg:b6"
+                class="relative mx-auto max-w-7xl w-full flex flex-col lg-flex-row lg-items-stretch gap-10">
+                <div text="center lg:left" class="lg-w-1/2 max-w-2xl md-max-w-3xl mx-auto flex flex-col md-justify-center">
                     <h1 text="teal-950 dark:white 4xl md:5xl lg:6xl" font="semibold display">
                         Manage with better
                         <span
@@ -131,16 +126,12 @@
                     </div>
                 </div>
                 <div class="lg-w1/2 relative lg-h-auto max-w-2xl md-max-w-3xl mx-auto hidden md-flex justify-end">
-                    <div w48 sm-w-52 aspect="[4/5]" bg-white rd-3xl border="~ gray-2" absolute left-7 -top-10 z10></div>
-                    <div w48 sm-w-52 aspect-video bg-white rd-3xl border="gray-2" absolute left-0 -bottom-10 z10></div>
                     <div relative w-full h-full flex items-center aspect-square overflow-hidden lg-aspect-auto>
-                        <span absolute inset-0 d-3xl  border="2 dashed border-blue-6" flex rotate-6></span>
-                        <img src="/images/Overview.png" alt="sidebiew image"
-                            class="w-full relative hauto rd-3xl">
+                        <img src="/images/woman-at-meet-up.webp" width="1266" height="1224" alt="woman at virtual meetup"
+                            class="w-full relative hauto">
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <script type="module" src="./../../../main.js"></script>

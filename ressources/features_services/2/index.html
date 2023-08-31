@@ -18,7 +18,7 @@
 <body class="bg-white dark-bg-gray-950">
 
     <section py-20>
-        <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto flex items-start gap-10 xl-gap-14">
+        <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto flex flex-col md-flex-row gap-10 xl-gap-14">
             <div class="flex flex-1 flex-col gap-5">
                 <div class="flex flex-col gap-5">
                     <div class="flex flex-col">
@@ -93,8 +93,11 @@
                     </div>
                 </div>
             </div>
-            <img src="/images/chef.webp" width="500" alt="img cover about"
-                class="w-full md-h-full object-cover rd-md hidden md-flex md-w-1/2 xl-w-[45%]">
+            <div
+                class="w-full md-h-auto object-cover flex md-items-end justify-center md-w-1/2 xl-w-45% relative">
+                <div class="absolute inset-x-0 bottom-0 h1/4 bg-gradient-to-tr from-gray-1 to-gray-3 dark-from-gray-9 dark-to-gray-7 rd-3xl"></div>
+                <img src="/images/woman-with-gro.webp" width="1001" height="1001" alt="woman with grocery" class="wfull hauto lg-w86% relative">
+            </div>
 
         </div>
     </section>

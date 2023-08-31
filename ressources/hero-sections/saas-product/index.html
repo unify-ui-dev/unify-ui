@@ -25,7 +25,6 @@
 </head>
 
 <body class="overflow-hidden overflow-y-auto lg-overflow-y-auto bg-white dark-bg-gray-950">
-    <!-- navbar -->
     <header
         class="absolute left-0 top-0 w-full flex items-center h24 z40">
         <nav px="5 sm:10 md:12 lg:5"
@@ -65,7 +64,7 @@
                             class="relative py2.5 duration-300 ease-linear hover:text-purple-6">Contact</a>
                     </li>
                 </ul>
-                <div aria-hidden="true"
+                <div
                     class="flex flex-col sm-flex-row sm-items-center gap-4  lg-min-w-max mt-10 lg-mt-0">
                     <a href="#" border="~ gray-2 dark:gray-8" text="purple-6 dark:gray-3" class="h10 flex items-center justify-center w-full sm-w-max rd-full px5">
                         Login
@@ -75,9 +74,9 @@
                     </a>
                 </div>
             </div>
-            <div aria-hidden="true" class="flex items-center lg-hidden">
+            <div class="flex items-center lg-hidden">
                 <button data-toggle-navbar data-is-open="false" border-l="~ purple-1 dark:gray-8"
-                    class="outline-none pl-3 relative py3 bg-transparent">
+                    class="focus-outline-none pl-3 relative py3 bg-transparent">
                     <span class="sr-only">Toggle navbar</span>
                     <div id="line-1" aria-hidden="true" bg="gray-8 dark:gray-3"
                         class="h0.5 w6 rd transition duration-300">
@@ -89,13 +88,12 @@
         </nav>
     </header>
 
-    <!-- hero section -->
     <section class="min-h-max bg-purple-50 dark-bg-gray-950">
         <div class="absolute top-0 inset-x-0 h40 bg-gradient-to-br from-purple-3 op-90 blur-lg dark-from-purple-8 dark-blur-xl dark-op-40"></div>
         <div class="w-full flex items-center relative">
             <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-2/5 aspect-[2/0.5] bg-gradient-to-br from-purple-6 to-pink-4 rd-full op-50 blur-2xl"></div>
             <div px="5 sm:10 md:12 lg:5" class="min-h-max relative mx-auto pt32 lg-max-w-7xl w-full text-center space-y-10">
-                <a href="#" text="gray-9 dark:gray-1" bg="gray-2 dark:gray-9" border="~ gray-3 dark:gray-8" class="flex items-center gap-x-2 mx-auto w-max px2 pr1 py1 rd-full">
+                <a href="#" text="gray-9 dark:gray-1" bg="gray-1 dark:gray-9" border="~ gray-3 dark:gray-8" class="flex items-center gap-x-2 mx-auto w-max px2 pr1 py1 rd-full">
                     mySto v2.1 is out
                     <span bg="gray-2 dark:gray-8" class="px1 rd-full">
                         <span i-carbon-arrow-right text-lg flex></span>                          
@@ -112,10 +110,10 @@
                         class="py1 pl6 w-full pr1 flex gap-3 items-center
                             rd-full ease-linear">
                         <input type="email" name="" id="" placeholder="johndoe@gmail.com"
-                            class="w-full py3 outline-none bg-transparent">
-                        <button
-                        after="absolute content-empty inset-x-0 aspect-square scale-0 op-70 origin-center duration-300 ease-linear top-0 left-0 bg-purple-7 hover:op-100 hover:scale-[2.5]" 
-                            class="flex text-white justify-center items-center w-max min-w-max sm:w-max px-6 h-12 rd-full outline-none relative overflow-hidden border duration-300 ease-linear
+                            class="w-full py3 focus-outline-none bg-transparent">
+                        <button aria-label="sign up"
+                            after="absolute content-empty inset-x-0 aspect-square scale-0 op-70 origin-center duration-300 ease-linear top-0 left-0 bg-purple-7 hover:op-100 hover:scale-[2.5]" 
+                            class="flex text-white justify-center items-center w-max min-w-max sm:w-max px-6 h-12 rd-full focus-outline-none relative overflow-hidden border duration-300 ease-linear
                                  bg-purple-6 border-transparent hover-border-[#172554]">
                             <span class="hidden sm:flex relative z-[5]">
                                 Sign up
@@ -126,8 +124,8 @@
                         </button>
                     </form>
                 </div>
-                <div class="mx-auto max-w-6xl rd-t-2xl aspect-[5/2.3] overflow-hidden">
-                    <img src="/images/Overview.png" alt="product image" class="rd-2xl w-full h-auto">
+                <div p="x2 t2" class="mx-auto max-w-6xl rd-t-2xl aspect-[5/2.3] overflow-hidden bg-gradient-to-t from-gray-50 to-gray-2 dark-from-gray-950 dark-to-gray-9">
+                    <img src="/images/Overview.png" width="1440" height="1024" alt="product image" class="rd-2xl w-full h-auto">
                 </div>
             </div>
         </div>
