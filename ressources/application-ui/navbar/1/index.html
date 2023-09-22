@@ -26,7 +26,7 @@
 
 <body bg="white dark:gray950" class="overflow-hidden overflow-y-auto lg-overflow-y-auto">
     <!-- navbar -->
-    <div bg="gray-8/40" class="fixed inset-0 z30 hidden lg-hidden" data-nav-overlay aria-hidden="true"></div>
+    <div data-nav-overlay aria-hidden="true" bg="gray-8/40" class="fixed inset-0 z30 hidden lg-hidden"></div>
     <header border-b="~ gray-1 dark:gray-9" bg="white/80 dark:gray-950/80"
         class="backdrop-filter backdrop-blur-xl z40 sticky top-0 w-full flex items-center h20">
         <nav px="5 sm:10 md:12 lg:5" class="relative mxauto max-w-7xl w-full flex gap-x-5 justify-between items-center">
@@ -44,7 +44,7 @@
 
             <div lg="top-0 relative w-max flex" bg="white dark:gray-950 lg:transparent"
                 border-b="~ gray-2 dark:gray-8 lg:none" py="8 lg:0" px="5 sm:10 md:12 lg:px-0"
-                class="translate-y-10 lg:translate-y-0 op-0 lg:op-100 invisible lg-visible ease-linear gap-x-6 absolute top-full left-0 w-full duration-300"
+                class="translate-y-10 lg:translate-y-0 op-0 lg:op-100 invisible lg-visible ease-linear lg-transition-none gap-x-6 absolute top-full left-0 w-full duration-300"
                 data-navbar>
                 <ul flex flex-col lg-flex-row gap-6 text="gray-7 dark:gray-3" lg="w-full justify-center items-center">
                     <li>
@@ -68,7 +68,7 @@
                             after="absolute content-empty w-full left-0 bottom-0 h-px rd-md origin-left ease-linear duration-300 scale-x-0 bg-indigo-600 hover:scale-x-100">Contact</a>
                     </li>
                 </ul>
-                <div mt="10 lg:0" flex flex-col sm-flex-row sm-items-center gap-4 lg-min-w-max aria-hidden="true">
+                <div mt="10 lg:0" flex flex-col sm-flex-row sm-items-center gap-4 lg-min-w-max>
                     <a href="#" flex justify-center relative px6 py3
                         before="absolute content-empty inset-0 rd-lg transition bg-gray-1 dark:bg-gray-9  hover:scale-105">
                         <span relative text="indigo-6 dark:white">
@@ -78,9 +78,8 @@
                 </div>
             </div>
             <div flex items-center lg-hidden>
-                <button data-toggle-navbar data-is-open="false" outline-none border-l border-l="~ indigo-1 dark:gray-7"
-                    p-3 relative bg-transparent>
-                    <span class="sr-only">Toggle navbar</span>
+                <button data-toggle-navbar data-is-open="false" outline-none border-l="~ indigo-1 dark:gray-7"
+                    p-3 relative bg-transparent aria-label="toggle navbar">
                     <div h0.5 w6 rd bg="gray-7 dark:gray-3" transition duration-300 id="line-1" aria-hidden="true">
                     </div>
                     <div mt2 h0.5 w6 rd bg="gray-7 dark:gray-3" transition duration-300 id="line-2" aria-hidden="true">

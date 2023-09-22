@@ -25,56 +25,62 @@
 </head>
 
 <body class="overflow-hidden overflow-y-auto lg-overflow-y-auto bg-white dark-bg-gray-950">
-    <!-- navbar -->
     <header
         class="absolute left-0 top-0 w-full flex items-center h24 z40">
         <nav px="5 sm:10 md:12 lg:5"
             class="relative mx-auto lg-max-w-7xl w-full flex gap-x-5 justify-between items-center">
-            <div class="flex items-center min-w-max">
+            <div class="flex items-center min-w-max relative">
                 <a href="#" class="font-semibold flex items-center gap-x-2">
                     <div class="flex items-center -space-x-3">
-                        <span bg="orange-6 dark:orange-5" class="h6 aspect-square rd-full flex"></span>
-                        <span bg="amber-6 dark:amber-4" class="h6 aspect-square blur rd-full flex"></span>
+                        <span bg="blue-6 dark:blue-5" class="h6 aspect-square rd-full flex"></span>
+                        <span bg="pink-6 dark:pink-4" class="h6 aspect-square blur rd-full flex"></span>
                     </div>
                     <span text="lg gray-7 dark:gray-3">Agency</span>
                 </a>
             </div>
 
-            <div data-navbar bg="white dark:gray-950 lg:!transparent" border-b="~ border-gray-2 dark:gray-8 lg:none" py="8 lg:0" px="5 sm:10 md:12 lg:0"
-                class="absolute top-full translate-y-10 op-0 invisible lg-visible  lg-translate-y-0 lg-op-100 left-0 lg-w-max lg-space-x-16 lg-top-0 lg-relative  lg-flex duration-300 ease-linear">
+            <div data-navbar bg="white dark:gray-950 lg:!transparent" py="32 lg:0" px="5 sm:10 md:12 lg:0"
+                class="fixed inset-x-0 h-[100dvh] lg-h-max top-0 -translate-y-10 op-0 invisible lg-visible  lg-translate-y-0 lg-op-100 left-0 w-full lg-top-0 lg-relative  lg-flex lg-justify-between duration-300 ease-linear">
                 <ul text="gray-7 dark:gray-3"
                     class="flex flex-col lg-flex-row gap-6 lg-items-center lg-w-full lg-justify-center">
-                    <li>
+                    <li class="">
                         <a href="#"
-                            class="relative py2.5 duration-300 ease-linear hover-text-orange-6">Portfolio</a>
+                            class="relative py2.5 duration-300 ease-linear hover-text-blue-6">Solutions</a>
                     </li>
-                    <li>
-                        <a href="#" class="relative py2.5 duration-300 ease-linear hover-text-orange-6">Company</a>
-                    </li>
-                    <li>
-                        <a href="#" class="relative py2.5 duration-300 ease-linear hover-text-orange-6">Products</a>
-                    </li>
-                    <li>
+                    <li class="">
                         <a href="#"
-                            class="relative py2.5 duration-300 ease-linear hover-text-orange-6">Resources</a>
+                            class="relative py2.5 duration-300 ease-linear hover-text-blue-6">Company</a>
+                    </li>
+                    <li class="">
+                        <a href="#"
+                            class="relative py2.5 duration-300 ease-linear hover-text-blue-6">Plateform</a>
+                    </li>
+                    <li class="">
+                        <a href="#"
+                            class="relative py2.5 duration-300 ease-linear hover-text-blue-6">Resources</a>
+                    </li>
+                    <li class="">
+                        <a href="#"
+                            class="relative py2.5 duration-300 ease-linear hover-text-blue-6">Contact</a>
                     </li>
                 </ul>
-                <div  class="flex flex-col sm-flex-row sm-items-center gap-4  lg-min-w-max mt-10 lg-mt-0">
-                    <a href="#" bg="gray-1 dark:gray-9" text="orange-6 dark:gray-3" border="~ gray-2 dark:gray-8"
-                        class="flex items-center justify-center w-full sm-w-auto h12 px6 rd-full">
+                <div
+                    class="flex flex-col sm-flex-row sm-items-center gap-4  lg-min-w-max mt-10 lg-mt-0">
+                    <a href="#" text="blue-6 hover:white dark:white" bg="hover:blue-7 dark:gray-900 dark:hover:gray-950" border="~ blue-6 dark:gray-8"
+                        class="px6 py3 duration-300 ease-linear flex justify-center w-full sm-w-auto rd-xl">
                         Get It touch
                     </a>
                 </div>
             </div>
-            <div aria-hidden="true" class="flex items-center lg-hidden">
-                <button data-toggle-navbar data-is-open="false" border-l="~ orange-1 dark:gray-8"
+            <div class="flex items-center lg-hidden">
+                <button data-toggle-navbar data-is-open="false" border-l="~ blue-1 dark:l-gray-8"
                     class="outline-none pl-3 relative py-3 bg-transparent">
                     <span class="sr-only">Toggle navbar</span>
                     <div id="line-1" aria-hidden="true" bg="gray-8 dark:gray-3"
                         class="h0.5 w6 rd transition duration-300">
                     </div>
-                    <div id="line-2" aria-hidden="true" bg="gray-8 dark:gray-3"
-                        class="mt2 h0.5 w6 rd transition duration-300"></div>
+                    <div id="line-2" aria-hidden="true" rd bg="gray-8 dark:gray-3"
+                        class="mt2 h0.5 w6 transition duration-300"></div>
                 </button>
             </div>
         </nav>
