@@ -1,7 +1,11 @@
 {
-  "name": "uno-ressources",
+  "name": "unify-ui",
+  "author": {
+    "name": "John Kat MJ",
+    "email": "johnkatembue4@gmail.com"
+  },
   "private": true,
-  "version": "0.0.0",
+  "version": "beta-v0.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,9 +18,11 @@
     "@unocss/preset-icons": "^0.53.5",
     "@unocss/preset-mini": "^0.53.5",
     "unocss": "^0.53.5",
-    "vite": "^4.4.0"
+    "vite": "^4.4.9"
   },
   "dependencies": {
-    "@unocss/reset": "^0.53.5"
-  }
+    "@unocss/reset": "^0.53.5",
+    "glob": "^10.3.5"
+  },
+  "license": "MIT"
 }
