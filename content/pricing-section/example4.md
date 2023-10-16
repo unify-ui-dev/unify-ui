@@ -6,8 +6,12 @@ previewUrl: /pricing-section/4/
 info: This section can be used for ......
 ---
 
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: pricing4_
+---
+    :::tab-panel{id="pricing4_1"}
     ```html
     <section py32>
         <div max-w-7xl mx-auto px="5 sm:10 md:12 lg:5">
@@ -172,10 +176,9 @@ info: This section can be used for ......
         </div>
     </section>
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="pricing4_2"}
+    ```vue
     <template>
         <section py32>
             <div max-w-7xl mx-auto px="5 sm:10 md:12 lg:5">
@@ -346,10 +349,9 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="pricing4_3"}
+    ```vue
     <template>
         <section py32>
             <div max-w-7xl mx-auto px="5 sm:10 md:12 lg:5">
@@ -520,5 +522,5 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem>
-</UnifyTab>
+    :::
+::
