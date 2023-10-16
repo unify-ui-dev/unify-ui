@@ -2,12 +2,16 @@
 title: SaaS Website Hero
 category: marketing-ui
 subCategory: hero-sections
-previewUrl: /hero-section/saas/
+previewUrl: /hero-sections/saas/
 info: This section can be used for ......
 ---
 
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: hero12_
+---
+    :::tab-panel{id="hero12_1"}
     ```html
     <!-- add this styles 
         button[data-toggle-navbar][data-is-open="true"] #line-1 {
@@ -157,10 +161,9 @@ info: This section can be used for ......
         }
     -->
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="hero12_2"}
+    ```vue
     <script setup>
     import { ref } from 'vue'
 
@@ -298,10 +301,9 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem> 
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="hero12_3"}
+    ```vue
     <script setup>
     const navIsOpen = useState('navIsOpen', ()=>false)
     const navItems = [
@@ -437,5 +439,5 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem>
-</UnifyTab>
+    :::
+::

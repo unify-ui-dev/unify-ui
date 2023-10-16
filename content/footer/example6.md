@@ -6,8 +6,12 @@ previewUrl: /footer/6/
 info: This section can be used for ......
 ---
 
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: foot6_
+---
+    :::tab-panel{id="foot6_1"}
     ```html
     <footer class="pt2">
         <div px="2 sm:0">
@@ -52,10 +56,9 @@ info: This section can be used for ......
         </div>
     </footer>
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="foot6_2"}
+    ```vue
     <template>
         <footer class="pt2">
             <div px="2 sm:0">
@@ -101,10 +104,9 @@ info: This section can be used for ......
         </footer>
     </template>
     ```
-  </TabItem> 
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="foot6_3"}
+    ```vue
     <template>
         <footer class="pt2">
             <div px="2 sm:0">
@@ -150,5 +152,5 @@ info: This section can be used for ......
         </footer>
     </template>
     ```
-  </TabItem>
-</UnifyTab>
+    :::
+::

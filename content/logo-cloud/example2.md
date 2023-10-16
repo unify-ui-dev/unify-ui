@@ -6,8 +6,12 @@ previewUrl: /logo-cloud/2/
 info: This section can be used for ......
 ---
 
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: logo2_
+---
+    :::tab-panel{id="logo2_1"}
     ```html
     <section class="py-20">
         <div class="max-w-7xl mx-auto px-5 sm-px10 md-px12 lg-px5 space-y-10 ">
@@ -48,10 +52,9 @@ info: This section can be used for ......
         </div>
     </section>
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="logo2_2"}
+    ```vue
     <script setup>
     const logos = [
         {
@@ -109,10 +112,9 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem> 
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="logo2_3"}
+    ```vue
     <script setup>
     const logos = [
         {
@@ -170,5 +172,5 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem>
-</UnifyTab>
+    :::
+::

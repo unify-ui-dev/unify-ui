@@ -2,12 +2,16 @@
 title: Healthcare Hero
 category: marketing-ui
 subCategory: hero-sections
-previewUrl: /hero-section/healthcare/
+previewUrl: /hero-sections/healthcare/
 info: This section can be used for ......
 ---
 
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: hero6_
+---
+    :::tab-panel{id="hero6_1"}
     ```html
     <!-- add this styles 
         button[data-toggle-navbar][data-is-open="true"] #line-1 {
@@ -180,10 +184,9 @@ info: This section can be used for ......
         }
     -->
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="hero6_2"}
+    ```vue
     <script setup>
     import { ref } from 'vue'
     const navIsOpen = ref(false)
@@ -352,10 +355,9 @@ info: This section can be used for ......
         </main>
     </template>
     ```
-  </TabItem> 
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="hero6_3"}
+    ```vue
     <script setup>
     const navIsOpen = useState('navIsOpen', ()=>false)
     const navItems = [
@@ -521,5 +523,5 @@ info: This section can be used for ......
         </main>
     </template>
     ```
-  </TabItem>
-</UnifyTab>
+    :::
+::

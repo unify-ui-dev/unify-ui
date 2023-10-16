@@ -6,8 +6,12 @@ previewUrl: /footer/5/
 info: This section can be used for ......
 ---
 
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: foot5_
+---
+    :::tab-panel{id="foot5_1"}
     ```html
     <footer text="gray-7 dark:gray-3" class="px5 py2">
         <div bg="gray-1 dark:gray-9" border="~ gray-2 dark:gray-8" class="max-w-7xl mx-auto px6 py4 md-py3 flex flex-col md-flex-row items-center md-justify-between gap-8 md-gap-14 rd-3xl">
@@ -48,10 +52,9 @@ info: This section can be used for ......
         </div>
     </footer>
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="foot5_2"}
+    ```vue
     <template>
         <footer un-text="gray-7 dark:gray-3" class="px5 py2">
             <div bg="gray-1 dark:gray-9" un-border="~ gray-2 dark:gray-8" class="max-w-7xl mx-auto px6 py4 md-py3 flex flex-col md-flex-row items-center md-justify-between gap-8 md-gap-14 rd-3xl">
@@ -93,10 +96,9 @@ info: This section can be used for ......
         </footer>
     </template>
     ```
-  </TabItem> 
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="foot5_3"}
+    ```vue
     <template>
         <footer un-text="gray-7 dark:gray-3" class="px5 py2">
             <div bg="gray-1 dark:gray-9" un-border="~ gray-2 dark:gray-8" class="max-w-7xl mx-auto px6 py4 md-py3 flex flex-col md-flex-row items-center md-justify-between gap-8 md-gap-14 rd-3xl">
@@ -138,5 +140,5 @@ info: This section can be used for ......
         </footer>
     </template>
     ```
-  </TabItem>
-</UnifyTab>
+    :::
+::

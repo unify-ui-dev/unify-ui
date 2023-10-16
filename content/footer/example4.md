@@ -6,8 +6,12 @@ previewUrl: /footer/4/
 info: This section can be used for ......
 ---
 
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: foot4_
+---
+    :::tab-panel{id="foot4_1"}
     ```html
     <footer bg="white dark:gray-950" text="gray-7 dark:gray-3">
         <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto py20 flex flex-col lg-flex-row gap-14">
@@ -148,10 +152,9 @@ info: This section can be used for ......
         </div>
     </footer>
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="foot4_2"}
+    ```vue
     <script setup>
     const footerLinks = [
     {
@@ -333,10 +336,9 @@ info: This section can be used for ......
         </footer>
     </template>
     ```
-  </TabItem> 
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="foot4_3"}
+    ```vue
     <script setup>
     const footerLinks = [
     {
@@ -517,5 +519,5 @@ info: This section can be used for ......
         </footer>
     </template>
     ```
-  </TabItem>
-</UnifyTab>
+    :::
+::

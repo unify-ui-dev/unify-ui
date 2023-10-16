@@ -2,12 +2,16 @@
 title: Creative agency Hero
 category: marketing-ui
 subCategory: hero-sections
-previewUrl: /hero-section/architecture/
+previewUrl: /hero-sections/architecture/
 info: This section can be used for ......
 ---
 
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: hero3_
+---
+    :::tab-panel{id="hero3_1"}
     ```html
     <!-- add this styles 
         button[data-toggle-navbar][data-is-open="true"] #line-1 {
@@ -142,10 +146,9 @@ info: This section can be used for ......
         }
     -->
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="hero3_2"}
+    ```vue
     <script setup>
     import { ref } from 'vue'
     const navIsOpen = ref(false)
@@ -270,10 +273,9 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem> 
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="hero3_3"}
+    ```vue
     <script setup>
     const navIsOpen = useState('navIsOpen', () => false)
 
@@ -399,5 +401,5 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem>
-</UnifyTab>
+    :::
+::
