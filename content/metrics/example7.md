@@ -6,8 +6,12 @@ previewUrl: /metrics/7/
 info: This section can be used for ......
 ---
 
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: metric7_
+---
+    :::tab-panel{id="metric7_1"}
     ```html
     <section class="py24">
         <div class="max-w-7xl mx-auto px5 sm-px10 md-px12 lg-px5 space-y-10">
@@ -54,10 +58,9 @@ info: This section can be used for ......
         </div>
     </section>
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="metric7_2"}
+    ```vue
     <template>
         <section class="py24">
             <div class="max-w-7xl mx-auto px5 sm-px10 md-px12 lg-px5 space-y-10">
@@ -105,10 +108,9 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem> 
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="metric7_3"}
+    ```vue
     <template>
         <section class="py24">
             <div class="max-w-7xl mx-auto px5 sm-px10 md-px12 lg-px5 space-y-10">
@@ -156,5 +158,5 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem>
-</UnifyTab>
+    :::
+::

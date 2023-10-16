@@ -6,8 +6,12 @@ previewUrl: /metrics/4/
 info: This section can be used for ......
 ---
 
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: metric4_
+---
+    :::tab-panel{id="metric4_1"}
     ```html
     <section class="py24">
         <div class="max-w-4xl mx-auto px-5 sm-px10 md-px12 lg-px5">
@@ -48,10 +52,9 @@ info: This section can be used for ......
         </div>
     </section>
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="metric4_2"}
+    ```vue
     <template>
         <section class="py24">
             <div class="max-w-4xl mx-auto px-5 sm-px10 md-px12 lg-px5">
@@ -93,10 +96,9 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem> 
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="metric4_3"}
+    ```vue
     <template>
         <section class="py24">
             <div class="max-w-4xl mx-auto px-5 sm-px10 md-px12 lg-px5">
@@ -138,5 +140,5 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem>
-</UnifyTab>
+    :::
+::

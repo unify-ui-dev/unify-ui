@@ -1,166 +1,207 @@
 ---
-title: Metrics 3
+title: Metrics 2
 category: marketing-ui
 subCategory: metrics
-previewUrl: /metrics/3/
+previewUrl: /metrics/2/
 info: This section can be used for ......
 ---
 
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: metric2_
+---
+    :::tab-panel{id="metric2_1"}
     ```html
     <section class="py24">
-        <div class="max-w-7xl mx-auto px-5 sm-px10 md-px12 lg-px5 flex gap16 flex-col md-flex-row md-items-center">
-            <img src="/images/happy-work.webp" alt="happy team work" class="w-full h-auto md-w-1/2 md-h-full object-cover rd-lg order-2 md-order-1">
-            <div class="space-y10 md-order-2">
+        <div class="max-w-7xl mx-auto px-5 sm-px10 md-px12 lg-px5 space-y-16">
+            <div class="space-y6 max-w-xl">
                 <h1 class="text-3xl font-bold text-gray9 dark-text-white capitalize">Title</h1>
                 <p class="text-gray7 dark-text-gray3">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit perferendis eos amet eum repudiandae aspernatur mollitia quos consectetur voluptatibus pariatur 
                 </p>
-                <div class="grid sm-grid-cols-2 gap-4 text-center text-gray7 dark-text-gray3 children-space-y3 children-bg-gray1 dark-children-bg-gray9 children-p4 children-rd-lg">
+            </div>
+            <div class="flex flex-col md-flex-row gap-14 md:items-center">
+                <div class="md-w-1/2 md-py8 grid sm-grid-cols-2 gap8 md-gap6 lg-gap10 text-center text-gray7 dark-text-gray3 children-space-y3">
                     <div class="">
-                        <span class="font-semibold text-2xl md-text-4xl text-sky6 dark-text-sky5">
+                        <span class="font-semibold text-xl text-sky6 dark-text-sky5">
                             12K+
                         </span>
                         <h2 class="text-gray8 dark-text-gray2 font-medium">
                             Metric title
                         </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
                     </div>
                     <div class="">
-                        <span class="font-semibold text-2xl md-text-4xl text-sky6 dark-text-sky5">
+                        <span class="font-semibold text-xl text-sky6 dark-text-sky5">
                             12K+
                         </span>
                         <h2 class="text-gray8 dark-text-gray2 font-medium">
                             Metric title
                         </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
                     </div>
                     <div class="">
-                        <span class="font-semibold text-2xl md-text-4xl text-sky6 dark-text-sky5">
+                        <span class="font-semibold text-xl text-sky6 dark-text-sky5">
                             12K+
                         </span>
                         <h2 class="text-gray8 dark-text-gray2 font-medium">
                             Metric title
                         </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
                     </div>
                     <div class="">
-                        <span class="font-semibold text-2xl md-text-4xl text-sky6 dark-text-sky5">
+                        <span class="font-semibold text-xl text-sky6 dark-text-sky5">
                             12K+
                         </span>
                         <h2 class="text-gray8 dark-text-gray2 font-medium">
                             Metric title
                         </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
                     </div>
-                    
                 </div>
+                <img src="/images/happy-work.webp" alt="happy team work" class="w-full h-auto md-w-1/2 md:h-full object-cover rd-lg">
             </div>
         </div>
     </section>
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="metric2_2"}
+    ```vue
     <template>
         <section class="py24">
-            <div class="max-w-7xl mx-auto px-5 sm-px10 md-px12 lg-px5 flex gap16 flex-col md-flex-row md-items-center">
-                <img src="/images/happy-work.webp" alt="happy team work" class="w-full h-auto md-w-1/2 md-h-full object-cover rd-lg order-2 md-order-1">
-                <div class="space-y10 md-order-2">
+            <div class="max-w-7xl mx-auto px-5 sm-px10 md-px12 lg-px5 space-y-16">
+                <div class="space-y6 max-w-xl">
                     <h1 class="text-3xl font-bold text-gray9 dark-text-white capitalize">Title</h1>
                     <p class="text-gray7 dark-text-gray3">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit perferendis eos amet eum repudiandae aspernatur mollitia quos consectetur voluptatibus pariatur 
                     </p>
-                    <div class="grid sm-grid-cols-2 gap-4 text-center text-gray7 dark-text-gray3 children-space-y3 children-bg-gray1 dark-children-bg-gray9 children-p4 children-rd-lg">
+                </div>
+                <div class="flex flex-col md-flex-row gap-14 md:items-center">
+                    <div class="md-w-1/2 md-py8 grid sm-grid-cols-2 gap8 md-gap6 lg-gap10 text-center text-gray7 dark-text-gray3 children-space-y3">
                         <div class="">
-                            <span class="font-semibold text-2xl md-text-4xl text-sky6 dark-text-sky5">
+                            <span class="font-semibold text-xl text-sky6 dark-text-sky5">
                                 12K+
                             </span>
                             <h2 class="text-gray8 dark-text-gray2 font-medium">
                                 Metric title
                             </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
                         </div>
                         <div class="">
-                            <span class="font-semibold text-2xl md-text-4xl text-sky6 dark-text-sky5">
+                            <span class="font-semibold text-xl text-sky6 dark-text-sky5">
                                 12K+
                             </span>
                             <h2 class="text-gray8 dark-text-gray2 font-medium">
                                 Metric title
                             </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
                         </div>
                         <div class="">
-                            <span class="font-semibold text-2xl md-text-4xl text-sky6 dark-text-sky5">
+                            <span class="font-semibold text-xl text-sky6 dark-text-sky5">
                                 12K+
                             </span>
                             <h2 class="text-gray8 dark-text-gray2 font-medium">
                                 Metric title
                             </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
                         </div>
                         <div class="">
-                            <span class="font-semibold text-2xl md-text-4xl text-sky6 dark-text-sky5">
+                            <span class="font-semibold text-xl text-sky6 dark-text-sky5">
                                 12K+
                             </span>
                             <h2 class="text-gray8 dark-text-gray2 font-medium">
                                 Metric title
                             </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
                         </div>
-                        
                     </div>
+                    <img src="/images/happy-work.webp" alt="happy team work" class="w-full h-auto md-w-1/2 md:h-full object-cover rd-lg">
                 </div>
             </div>
         </section>
     </template>
     ```
-  </TabItem> 
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="metric2_3"}
+    ```vue
     <template>
         <section class="py24">
-            <div class="max-w-7xl mx-auto px-5 sm-px10 md-px12 lg-px5 flex gap16 flex-col md-flex-row md-items-center">
-                <img src="/images/happy-work.webp" alt="happy team work" class="w-full h-auto md-w-1/2 md-h-full object-cover rd-lg order-2 md-order-1">
-                <div class="space-y10 md-order-2">
+            <div class="max-w-7xl mx-auto px-5 sm-px10 md-px12 lg-px5 space-y-16">
+                <div class="space-y6 max-w-xl">
                     <h1 class="text-3xl font-bold text-gray9 dark-text-white capitalize">Title</h1>
                     <p class="text-gray7 dark-text-gray3">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit perferendis eos amet eum repudiandae aspernatur mollitia quos consectetur voluptatibus pariatur 
                     </p>
-                    <div class="grid sm-grid-cols-2 gap-4 text-center text-gray7 dark-text-gray3 children-space-y3 children-bg-gray1 dark-children-bg-gray9 children-p4 children-rd-lg">
+                </div>
+                <div class="flex flex-col md-flex-row gap-14 md:items-center">
+                    <div class="md-w-1/2 md-py8 grid sm-grid-cols-2 gap8 md-gap6 lg-gap10 text-center text-gray7 dark-text-gray3 children-space-y3">
                         <div class="">
-                            <span class="font-semibold text-2xl md-text-4xl text-sky6 dark-text-sky5">
+                            <span class="font-semibold text-xl text-sky6 dark-text-sky5">
                                 12K+
                             </span>
                             <h2 class="text-gray8 dark-text-gray2 font-medium">
                                 Metric title
                             </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
                         </div>
                         <div class="">
-                            <span class="font-semibold text-2xl md-text-4xl text-sky6 dark-text-sky5">
+                            <span class="font-semibold text-xl text-sky6 dark-text-sky5">
                                 12K+
                             </span>
                             <h2 class="text-gray8 dark-text-gray2 font-medium">
                                 Metric title
                             </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
                         </div>
                         <div class="">
-                            <span class="font-semibold text-2xl md-text-4xl text-sky6 dark-text-sky5">
+                            <span class="font-semibold text-xl text-sky6 dark-text-sky5">
                                 12K+
                             </span>
                             <h2 class="text-gray8 dark-text-gray2 font-medium">
                                 Metric title
                             </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
                         </div>
                         <div class="">
-                            <span class="font-semibold text-2xl md-text-4xl text-sky6 dark-text-sky5">
+                            <span class="font-semibold text-xl text-sky6 dark-text-sky5">
                                 12K+
                             </span>
                             <h2 class="text-gray8 dark-text-gray2 font-medium">
                                 Metric title
                             </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
                         </div>
-                        
                     </div>
+                    <img src="/images/happy-work.webp" alt="happy team work" class="w-full h-auto md-w-1/2 md:h-full object-cover rd-lg">
                 </div>
             </div>
         </section>
     </template>
     ```
-  </TabItem>
-</UnifyTab>
+    :::
+::

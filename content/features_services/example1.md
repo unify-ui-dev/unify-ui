@@ -1,13 +1,17 @@
 ---
-title: Features & Services
+title: Features & Services 1
 category: marketing-ui
 subCategory: features
 previewUrl: /features_services/1/
 info: This section can be used for ......
 ---
 
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: feat1_
+---
+    :::tab-panel{id="feat1_1"}
     ```html
     <section py20>
         <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto space-y-16">
@@ -82,10 +86,9 @@ info: This section can be used for ......
         </div>
     </section>
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="feat1_2"}
+    ```vue
     <template>
         <section py20>
             <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto space-y-16">
@@ -161,10 +164,9 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem> 
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="feat1_3"}
+    ```vue
     <template>
         <section py20>
             <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto space-y-16">
@@ -240,5 +242,5 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem>
-</UnifyTab>
+    :::
+::
