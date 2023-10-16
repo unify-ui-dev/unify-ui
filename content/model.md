@@ -5,20 +5,19 @@ subCategory: hero-section (the folder name where the block is located)
 previewUrl: /subCategory/blockFolderName/
 info: additionnal information about the block .....
 ---
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
-    ```html
-    
-    ```
-  </TabItem>
-  <TabItem>
-    ```
-    
-    ```
-  </TabItem>  
-  <TabItem>
-    ```
-    
-    ```
-  </TabItem>
-</UnifyTab>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: likePrefix_
+---
+
+    :::tab-panel{id="likePrefix_1"}
+    Hello Worl 1
+    :::
+    :::tab-panel{id="likePrefix_2"}
+    Hello Worl 2
+    :::
+    :::tab-panel{id="likePrefix_3"}
+    Hello Worl 3
+    :::
+::
