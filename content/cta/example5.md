@@ -1,0 +1,99 @@
+---
+title: Cta 5
+category: marketing-ui
+subCategory: CTA
+previewUrl: /cta/5/
+info: This section can be used for ......
+---
+
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: cta5_
+---
+    :::tab-panel{id="cta5_1"}
+    ```html
+    <section py24>
+        <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto relative">
+            <div bg="white dark:gray-950" class="flex md-justify-between gap-8 p12 rd-xl items-start">
+                <div class="max-w-xl space-y-3">
+                    <h1 text="2xl gray-9 dark:white" class="font-semibold">
+                        Ready to take your skills to the noon
+                    </h1>
+                    <p text="gray-7 dark:gray-3">
+                        Lorem ipsum dolor sit amet consectetur
+                    </p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a href="#" bg="gray-2 dark:gray-8" text="gray-8 dark:gray-2" class="px5 py2.5 rd-lg">
+                        Read doc
+                    </a>
+                    <a href="#" class="bg-blue-6 text-white px5 py2.5 rd-lg">
+                        Get started
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div bg="gray-9 dark:gray-8" class="pt32 -mt16"></div>
+    </section>
+    ```
+    :::
+    :::tab-panel{id="cta5_2"}
+    ```vue
+    <template>
+        <section py24>
+            <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto relative">
+                <div bg="white dark:gray-950" class="flex md-justify-between gap-8 p12 rd-xl items-start">
+                    <div class="max-w-xl space-y-3">
+                        <h1 text="2xl gray-9 dark:white" class="font-semibold">
+                            Ready to take your skills to the noon
+                        </h1>
+                        <p text="gray-7 dark:gray-3">
+                            Lorem ipsum dolor sit amet consectetur
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <a href="#" un-bg="gray-2 dark:gray-8" un-text="gray-8 dark:gray-2" class="px5 py2.5 rd-lg">
+                            Read doc
+                        </a>
+                        <a href="#" class="bg-blue-6 text-white px5 py2.5 rd-lg">
+                            Get started
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div bg="gray-9 dark:gray-8" class="pt32 -mt16"></div>
+        </section>
+    </template>
+    ```
+    :::
+    :::tab-panel{id="cta5_3"}
+    ```vue
+    <template>
+        <section py24>
+            <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto relative">
+                <div bg="white dark:gray-950" class="flex md-justify-between gap-8 p12 rd-xl items-start">
+                    <div class="max-w-xl space-y-3">
+                        <h1 text="2xl gray-9 dark:white" class="font-semibold">
+                            Ready to take your skills to the noon
+                        </h1>
+                        <p text="gray-7 dark:gray-3">
+                            Lorem ipsum dolor sit amet consectetur
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <nuxt-link to="#" un-bg="gray-2 dark:gray-8" un-text="gray-8 dark:gray-2" class="px5 py2.5 rd-lg">
+                            Read doc
+                        </nuxt-link>
+                        <nuxt-link to="#" class="bg-blue-6 text-white px5 py2.5 rd-lg">
+                            Get started
+                        </nuxt-link>
+                    </div>
+                </div>
+            </div>
+            <div bg="gray-9 dark:gray-8" class="pt32 -mt16"></div>
+        </section>
+    </template>
+    ```
+    :::
+::

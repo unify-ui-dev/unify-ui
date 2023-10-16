@@ -1,0 +1,210 @@
+---
+title: Testimonial Section (4)
+category: marketing-ui
+subCategory: pricing-section
+previewUrl: /testimonial_success/4/
+info: This section can be used for ......
+---
+
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: testi4_
+---
+    :::tab-panel{id="testi4_1"}
+    ```html
+    <section py20>
+        <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto space-y-16">
+            <div class="mx-auto max-w-2xl text-center">
+                <h1 text="3xl gray-8 dark:white" class="font-bold">Client’s Say About Us</h1>
+            </div>
+            <div class="relative flex flex-col">
+                <div bg="white dark:gray-950" border="~ gray-1/10 dark:gray-9" shadow="2xl gray-7/40 dark:none"
+                    class="p6 w-full mx-auto max-w-4xl md-p-10 rd-2xl flex flex-col items-center justify-center text-center space-y-6 md-space-y-8">
+                    <img src="/images/sidebiew.webp" alt="Author avatar"
+                        class="w-20 md-w-24 h-20 md-h-24 object-cover rd-full flex">
+                    <div class="space-y-2 text-center flex-1">
+                        <h2 text="xl gray-8 dark:gray-2" class="font-semibold leading-none">
+                            John Doe
+                        </h2>
+                        <p text="sky-7 dark:sky-3">
+                            SEO Kelasi-AI SARL
+                        </p>
+                    </div>
+                    <p text="gray-7 dark:gray-3" class="font-medium max-w-md">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum at ipsa pariatur culpa iste dolore
+                        aliquid officia modi quas vel inventore animi, error commodi distinctio eum accusamus?
+                        Accusantium, tempora quisquam!
+                    </p>
+                    <div class="mx-auto flex items-center gap-2">
+                        <span text="yellow-6 2xl" class="flex">
+                            &starf;
+                        </span>
+                        <span text="yellow-6 2xl" class="flex">
+                            &starf;
+                        </span>
+                        <span text="yellow-6 2xl" class="flex">
+                            &starf;
+                        </span>
+                        <span text="yellow-6 2xl" class="flex">
+                            &starf;
+                        </span>
+                        <span text="yellow-6 2xl" class="flex">
+                            &starf;
+                        </span>
+                    </div>
+                </div>
+                <button aria-label="Prev Button" bg="gray-1 dark:gray-9" text="gray-8 dark:gray-2" class="outline-none absolute -left-4 md-left-0 top-1/2 -translate-y-1/2 p4 rd-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M18 10a.75.75 0 01-.75.75H4.66l2.1 1.95a.75.75 0 11-1.02 1.1l-3.5-3.25a.75.75 0 010-1.1l3.5-3.25a.75.75 0 111.02 1.1l-2.1 1.95h12.59A.75.75 0 0118 10z" clip-rule="evenodd" />
+                    </svg>                      
+                </button>
+                <button aria-label="Next Button" bg="gray-1 dark:gray-9" text="gray-8 dark:gray-2" class="outline-none absolute -right-4 md-right-0 top-1/2 -translate-y-1/2 p4 rd-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z" clip-rule="evenodd" />
+                    </svg>
+                    
+                </button>
+                <div class="flex items-center gap-1 border-0 bg-transparent absolute left-1/2 -translate-x-1/2 -bottom-10">
+                    <span class="cursor-pointer w4 h2 rd-full bg-blue-6 transition"></span>
+                    <span bg="gray-4 dark:gray-8" class="cursor-pointer w2 h2 rd-full transition ease-linear"></span>
+                    <span bg="gray-4 dark:gray-8" class="cursor-pointer w2 h2 rd-full transition ease-linear"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    ```
+    :::
+    :::tab-panel{id="testi4_2"}
+    ```vue
+    <template>
+        <section py20>
+            <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto space-y-16">
+                <div class="mx-auto max-w-2xl text-center">
+                    <h1 text="3xl gray-8 dark:white" class="font-bold">Client’s Say About Us</h1>
+                </div>
+                <div class="relative flex flex-col">
+                    <div bg="white dark:gray-950" border="~ gray-1/10 dark:gray-9" shadow="2xl gray-7/40 dark:none"
+                        class="p6 w-full mx-auto max-w-4xl md-p-10 rd-2xl flex flex-col items-center justify-center text-center space-y-6 md-space-y-8">
+                        <img src="/images/sidebiew.webp" alt="Author avatar"
+                            class="w-20 md-w-24 h-20 md-h-24 object-cover rd-full flex">
+                        <div class="space-y-2 text-center flex-1">
+                            <h2 text="xl gray-8 dark:gray-2" class="font-semibold leading-none">
+                                John Doe
+                            </h2>
+                            <p text="sky-7 dark:sky-3">
+                                SEO Kelasi-AI SARL
+                            </p>
+                        </div>
+                        <p text="gray-7 dark:gray-3" class="font-medium max-w-md">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum at ipsa pariatur culpa iste dolore
+                            aliquid officia modi quas vel inventore animi, error commodi distinctio eum accusamus?
+                            Accusantium, tempora quisquam!
+                        </p>
+                        <div class="mx-auto flex items-center gap-2">
+                            <span text="yellow-6 2xl" class="flex">
+                                &starf;
+                            </span>
+                            <span text="yellow-6 2xl" class="flex">
+                                &starf;
+                            </span>
+                            <span text="yellow-6 2xl" class="flex">
+                                &starf;
+                            </span>
+                            <span text="yellow-6 2xl" class="flex">
+                                &starf;
+                            </span>
+                            <span text="yellow-6 2xl" class="flex">
+                                &starf;
+                            </span>
+                        </div>
+                    </div>
+                    <button aria-label="Prev Button" bg="gray-1 dark:gray-9" text="gray-8 dark:gray-2" class="outline-none absolute -left-4 md-left-0 top-1/2 -translate-y-1/2 p4 rd-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M18 10a.75.75 0 01-.75.75H4.66l2.1 1.95a.75.75 0 11-1.02 1.1l-3.5-3.25a.75.75 0 010-1.1l3.5-3.25a.75.75 0 111.02 1.1l-2.1 1.95h12.59A.75.75 0 0118 10z" clip-rule="evenodd" />
+                        </svg>                      
+                    </button>
+                    <button aria-label="Next Button" bg="gray-1 dark:gray-9" text="gray-8 dark:gray-2" class="outline-none absolute -right-4 md-right-0 top-1/2 -translate-y-1/2 p4 rd-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z" clip-rule="evenodd" />
+                        </svg>
+                        
+                    </button>
+                    <div class="flex items-center gap-1 border-0 bg-transparent absolute left-1/2 -translate-x-1/2 -bottom-10">
+                        <span class="cursor-pointer w4 h2 rd-full bg-blue-6 transition"></span>
+                        <span bg="gray-4 dark:gray-8" class="cursor-pointer w2 h2 rd-full transition ease-linear"></span>
+                        <span bg="gray-4 dark:gray-8" class="cursor-pointer w2 h2 rd-full transition ease-linear"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    ```
+    :::
+    :::tab-panel{id="testi4_3"}
+    ```vue
+    <template>
+        <section py20>
+            <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto space-y-16">
+                <div class="mx-auto max-w-2xl text-center">
+                    <h1 text="3xl gray-8 dark:white" class="font-bold">Client’s Say About Us</h1>
+                </div>
+                <div class="relative flex flex-col">
+                    <div bg="white dark:gray-950" border="~ gray-1/10 dark:gray-9" shadow="2xl gray-7/40 dark:none"
+                        class="p6 w-full mx-auto max-w-4xl md-p-10 rd-2xl flex flex-col items-center justify-center text-center space-y-6 md-space-y-8">
+                        <img src="/images/sidebiew.webp" alt="Author avatar"
+                            class="w-20 md-w-24 h-20 md-h-24 object-cover rd-full flex">
+                        <div class="space-y-2 text-center flex-1">
+                            <h2 text="xl gray-8 dark:gray-2" class="font-semibold leading-none">
+                                John Doe
+                            </h2>
+                            <p text="sky-7 dark:sky-3">
+                                SEO Kelasi-AI SARL
+                            </p>
+                        </div>
+                        <p text="gray-7 dark:gray-3" class="font-medium max-w-md">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum at ipsa pariatur culpa iste dolore
+                            aliquid officia modi quas vel inventore animi, error commodi distinctio eum accusamus?
+                            Accusantium, tempora quisquam!
+                        </p>
+                        <div class="mx-auto flex items-center gap-2">
+                            <span text="yellow-6 2xl" class="flex">
+                                &starf;
+                            </span>
+                            <span text="yellow-6 2xl" class="flex">
+                                &starf;
+                            </span>
+                            <span text="yellow-6 2xl" class="flex">
+                                &starf;
+                            </span>
+                            <span text="yellow-6 2xl" class="flex">
+                                &starf;
+                            </span>
+                            <span text="yellow-6 2xl" class="flex">
+                                &starf;
+                            </span>
+                        </div>
+                    </div>
+                    <button aria-label="Prev Button" bg="gray-1 dark:gray-9" text="gray-8 dark:gray-2" class="outline-none absolute -left-4 md-left-0 top-1/2 -translate-y-1/2 p4 rd-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M18 10a.75.75 0 01-.75.75H4.66l2.1 1.95a.75.75 0 11-1.02 1.1l-3.5-3.25a.75.75 0 010-1.1l3.5-3.25a.75.75 0 111.02 1.1l-2.1 1.95h12.59A.75.75 0 0118 10z" clip-rule="evenodd" />
+                        </svg>                      
+                    </button>
+                    <button aria-label="Next Button" bg="gray-1 dark:gray-9" text="gray-8 dark:gray-2" class="outline-none absolute -right-4 md-right-0 top-1/2 -translate-y-1/2 p4 rd-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z" clip-rule="evenodd" />
+                        </svg>
+                        
+                    </button>
+                    <div class="flex items-center gap-1 border-0 bg-transparent absolute left-1/2 -translate-x-1/2 -bottom-10">
+                        <span class="cursor-pointer w4 h2 rd-full bg-blue-6 transition"></span>
+                        <span bg="gray-4 dark:gray-8" class="cursor-pointer w2 h2 rd-full transition ease-linear"></span>
+                        <span bg="gray-4 dark:gray-8" class="cursor-pointer w2 h2 rd-full transition ease-linear"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    ```
+    :::
+::

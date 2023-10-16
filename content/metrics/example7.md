@@ -1,0 +1,162 @@
+---
+title: Metrics 7
+category: marketing-ui
+subCategory: metrics
+previewUrl: /metrics/7/
+info: This section can be used for ......
+---
+
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: metric7_
+---
+    :::tab-panel{id="metric7_1"}
+    ```html
+    <section class="py24">
+        <div class="max-w-7xl mx-auto px5 sm-px10 md-px12 lg-px5 space-y-10">
+            <div class="text-center space-y6 max-w-2xl mx-auto">
+                <h1 class="text-3xl font-bold text-gray9 dark-text-white capitalize">Title</h1>
+                <p class="text-gray7 dark-text-gray3">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="grid gap-6 sm-grid-cols-2 md-grid-cols-4 divide-y md-children-!border-t-0 sm-divide-x divide-gray1 dark-divide-gray9">
+                <div class="space-y4 text-center">
+                    <h2 class="text-gray9 dark-text-white font-semibold text-3xl">
+                        4 Years
+                    </h2>
+                    <p class="text-gray7 dark-text-gray3">
+                        Experiences
+                    </p>
+                </div>
+                <div class="space-y4 text-center">
+                    <h2 class="text-gray9 dark-text-white font-semibold text-3xl">
+                        +20 Projects
+                    </h2>
+                    <p class="text-gray7 dark-text-gray3">
+                        Achieved
+                    </p>
+                </div>
+                <div class="space-y4 text-center">
+                    <h2 class="text-gray9 dark-text-white font-semibold text-3xl">
+                        95%
+                    </h2>
+                    <p class="text-gray7 dark-text-gray3">
+                        Satisfaction
+                    </p>
+                </div>
+                <div class="space-y4 text-center">
+                    <h2 class="text-gray9 dark-text-white font-semibold text-3xl">
+                        14
+                    </h2>
+                    <p class="text-gray7 dark-text-gray3">
+                        Clients
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    ```
+    :::
+    :::tab-panel{id="metric7_2"}
+    ```vue
+    <template>
+        <section class="py24">
+            <div class="max-w-7xl mx-auto px5 sm-px10 md-px12 lg-px5 space-y-10">
+                <div class="text-center space-y6 max-w-2xl mx-auto">
+                    <h1 class="text-3xl font-bold text-gray9 dark-text-white capitalize">Title</h1>
+                    <p class="text-gray7 dark-text-gray3">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="grid gap-6 sm-grid-cols-2 md-grid-cols-4 divide-y md-children-!border-t-0 sm-divide-x divide-gray1 dark-divide-gray9">
+                    <div class="space-y4 text-center">
+                        <h2 class="text-gray9 dark-text-white font-semibold text-3xl">
+                            4 Years
+                        </h2>
+                        <p class="text-gray7 dark-text-gray3">
+                            Experiences
+                        </p>
+                    </div>
+                    <div class="space-y4 text-center">
+                        <h2 class="text-gray9 dark-text-white font-semibold text-3xl">
+                            +20 Projects
+                        </h2>
+                        <p class="text-gray7 dark-text-gray3">
+                            Achieved
+                        </p>
+                    </div>
+                    <div class="space-y4 text-center">
+                        <h2 class="text-gray9 dark-text-white font-semibold text-3xl">
+                            95%
+                        </h2>
+                        <p class="text-gray7 dark-text-gray3">
+                            Satisfaction
+                        </p>
+                    </div>
+                    <div class="space-y4 text-center">
+                        <h2 class="text-gray9 dark-text-white font-semibold text-3xl">
+                            14
+                        </h2>
+                        <p class="text-gray7 dark-text-gray3">
+                            Clients
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    ```
+    :::
+    :::tab-panel{id="metric7_3"}
+    ```vue
+    <template>
+        <section class="py24">
+            <div class="max-w-7xl mx-auto px5 sm-px10 md-px12 lg-px5 space-y-10">
+                <div class="text-center space-y6 max-w-2xl mx-auto">
+                    <h1 class="text-3xl font-bold text-gray9 dark-text-white capitalize">Title</h1>
+                    <p class="text-gray7 dark-text-gray3">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="grid gap-6 sm-grid-cols-2 md-grid-cols-4 divide-y md-children-!border-t-0 sm-divide-x divide-gray1 dark-divide-gray9">
+                    <div class="space-y4 text-center">
+                        <h2 class="text-gray9 dark-text-white font-semibold text-3xl">
+                            4 Years
+                        </h2>
+                        <p class="text-gray7 dark-text-gray3">
+                            Experiences
+                        </p>
+                    </div>
+                    <div class="space-y4 text-center">
+                        <h2 class="text-gray9 dark-text-white font-semibold text-3xl">
+                            +20 Projects
+                        </h2>
+                        <p class="text-gray7 dark-text-gray3">
+                            Achieved
+                        </p>
+                    </div>
+                    <div class="space-y4 text-center">
+                        <h2 class="text-gray9 dark-text-white font-semibold text-3xl">
+                            95%
+                        </h2>
+                        <p class="text-gray7 dark-text-gray3">
+                            Satisfaction
+                        </p>
+                    </div>
+                    <div class="space-y4 text-center">
+                        <h2 class="text-gray9 dark-text-white font-semibold text-3xl">
+                            14
+                        </h2>
+                        <p class="text-gray7 dark-text-gray3">
+                            Clients
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    ```
+    :::
+::

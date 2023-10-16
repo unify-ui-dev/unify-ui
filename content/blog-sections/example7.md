@@ -1,0 +1,348 @@
+---
+title: Blog section 7
+category: marketing-ui
+subCategory: blog-sections
+previewUrl: /blog-sections/7/
+info: This section can be used for ......
+---
+
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: blg_sec7_
+---
+    :::tab-panel{id="blg_sec7_1"}
+    ```html
+    <section py20>
+        <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto space-y-14">
+            <div class="text-center max-w-2xl mx-auto space-y-5">
+                <span before="absolute content-empty w4 h0.5 rd-md left-0 top-1/2 bg-sky-7 dark:bg-sky-6" class="pl5 relative text-sky-700 dark:text-sky-500">
+                    News
+                </span>
+                <h2 text="3xl md:4xl xl:5xl blue-950 dark:gray-2" class="font-semibold leading-tight">From our latest Blog Post</h2>
+                <div class="flex justify-center mt2">
+                    <a href="#" bg="gray-1 dark:gray-9" border="~ gray-2 dark:gray-8"
+                        class="px5 py2.5 rd-xl text-blue-600 dark:text-gray-300 flex items-center gap-x-3">
+                        See More
+                        <span i-carbon-chevron-right text-md></span>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm-grid-cols-2 lg-grid-cols-3 gap-8">
+                <div bg="white dark:gray-950" border="~ gray-1 dark:gray-9" class="pxpx rd-xl">
+                    <div bg="gray-2 dark:gray-8" class="rd-[11px] relative">
+                        <img src="/images/sidebiew.webp" alt="article cover" width="1400" class="rd-[7px] w-full aspect-video object-cover">
+                        <div bg="gray-1 dark:gray-9" border="~ gray-2 dark:gray-8" class="absolute -bottom-8 z10 flex inset-x-2 rd-lg  p2">
+                            <div class="flex items-center gap-x-4">
+                                <img src="/images/sidebiew.webp" alt="" width="800" class="w10 h10 object-cover rd-full">
+                                <div>
+                                    <p text="gray-8 dark:gray-50" class="font-semibold">By John Doe</p>
+                                    <p text="sm gray-6 dark:gray-3">
+                                        Web Designer
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt14 px5 pb5 space-y-4">
+                        <span text="blue-6 dark:blue-4 sm">June-10-2023</span>
+                        <h1 text="xl gray-9 dark:white" class="font-semibold">
+                            How to deploy your JS fullstack app using Vercel and Railway
+                        </h1>
+                        <p text="gray-7 dark:gray-3" class="line-clamp-2">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium temporibus debitis 
+                        </p>
+                        <a href="#" text="blue-6 dark:blue-4" class="flex items-center gap-x-2">
+                            Read more
+                            <span i-carbon-arrow-up-right text-sm></span>
+                        </a>
+                    </div>
+                </div>
+                <div bg="white dark:gray-950" border="~ gray-1 dark:gray-9" class="pxpx rd-xl">
+                    <div bg="gray-2 dark:gray-8" class="rd-[11px] relative">
+                        <img src="/images/sidebiew.webp" alt="article cover" width="1400" class="rd-[7px] w-full aspect-video object-cover">
+                        <div bg="gray-1 dark:gray-9" border="~ gray-2 dark:gray-8" class="absolute -bottom-8 z10 flex inset-x-2 rd-lg  p2">
+                            <div class="flex items-center gap-x-4">
+                                <img src="/images/sidebiew.webp" alt="" width="800" class="w10 h10 object-cover rd-full">
+                                <div>
+                                    <p text="gray-8 dark:gray-50" class="font-semibold">By John Doe</p>
+                                    <p text="sm gray-6 dark:gray-3">
+                                        Web Designer
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt14 px5 pb5 space-y-4">
+                        <span text="blue-6 dark:blue-4 sm">June-10-2023</span>
+                        <h1 text="xl gray-9 dark:white" class="font-semibold">
+                            How to deploy your JS fullstack app using Vercel and Railway
+                        </h1>
+                        <p text="gray-7 dark:gray-3" class="line-clamp-2">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium temporibus debitis 
+                        </p>
+                        <a href="#" text="blue-6 dark:blue-4" class="flex items-center gap-x-2">
+                            Read more
+                            <span i-carbon-arrow-up-right text-sm></span>
+                        </a>
+                    </div>
+                </div>
+                <div bg="white dark:gray-950" border="~ gray-1 dark:gray-9" class="pxpx rd-xl">
+                    <div bg="gray-2 dark:gray-8" class="rd-[11px] relative">
+                        <img src="/images/sidebiew.webp" alt="article cover" width="1400" class="rd-[7px] w-full aspect-video object-cover">
+                        <div bg="gray-1 dark:gray-9" border="~ gray-2 dark:gray-8" class="absolute -bottom-8 z10 flex inset-x-2 rd-lg  p2">
+                            <div class="flex items-center gap-x-4">
+                                <img src="/images/sidebiew.webp" alt="" width="800" class="w10 h10 object-cover rd-full">
+                                <div>
+                                    <p text="gray-8 dark:gray-50" class="font-semibold">By John Doe</p>
+                                    <p text="sm gray-6 dark:gray-3">
+                                        Web Designer
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt14 px5 pb5 space-y-4">
+                        <span text="blue-6 dark:blue-4 sm">June-10-2023</span>
+                        <h1 text="xl gray-9 dark:white" class="font-semibold">
+                            How to deploy your JS fullstack app using Vercel and Railway
+                        </h1>
+                        <p text="gray-7 dark:gray-3" class="line-clamp-2">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium temporibus debitis 
+                        </p>
+                        <a href="#" text="blue-6 dark:blue-4" class="flex items-center gap-x-2">
+                            Read more
+                            <span i-carbon-arrow-up-right text-sm></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    ```
+    :::
+    :::tab-panel{id="blg_sec7_2"}
+    ```vue
+  <template>
+      <section py20>
+          <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto space-y-14">
+              <div class="text-center max-w-2xl mx-auto space-y-5">
+                  <span un-before="absolute content-empty w4 h0.5 rd-md left-0 top-1/2 bg-sky-7 dark:bg-sky-6" class="pl5 relative text-sky-700 dark:text-sky-500">
+                      News
+                  </span>
+                  <h2 text="3xl md:4xl xl:5xl blue-950 dark:gray-2" class="font-semibold leading-tight">From our latest Blog Post</h2>
+                  <div class="flex justify-center mt2">
+                      <a href="#" bg="gray-1 dark:gray-9" border="~ gray-2 dark:gray-8"
+                          class="px5 py2.5 rd-xl text-blue-600 dark:text-gray-300 flex items-center gap-x-3">
+                          See More
+                          <span i-carbon-chevron-right text-md></span>
+                      </a>
+                  </div>
+              </div>
+              <div class="grid grid-cols-1 sm-grid-cols-2 lg-grid-cols-3 gap-8">
+                  <div bg="white dark:gray-950" border="~ gray-1 dark:gray-9" class="pxpx rd-xl">
+                      <div bg="gray-2 dark:gray-8" class="rd-[11px] relative">
+                          <img src="/images/sidebiew.webp" alt="article cover" width="1400" class="rd-[7px] w-full aspect-video object-cover">
+                          <div bg="gray-1 dark:gray-9" border="~ gray-2 dark:gray-8" class="absolute -bottom-8 z10 flex inset-x-2 rd-lg  p2">
+                              <div class="flex items-center gap-x-4">
+                                  <img src="/images/sidebiew.webp" alt="" width="800" class="w10 h10 object-cover rd-full">
+                                  <div>
+                                      <p text="gray-8 dark:gray-50" class="font-semibold">By John Doe</p>
+                                      <p text="sm gray-6 dark:gray-3">
+                                          Web Designer
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="mt14 px5 pb5 space-y-4">
+                          <span text="blue-6 dark:blue-4 sm">June-10-2023</span>
+                          <h1 text="xl gray-9 dark:white" class="font-semibold">
+                              How to deploy your JS fullstack app using Vercel and Railway
+                          </h1>
+                          <p text="gray-7 dark:gray-3" class="line-clamp-2">
+                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium temporibus debitis 
+                          </p>
+                          <a href="#" un-text="blue-6 dark:blue-4" class="flex items-center gap-x-2">
+                              Read more
+                              <span i-carbon-arrow-up-right text-sm></span>
+                          </a>
+                      </div>
+                  </div>
+                  <div bg="white dark:gray-950" border="~ gray-1 dark:gray-9" class="pxpx rd-xl">
+                      <div bg="gray-2 dark:gray-8" class="rd-[11px] relative">
+                          <img src="/images/sidebiew.webp" alt="article cover" width="1400" class="rd-[7px] w-full aspect-video object-cover">
+                          <div bg="gray-1 dark:gray-9" border="~ gray-2 dark:gray-8" class="absolute -bottom-8 z10 flex inset-x-2 rd-lg  p2">
+                              <div class="flex items-center gap-x-4">
+                                  <img src="/images/sidebiew.webp" alt="" width="800" class="w10 h10 object-cover rd-full">
+                                  <div>
+                                      <p text="gray-8 dark:gray-50" class="font-semibold">By John Doe</p>
+                                      <p text="sm gray-6 dark:gray-3">
+                                          Web Designer
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="mt14 px5 pb5 space-y-4">
+                          <span text="blue-6 dark:blue-4 sm">June-10-2023</span>
+                          <h1 text="xl gray-9 dark:white" class="font-semibold">
+                              How to deploy your JS fullstack app using Vercel and Railway
+                          </h1>
+                          <p text="gray-7 dark:gray-3" class="line-clamp-2">
+                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium temporibus debitis 
+                          </p>
+                          <a href="#" un-text="blue-6 dark:blue-4" class="flex items-center gap-x-2">
+                              Read more
+                              <span i-carbon-arrow-up-right text-sm></span>
+                          </a>
+                      </div>
+                  </div>
+                  <div bg="white dark:gray-950" border="~ gray-1 dark:gray-9" class="pxpx rd-xl">
+                      <div bg="gray-2 dark:gray-8" class="rd-[11px] relative">
+                          <img src="/images/sidebiew.webp" alt="article cover" width="1400" class="rd-[7px] w-full aspect-video object-cover">
+                          <div bg="gray-1 dark:gray-9" border="~ gray-2 dark:gray-8" class="absolute -bottom-8 z10 flex inset-x-2 rd-lg  p2">
+                              <div class="flex items-center gap-x-4">
+                                  <img src="/images/sidebiew.webp" alt="" width="800" class="w10 h10 object-cover rd-full">
+                                  <div>
+                                      <p text="gray-8 dark:gray-50" class="font-semibold">By John Doe</p>
+                                      <p text="sm gray-6 dark:gray-3">
+                                          Web Designer
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="mt14 px5 pb5 space-y-4">
+                          <span text="blue-6 dark:blue-4 sm">June-10-2023</span>
+                          <h1 text="xl gray-9 dark:white" class="font-semibold">
+                              How to deploy your JS fullstack app using Vercel and Railway
+                          </h1>
+                          <p text="gray-7 dark:gray-3" class="line-clamp-2">
+                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium temporibus debitis 
+                          </p>
+                          <a href="#" un-text="blue-6 dark:blue-4" class="flex items-center gap-x-2">
+                              Read more
+                              <span i-carbon-arrow-up-right text-sm></span>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </template>
+    ```
+    :::
+    :::tab-panel{id="blg_sec7_3"}
+    ```vue
+  <template>
+      <section py20>
+          <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto space-y-14">
+              <div class="text-center max-w-2xl mx-auto space-y-5">
+                  <span un-before="absolute content-empty w4 h0.5 rd-md left-0 top-1/2 bg-sky-7 dark:bg-sky-6" class="pl5 relative text-sky-700 dark:text-sky-500">
+                      News
+                  </span>
+                  <h2 text="3xl md:4xl xl:5xl blue-950 dark:gray-2" class="font-semibold leading-tight">From our latest Blog Post</h2>
+                  <div class="flex justify-center mt2">
+                      <nuxt-link to="#" bg="gray-1 dark:gray-9" border="~ gray-2 dark:gray-8"
+                          class="px5 py2.5 rd-xl text-blue-600 dark:text-gray-300 flex items-center gap-x-3">
+                          See More
+                          <span i-carbon-chevron-right text-md></span>
+                      </nuxt-link>
+                  </div>
+              </div>
+              <div class="grid grid-cols-1 sm-grid-cols-2 lg-grid-cols-3 gap-8">
+                  <div bg="white dark:gray-950" border="~ gray-1 dark:gray-9" class="pxpx rd-xl">
+                      <div bg="gray-2 dark:gray-8" class="rd-[11px] relative">
+                          <img src="/images/sidebiew.webp" alt="article cover" width="1400" class="rd-[7px] w-full aspect-video object-cover">
+                          <div bg="gray-1 dark:gray-9" border="~ gray-2 dark:gray-8" class="absolute -bottom-8 z10 flex inset-x-2 rd-lg  p2">
+                              <div class="flex items-center gap-x-4">
+                                  <img src="/images/sidebiew.webp" alt="" width="800" class="w10 h10 object-cover rd-full">
+                                  <div>
+                                      <p text="gray-8 dark:gray-50" class="font-semibold">By John Doe</p>
+                                      <p text="sm gray-6 dark:gray-3">
+                                          Web Designer
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="mt14 px5 pb5 space-y-4">
+                          <span text="blue-6 dark:blue-4 sm">June-10-2023</span>
+                          <h1 text="xl gray-9 dark:white" class="font-semibold">
+                              How to deploy your JS fullstack app using Vercel and Railway
+                          </h1>
+                          <p text="gray-7 dark:gray-3" class="line-clamp-2">
+                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium temporibus debitis 
+                          </p>
+                          <nuxt-link to="#" un-text="blue-6 dark:blue-4" class="flex items-center gap-x-2">
+                              Read more
+                              <span i-carbon-arrow-up-right text-sm></span>
+                          </nuxt-link>
+                      </div>
+                  </div>
+                  <div bg="white dark:gray-950" border="~ gray-1 dark:gray-9" class="pxpx rd-xl">
+                      <div bg="gray-2 dark:gray-8" class="rd-[11px] relative">
+                          <img src="/images/sidebiew.webp" alt="article cover" width="1400" class="rd-[7px] w-full aspect-video object-cover">
+                          <div bg="gray-1 dark:gray-9" border="~ gray-2 dark:gray-8" class="absolute -bottom-8 z10 flex inset-x-2 rd-lg  p2">
+                              <div class="flex items-center gap-x-4">
+                                  <img src="/images/sidebiew.webp" alt="" width="800" class="w10 h10 object-cover rd-full">
+                                  <div>
+                                      <p text="gray-8 dark:gray-50" class="font-semibold">By John Doe</p>
+                                      <p text="sm gray-6 dark:gray-3">
+                                          Web Designer
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="mt14 px5 pb5 space-y-4">
+                          <span text="blue-6 dark:blue-4 sm">June-10-2023</span>
+                          <h1 text="xl gray-9 dark:white" class="font-semibold">
+                              How to deploy your JS fullstack app using Vercel and Railway
+                          </h1>
+                          <p text="gray-7 dark:gray-3" class="line-clamp-2">
+                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium temporibus debitis 
+                          </p>
+                          <nuxt-link to="#" un-text="blue-6 dark:blue-4" class="flex items-center gap-x-2">
+                              Read more
+                              <span i-carbon-arrow-up-right text-sm></span>
+                          </nuxt-link>
+                      </div>
+                  </div>
+                  <div bg="white dark:gray-950" border="~ gray-1 dark:gray-9" class="pxpx rd-xl">
+                      <div bg="gray-2 dark:gray-8" class="rd-[11px] relative">
+                          <img src="/images/sidebiew.webp" alt="article cover" width="1400" class="rd-[7px] w-full aspect-video object-cover">
+                          <div bg="gray-1 dark:gray-9" border="~ gray-2 dark:gray-8" class="absolute -bottom-8 z10 flex inset-x-2 rd-lg  p2">
+                              <div class="flex items-center gap-x-4">
+                                  <img src="/images/sidebiew.webp" alt="" width="800" class="w10 h10 object-cover rd-full">
+                                  <div>
+                                      <p text="gray-8 dark:gray-50" class="font-semibold">By John Doe</p>
+                                      <p text="sm gray-6 dark:gray-3">
+                                          Web Designer
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="mt14 px5 pb5 space-y-4">
+                          <span text="blue-6 dark:blue-4 sm">June-10-2023</span>
+                          <h1 text="xl gray-9 dark:white" class="font-semibold">
+                              How to deploy your JS fullstack app using Vercel and Railway
+                          </h1>
+                          <p text="gray-7 dark:gray-3" class="line-clamp-2">
+                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium temporibus debitis 
+                          </p>
+                          <nuxt-link to="#" un-text="blue-6 dark:blue-4" class="flex items-center gap-x-2">
+                              Read more
+                              <span i-carbon-arrow-up-right text-sm></span>
+                          </nuxt-link>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </template>    
+    ```
+    :::
+::
