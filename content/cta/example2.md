@@ -6,8 +6,12 @@ previewUrl: /cta/2/
 info: This section can be used for ......
 ---
 
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: cta2_
+---
+    :::tab-panel{id="cta2_1"}
     ```html
     <section py24>
         <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto">
@@ -46,10 +50,9 @@ info: This section can be used for ......
         </div>
     </section>
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="cta2_2"}
+    ```vue
     <template>
         <section py24>
             <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto">
@@ -89,10 +92,9 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem> 
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="cta2_3"}
+    ```vue
     <template>
         <section py24>
             <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto">
@@ -132,5 +134,5 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem>
-</UnifyTab>
+    :::
+::

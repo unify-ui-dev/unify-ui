@@ -6,8 +6,12 @@ previewUrl: /portfolio/1/
 info: This section can be used for ......
 ---
 
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: portfo1_
+---
+    :::tab-panel{id="portfo1_1"}
     ```html
     <section class="py-20">
         <div class="max-w-7xl mx-auto px-5 sm-px10 md-px12 lg-px5 space-y-16">
@@ -66,10 +70,9 @@ info: This section can be used for ......
         </div>
     </section>
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="portfo1_2"}
+    ```vue
     <template>
         <section class="py-20">
             <div class="max-w-7xl mx-auto px-5 sm-px10 md-px12 lg-px5 space-y-16">
@@ -129,10 +132,9 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem> 
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="portfo1_3"}
+    ```vue
     <template>
         <section class="py-20">
             <div class="max-w-7xl mx-auto px-5 sm-px10 md-px12 lg-px5 space-y-16">
@@ -192,5 +194,5 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem>
-</UnifyTab>
+    :::
+::
