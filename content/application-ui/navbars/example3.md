@@ -6,8 +6,12 @@ previewUrl: /navbars/3/
 info: Require JS
 ---
 
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: nav3_
+---
+    :::tab-panel{id="nav3_1"}
     ```html
     <!-- copy this styles
         button[data-toggle-navbar][data-is-open="true"] #line-1 {
@@ -105,10 +109,9 @@ info: Require JS
     </script> -->
     
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="nav3_2"}
+    ```vue
     <script setup>
         import { ref } from 'vue'
 
@@ -185,10 +188,9 @@ info: Require JS
         </header>
     </template>
     ```
-  </TabItem> 
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="nav3_3"}
+    ```vue
     <script setup>
         const navIsOpen = useState('navIsOpen', ()=>false)
 
@@ -263,5 +265,5 @@ info: Require JS
         </header>
     </template>
     ```
-  </TabItem>
-</UnifyTab>
+    :::
+::

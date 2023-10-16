@@ -1,13 +1,17 @@
 ---
-title: Navbar 1
+title: Sidebar 1
 category: application-ui
 subCategory: sidebars
 previewUrl: /sidebars/1/
 info: Require JS
 ---
 
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: sideb1_
+---
+    :::tab-panel{id="sideb1_1"}
     ```html
     <!-- copy this styles
         button[data-toggle-sidebar][data-is-open="true"] #line-1 {
@@ -146,10 +150,9 @@ info: Require JS
     -->
     
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="sideb1_2"}
+    ```vue
     <script setup>
     import { ref } from 'vue';
     const sidebarIsToggled = ref(false)
@@ -253,10 +256,9 @@ info: Require JS
         </main>
     </template>
     ```
-  </TabItem> 
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="sideb1_3"}
+    ```vue
     <script setup>
     const sidebarIsToggled = useState('sidebarIsToggled',()=>false)
     const sidebarIsResized = useState('sidebarIsResized',()=>false)
@@ -357,5 +359,5 @@ info: Require JS
         </main>
     </template>
     ```
-  </TabItem>
-</UnifyTab>
+    :::
+::

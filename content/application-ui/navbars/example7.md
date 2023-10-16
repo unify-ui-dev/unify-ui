@@ -6,8 +6,12 @@ previewUrl: /navbars/7/
 info: Require JS
 ---
 
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: nav7
+---
+    :::tab-panel{id="nav7_1"}
     ```html
     <!-- copy this styles
         button[data-toggle-navbar][data-is-open="true"] #line-1 {
@@ -104,10 +108,9 @@ info: Require JS
     </script> 
     -->
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="nav7_2"}
+    ```vue
     <script setup>
     import { ref } from 'vue'
 
@@ -196,44 +199,43 @@ info: Require JS
         </header>
     </template>
     ```
-  </TabItem> 
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="nav7_3"}
+    ```vue
     <script setup>
-    const navIsOpen = useState('navIsOpen', ()=>false)
-    const navItems = [
-        {
-            id:1,
-            text:"Features",
-            href:"#"
-        },
-        {
-            id:2,
-            text:"Company",
-            href:"#"
-        },
-        {
-            id:3,
-            text:"Plateform",
-            href:"#"
-        },
-        {
-            id:4,
-            text:"Resources",
-            href:"#"
-        },
-        {
-            id:5,
-            text:"Contact",
-            href:"#"
-        }
-    ]
+        const navIsOpen = useState('navIsOpen', ()=>false)
+        const navItems = [
+            {
+                id:1,
+                text:"Features",
+                href:"#"
+            },
+            {
+                id:2,
+                text:"Company",
+                href:"#"
+            },
+            {
+                id:3,
+                text:"Plateform",
+                href:"#"
+            },
+            {
+                id:4,
+                text:"Resources",
+                href:"#"
+            },
+            {
+                id:5,
+                text:"Contact",
+                href:"#"
+            }
+        ]
 
-    function toggleNavBar(){
-        navIsOpen.value = !navIsOpen.value
-        document.body.classList.toggle("overflow-y-auto")
-    }
+        function toggleNavBar(){
+            navIsOpen.value = !navIsOpen.value
+            document.body.classList.toggle("overflow-y-auto")
+        }
     </script>
     <template>
         <header
@@ -285,5 +287,5 @@ info: Require JS
         </header>
     </template>
     ```
-  </TabItem>
-</UnifyTab>
+    :::
+::
