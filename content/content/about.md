@@ -6,8 +6,12 @@ previewUrl: /content/about/
 info: This section can be used for ......
 ---
 
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: cont1_
+---
+    :::tab-panel{id="cont1_1"}
     ```html
     <section class="py24">
         <div class="max-w-7xl mx-auto px-5 sm-px-10 md-px-12 lg-px-5 flex flex-col md-flex-row gap16">
@@ -51,10 +55,9 @@ info: This section can be used for ......
         </div>
     </section>
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="cont1_2"}
+    ```vue
     <template>
         <section class="py24">
             <div class="max-w-7xl mx-auto px-5 sm-px-10 md-px-12 lg-px-5 flex flex-col md-flex-row gap16">
@@ -106,10 +109,9 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem> 
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="cont1_3"}
+    ```vue
     <template>
         <section class="py24">
             <div class="max-w-7xl mx-auto px-5 sm-px-10 md-px-12 lg-px-5 flex flex-col md-flex-row gap16">
@@ -161,5 +163,5 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem>
-</UnifyTab>
+    :::
+::

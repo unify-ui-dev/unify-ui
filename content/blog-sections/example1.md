@@ -1,13 +1,17 @@
 ---
-title: Example 1
+title: Blog section 1
 category: marketing-ui
 subCategory: blog-sections
 previewUrl: /blog-sections/1/
 info: This section can be used for ......
 ---
 
-<UnifyTab items={["Html", "Vue.Js", "Nuxt.JS"]}>
-  <TabItem>
+::unify-tab
+---
+items : ["html", "vue", "nuxt"]
+initial_: blg_sec1_
+---
+    :::tab-panel{id="blg_sec1_1"}
     ```html
     <section py-20>
         <div px="5 sm:10 md:12 lg:5" class="max-w-7xl mx-auto space-y-10">
@@ -102,10 +106,9 @@ info: This section can be used for ......
         </div>
     </section>
     ```
-  </TabItem>
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="blg_sec1_2"}
+    ```vue
     <script setup>
     const posts  = [
         {
@@ -195,10 +198,9 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem> 
-
-  <TabItem>
-    ```
+    :::
+    :::tab-panel{id="blg_sec1_3"}
+    ```vue
     <script setup>
     const posts  = [
         {
@@ -287,5 +289,5 @@ info: This section can be used for ......
         </section>
     </template>
     ```
-  </TabItem>
-</UnifyTab>
+    :::
+::
