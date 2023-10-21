@@ -6,12 +6,8 @@ previewUrl: /navbars/1/
 info: Require JS
 ---
 
-::unify-tab
----
-items : ["html", "vue", "nuxt"]
-initial_: nav1_
----
-    :::tab-panel{id="nav1_1"}
+<UnifyTab values={["html","vue","nuxt"]}>
+    <TabPanel value="html">
     ```html
     <!-- 
         Add styles
@@ -119,9 +115,9 @@ initial_: nav1_
         }
     </script> -->
     ```
-    :::
-    :::tab-panel{id="nav1_2"}
-    ```vue
+    </TabPanel>
+    <TabPanel value="vue">
+    ```html
     <script setup>
     import { ref } from 'vue'
     const navIsOpen = ref(false)
@@ -217,9 +213,9 @@ initial_: nav1_
         </header>
     </template>
     ```
-    :::
-    :::tab-panel{id="nav1_3"}
-    ```vue
+    </TabPanel>
+    <TabPanel value="nuxt">
+    ```html
     <script setup>
     const navIsOpen = useState('navIsOpen', ()=>false)
     const navItems = [
@@ -313,5 +309,5 @@ initial_: nav1_
         </header>
     </template>
     ```
-    :::
-::
+    </TabPanel>
+</UnifyTab>

@@ -6,14 +6,10 @@ previewUrl: /navbars/3/
 info: Require JS
 ---
 
-::unify-tab
----
-items : ["html", "vue", "nuxt"]
-initial_: nav3_
----
-    :::tab-panel{id="nav3_1"}
+<UnifyTab values={["html","vue","nuxt"]}>
+    <TabPanel value="html">
     ```html
-    <!-- copy this styles
+    <!--copy this styles
         button[data-toggle-navbar][data-is-open="true"] #line-1 {
             transform: translateY(0.375rem) rotate(40deg);
         }
@@ -109,9 +105,9 @@ initial_: nav3_
     </script> -->
     
     ```
-    :::
-    :::tab-panel{id="nav3_2"}
-    ```vue
+    </TabPanel>
+    <TabPanel value="vue">
+    ```html
     <script setup>
         import { ref } from 'vue'
 
@@ -188,9 +184,9 @@ initial_: nav3_
         </header>
     </template>
     ```
-    :::
-    :::tab-panel{id="nav3_3"}
-    ```vue
+    </TabPanel>
+    <TabPanel value="nuxt">
+    ```html
     <script setup>
         const navIsOpen = useState('navIsOpen', ()=>false)
 
@@ -265,5 +261,5 @@ initial_: nav3_
         </header>
     </template>
     ```
-    :::
-::
+    </TabPanel>
+</UnifyTab>

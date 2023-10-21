@@ -6,14 +6,10 @@ previewUrl: /navbars/4/
 info: Require JS
 ---
 
-::unify-tab
----
-items : ["html", "vue", "nuxt"]
-initial_: nav4_
----
-    :::tab-panel{id="nav4_1"}
+<UnifyTab values={["html","vue","nuxt"]}>
+    <TabPanel value="html">
     ```html
-    <!-- copy this styles
+    <!--copy this styles
         button[data-toggle-navbar][data-is-open="true"] #line-1 {
             transform: rotate(45deg) translateY(0.375rem);
         }
@@ -129,9 +125,9 @@ initial_: nav4_
     </script> -->
     
     ```
-    :::
-    :::tab-panel{id="nav4_2"}
-    ```vue
+    </TabPanel>
+    <TabPanel value="vue">
+    ```html
     <script setup>
         import { ref } from 'vue'
 
@@ -229,9 +225,9 @@ initial_: nav4_
         </header>
     </template>
     ```
-    :::
-    :::tab-panel{id="nav4_3"}
-    ```vue
+    </TabPanel>
+    <TabPanel value="nuxt">
+    ```html
     <script setup>
         const navIsOpen = useState('navIsOpen', () => false)
         const navItems = [
@@ -337,5 +333,5 @@ initial_: nav4_
     </template>
 
     ```
-    :::
-::
+    </TabPanel>
+</UnifyTab>

@@ -6,12 +6,8 @@ previewUrl: /sidebars/2/
 info: Require JS
 ---
 
-::unify-tab
----
-items : ["html", "vue", "nuxt"]
-initial_: sideb2_
----
-    :::tab-panel{id="sideb2_1"}
+<UnifyTab values={["html","vue","nuxt"]}>
+    <TabPanel value="html">
     ```html
     <!-- copy this styles
         button[data-toggle-sidebar][data-is-open="true"] #line-1 {
@@ -143,9 +139,9 @@ initial_: sideb2_
     -->
     
     ```
-    :::
-    :::tab-panel{id="sideb2_2"}
-    ```vue
+    </TabPanel>
+    <TabPanel value="vue">
+    ```html
     <script setup>
     import { ref } from 'vue';
 
@@ -254,9 +250,9 @@ initial_: sideb2_
     </main>
     </template>
     ```
-    :::
-    :::tab-panel{id="sideb2_3"}
-    ```vue
+    </TabPanel>
+    <TabPanel value="nuxt">
+    ```html
     <script setup>
     const sidebarIsToggled = useState('sidebarIsToggled',()=>false)
     const toggleSidebar = () => {
@@ -362,5 +358,5 @@ initial_: sideb2_
     </main>
     </template>
     ```
-    :::
-::
+    </TabPanel>
+</UnifyTab>
