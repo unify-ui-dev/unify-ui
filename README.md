@@ -1,6 +1,6 @@
 <p align="center">
 <a href=https://github.com/unify-ui-dev/unocss-unifyui target="_blank">
-<img src='https://raw.githubusercontent.com/unify-ressources/.github/main/cover_.png' width="100%" alt="Banner" />
+<img src='./cover/cover_unocss.webp' width="100%" alt="UnifyUI Cover" />
 </a>
 </p>
 
