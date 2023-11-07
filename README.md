@@ -5,7 +5,6 @@
 </p>
 
 
-
 <p align="center">
 <img src="https://img.shields.io/github/contributors/unify-ui-dev/unocss-unifyui" alt="GitHub contributors" />
 <img src="https://img.shields.io/github/discussions/unify-ui-dev/unocss-unifyui" alt="GitHub discussions" />
@@ -88,12 +87,7 @@ Start the development server on http://localhost:5173/
 
 ```bash
 npm run dev
-``` 
-
-
-## 🙌 Credit
-
-
+```
 
 ## Contributing
 
@@ -102,7 +96,7 @@ If you're interested in contributing to Unify-UI, please read our [contributing 
 
 ## Request Component/Block
 
-Request <a href="https://sharuco.lndev.me/form/view/GEG1qbIZbD7U3jLF6Lj7" target="_blank">here</a>
+Request [here](https://docs.google.com/forms/d/e/1FAIpQLSfAlmv1bocO-XGoiPfEaWp0v5UzFLbjsLQbQuhIDHhM3V4JFQ/viewform?usp=pp_url){target="_blank"}
 
 
 ## 📄 License
