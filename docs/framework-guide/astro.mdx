@@ -1,0 +1,113 @@
+---
+title: Install with AstroJS
+description: Use UnoCSS within your AstroJS project
+---
+
+This guide will help you get started with UnifyUI, how to install and integrate it in your project!
+<br/>
+UnifyUI is built on top of UnoCSS.
+
+
+## Installation
+<Steps>
+
+### Create a new Vite Project
+Install UnoCSS using `your` package manager
+
+<Tabs values={["npm","pnpm", "yarn"]}>
+  <TabPanel value="npm">
+```bash
+npm install -D unocss
+```
+  </TabPanel>
+  <TabPanel value="pnpm">
+```bash
+pnpm add -D unocss
+```
+  </TabPanel>
+  <TabPanel value="yarn">
+```bash
+yarn add -D unocss
+```
+  </TabPanel>
+</Tabs>
+
+### Install preset-icon
+Use any icon with Pure CSS for UnoCSS. UnifyUI uses carbon by default
+
+<Tabs values={["npm","pnpm", "yarn"]}>
+  <TabPanel value="npm">
+```bash
+npm install -D @unocss/preset-icons @iconify-json/carbon
+```
+  </TabPanel>
+  <TabPanel value="pnpm">
+```bash
+pnpm add -D @unocss/preset-icons @iconify-json/carbon
+```
+  </TabPanel>
+  <TabPanel value="yarn">
+```bash
+yarn add -D @unocss/preset-icons @iconify-json/carbon
+```
+  </TabPanel>
+</Tabs>
+
+
+### Install transformer-directives
+
+UnoCSS transformer for `@apply`, `@screen` and `theme()` directives: `@unocss/transformer-directives`.
+
+<Tabs values={["npm","pnpm", "yarn"]}>
+  <TabPanel value="npm">
+```bash
+npm install -D @unocss/transformer-directives
+```
+  </TabPanel>
+  <TabPanel value="pnpm">
+```bash
+pnpm add -D @unocss/transformer-directives
+```
+  </TabPanel>
+  <TabPanel value="yarn">
+```bash
+yarn add -D @unocss/transformer-directives
+```
+  </TabPanel>
+</Tabs>
+
+### Configure UnoCSS
+
+Create a file `uno.config.ts` or `uno.config.js` configuration file to the root-level of your project.
+
+```ts
+// uno.config.ts
+import {
+    defineConfig, presetAttributify, presetIcons, presetUno, presetMini, presetWebFonts
+  } from 'unocss'
+  
+  import transformerDirectives from '@unocss/transformer-directives'
+  
+  export default defineConfig({
+    transformers: [
+      transformerDirectives(),
+    ],
+    presets: [
+      presetUno(),
+      presetAttributify(),
+      presetMini(),
+      presetWebFonts(),
+      presetIcons(
+        {
+          collections: {
+            carbon: () => import('@iconify-json/carbon/icons.json').then(i => i.default),
+          }
+        }
+      ),
+    ],
+  })
+```
+### Run server
+Run your server to see magic
+
+</Steps>
