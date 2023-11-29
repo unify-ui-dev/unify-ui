@@ -96,7 +96,7 @@ If you're interested in contributing to Unify-UI, please read our [contributing 
 
 ## Request Component/Block
 
-Request [here](https://docs.google.com/forms/d/e/1FAIpQLSfAlmv1bocO-XGoiPfEaWp0v5UzFLbjsLQbQuhIDHhM3V4JFQ/viewform?usp=pp_url){target="_blank"}
+Request [here](https://docs.google.com/forms/d/e/1FAIpQLSfAlmv1bocO-XGoiPfEaWp0v5UzFLbjsLQbQuhIDHhM3V4JFQ/viewform?usp=pp_url){:target="_blank"}
 
 
 ## 📄 License
