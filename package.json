@@ -1,11 +1,11 @@
 {
   "name": "unify-ui",
+  "version": "beta-v0.4",
   "author": {
     "name": "John Kat MJ",
     "email": "johnkatembue4@gmail.com"
   },
   "private": true,
-  "version": "beta-v0.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,14 +14,14 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "^1.1.18",
-    "@unocss/preset-icons": "^0.53.5",
-    "@unocss/preset-mini": "^0.53.5",
-    "unocss": "^0.53.6",
-    "vite": "^4.5.0"
+    "@iconify-json/carbon": "^1.1.30",
+    "@unocss/preset-icons": "^0.58.5",
+    "unocss": "^0.58.5",
+    "vite": "^5.1.4"
   },
   "dependencies": {
-    "@unocss/reset": "^0.53.5",
+    "@julr/unocss-preset-forms": "^0.1.0",
+    "@unocss/reset": "^0.58.5",
     "glob": "^10.3.5"
   },
   "license": "MIT"
