@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 import {glob} from 'glob';
 
 function getInputs() {
-    const dirs = glob.sync('resources/**/index.html');
+    const dirs = glob.sync('blocks/**/index.html');
     const inputs = {
         main: resolve(__dirname, 'index.html'),
     };

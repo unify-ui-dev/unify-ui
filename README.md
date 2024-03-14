@@ -1,19 +1,20 @@
 <p align="center">
-<a href=https://github.com/unify-ui-dev/unocss-unifyui target="_blank">
+<a href=https://github.com/unify-ui-dev/unifyui target="_blank">
 <img src='./cover/cover_unocss.webp' width="100%" alt="UnifyUI Cover" />
 </a>
 </p>
 
 
 <p align="center">
-<img src="https://img.shields.io/github/contributors/unify-ui-dev/unocss-unifyui" alt="GitHub contributors" />
-<img src="https://img.shields.io/github/discussions/unify-ui-dev/unocss-unifyui" alt="GitHub discussions" />
-<img src="https://img.shields.io/github/issues/unify-ui-dev/unocss-unifyui" alt="GitHub issues" />
-<img src="https://img.shields.io/github/issues-pr/unify-ui-dev/unocss-unifyui" alt="GitHub pull request" />
+<img src="https://img.shields.io/github/contributors/unify-ui-dev/unifyui" alt="GitHub contributors" />
+<img src="https://img.shields.io/github/discussions/unify-ui-dev/unifyui" alt="GitHub discussions" />
+<img src="https://img.shields.io/github/issues/unify-ui-dev/unifyui" alt="GitHub issues" />
+<img src="https://img.shields.io/github/issues-pr/unify-ui-dev/unifyui" alt="GitHub pull request" />
 </p>
 
 <p></p>
 <p></p>
+
 
 ## 🔍 Table of Contents
 
@@ -47,47 +48,16 @@
 
 ## 📝 Project Summary
 
-- [content](content): Stores various sections and content for the application UI.
-- [public](public): Holds client-specific files and images for public access.
-- [resources/application-ui](resources/application-ui): Contains UI resources such as navbars and sidebars.
-- [resources/blog-sections](resources/blog-sections): Stores resources related to blog sections.
-- [resources/content](resources/content): Holds resources related to the main content of the application.
-- [resources/cta](resources/cta): Contains call-to-action resources.
-- [resources/features_services](resources/features_services): Stores resources related to features and services.
-- [resources/footer](resources/footer): Holds resources related to the application footer.
-- [resources/hero-sections](resources/hero-sections): Contains resources related to hero sections.
-- [resources/logo-cloud](resources/logo-cloud): Contains resources related to logo cloud sections.
-- [resources/portfolio](resources/metrics): Contains resources related to metrics sections.
-- [resources/portfolio](resources/portfolio): Contains resources related to portfolio sections.
-- [resources/pricing-section](resources/pricing-section): Contains resources related to pricing sections.
-- [resources/testimonial_success](resources/testimonial_succes): Contains resources related to testimonial sections.
+- [blocks](blocks): Contains all UnifyUI blocks.
+- [preset](preset): Contains UnifyUI Preset.
+- [components](components): The main UnifyUI Kit (All base components).
 
 
 ## ⚙️ Setting Up
 
 #### Local Development
 
-1. Clone unocss-unifyui repository:
 
-```bash
-git clone https://github.com/unify-ui-dev/unocss-unifyui.git
-```
-
-2. Install dependencies
-
-Make sure to install the dependencies:
-
-```bash
-npm install
-```
-
-3. Development Server
-
-Start the development server on http://localhost:5173/
-
-```bash
-npm run dev
-```
 
 ## Contributing
 
@@ -96,7 +66,7 @@ If you're interested in contributing to Unify-UI, please read our [contributing 
 
 ## Request Component/Block
 
-Request [here](https://docs.google.com/forms/d/e/1FAIpQLSfAlmv1bocO-XGoiPfEaWp0v5UzFLbjsLQbQuhIDHhM3V4JFQ/viewform?usp=pp_url){:target="_blank"}
+Request [here](https://docs.google.com/forms/d/e/1FAIpQLSfAlmv1bocO-XGoiPfEaWp0v5UzFLbjsLQbQuhIDHhM3V4JFQ/viewform?usp=pp_url)
 
 
 ## 📄 License

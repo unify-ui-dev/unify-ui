@@ -1,6 +1,6 @@
 {
   "name": "unify-ui",
-  "version": "beta-v0.4",
+  "version": "0.0.0",
   "author": {
     "name": "John Kat MJ",
     "email": "johnkatembue4@gmail.com"
@@ -14,6 +14,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@flexilla/uno-preset": "^0.0.1",
     "@iconify-json/carbon": "^1.1.30",
     "@unocss/preset-icons": "^0.58.5",
     "unocss": "^0.58.5",

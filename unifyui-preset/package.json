@@ -1,6 +1,6 @@
 {
   "name": "unifyui-preset",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,7 +9,13 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/node": "^20.11.24",
     "typescript": "^5.2.2",
+    "unocss": "^0.58.5",
     "vite": "^5.1.4"
-  }
+  },
+  "peerDependencies": {
+    "unocss": ">= 0.58.5 || < 1"
+  },
+  "license": "MIT"
 }

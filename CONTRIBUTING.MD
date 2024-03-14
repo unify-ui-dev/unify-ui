@@ -1,7 +1,7 @@
- # Unify-UI (UnoCSS) Contributing Guide
+ # Unify-UI Contributing Guide
 Every contribution is welcome to this open source project. However, before submitting your contribution, be sure to take a moment and read the following guidelines.
 
-- [Unify-UI (UnoCSS) Contributing Guide](#unify-ui-unocss-contributing-guide)
+- [Unify-UI Contributing Guide](#unify-ui-contributing-guide)
   - [Don't know how to contribute or new to Open Source?](#dont-know-how-to-contribute-or-new-to-open-source)
   - [Have a question?](#have-a-question)
     - [Prerequisites](#prerequisites)
@@ -15,13 +15,13 @@ Every contribution is welcome to this open source project. However, before submi
 ## Don't know how to contribute or new to Open Source?
 
 Take a look at :
-1. [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/){:target="_blank"}
-2. [How to Contribute to an Open Source Project on GitHub](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github){:target="_blank"}
+1. [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
+2. [How to Contribute to an Open Source Project on GitHub](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
 
 ## Have a question?
 
-1. Check our [Github Issues](){:target="_blank"} to see if someone has already answered your question.
-2. Join our community on [Discord](){:target="_blank"} and feel free to ask everything you want.
+1. Check our [Github Issues]() to see if someone has already answered your question.
+2. Join our community on [Discord](https://discord.gg/6VN6zTPZAy) and feel free to ask everything you want.
 
 
 ### Prerequisites
@@ -31,8 +31,7 @@ Take a look at :
 
 #### VS Code Extensions
 
-1. [UnoCSS](https://marketplace.visualstudio.com/items?itemName=antfu.unocss){:target="_blank"}
-2. [Inline Fold](https://marketplace.visualstudio.com/items?itemName=moalamri.inline-fold){:target="_blank"}
+1. [UnoCSS](https://marketplace.visualstudio.com/items?itemName=antfu.unocss)
 
 
 ## commit-convention
@@ -55,20 +54,3 @@ Take a look at :
    
 ## Local Development
 
-After cloning the repository, execute the following commands in the root folder:
-
-1. Install dependencies
-
-Make sure to install the dependencies:
-
-```bash
-npm install
-```
-
-2. Development Server
-
-Start the development server on http://localhost:5173/
-
-```bash
-npm run dev
-```
