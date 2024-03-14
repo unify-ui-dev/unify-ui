@@ -48,9 +48,9 @@
 
 ## 📝 Project Summary
 
+- [unify ui](unify-ui/): Contains UnifyUI Preset.
 - [blocks](blocks): Contains all UnifyUI blocks.
-- [preset](preset): Contains UnifyUI Preset.
-- [components](components): The main UnifyUI Kit (All base components).
+- [components](components): The main UnifyUI Kit.
 
 
 ## ⚙️ Setting Up

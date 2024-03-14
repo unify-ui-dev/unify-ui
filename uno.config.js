@@ -11,11 +11,6 @@ import {
 import unifyUI from "@flexilla/uno-preset"
 
 export default defineConfig({
-  content: {
-    pipeline: {
-
-    },
-  },
   presets: [
     presetUno(),
     presetAttributify(),

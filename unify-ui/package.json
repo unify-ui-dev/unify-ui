@@ -1,0 +1,22 @@
+{
+  "name": "unify-ui",
+  "version": "0.0.0",
+  "description": "The atomic UI Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "unifyui-dev",
+  "license": "ISC",
+  "dependencies": {
+    "unbuild": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.27",
+    "@unocss/reset": "^0.58.6",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2",
+    "unocss": "^0.58.6"
+  }
+}
