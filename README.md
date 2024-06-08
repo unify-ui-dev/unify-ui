@@ -16,46 +16,12 @@
 <p></p>
 
 
-## 🔍 Table of Contents
-
-- [💻 Resources](💻 Resources)
-
-- [🔍 Table of Contents](#-table-of-contents)
-- [💻 Resources](#-resources)
-  - [Presets](#presets)
-- [📝 Project Summary](#-project-summary)
-- [⚙️ Setting Up](#️-setting-up)
-    - [Local Development](#local-development)
-- [🙌 Credit](#-credit)
-- [Contributing](#contributing)
-- [Request Component/Block](#request-componentblock)
-- [📄 License](#-license)
-
-## 💻 Resources
-
-- [Uno css](https://unocss.dev)
-- [Vite js](https://vitejs.dev)
-- [Carbon icon](https://carbondesignsystem.com/guidelines/icons/library/)
-- [Heroicons](https://heroicons.com/)
-- [Flowbite Icons](https://flowbite.com/icons/)
-
-### Presets
-
-1. [presetAttributify](https://unocss.dev/presets/attributify), 
-2. [presetIcons](https://unocss.dev/presets/icons), 
-3. [presetMini](https://unocss.dev/presets/mini)
-
 
 ## 📝 Project Summary
+ 
+- [ui](./ui/): Contains all UnifyUI blocks.
+- [website](./website/): The main UnifyUI Kit.
 
-- [blocks](blocks): Contains all UnifyUI blocks.
-- [preset](preset): Contains UnifyUI Preset.
-- [components](components): The main UnifyUI Kit (All base components).
-
-
-## ⚙️ Setting Up
-
-#### Local Development
 
 
 
