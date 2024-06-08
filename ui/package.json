@@ -1,0 +1,25 @@
+{
+  "name": "unify-ui-html",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@iconify-json/ph": "^1.1.13",
+    "@julr/unocss-preset-forms": "^0.1.0",
+    "@types/node": "^20.13.0",
+    "@unocss/preset-icons": "^0.60.4",
+    "typescript": "^5.2.2",
+    "unocss": "^0.60.4",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "@flexilla/flexilla": "^2.0.5",
+    "@unocss/reset": "^0.60.4",
+    "glob": "^10.4.1"
+  }
+}
