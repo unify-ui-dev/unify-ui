@@ -1,0 +1,33 @@
+{
+  "name": "unify-ui-dev",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build --remote",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.5.8",
+    "@astrojs/db": "^0.11.7",
+    "@astrojs/mdx": "^3.1.2",
+    "@astrojs/vercel": "^7.7.2",
+    "@astrojs/vue": "^4.5.0",
+    "@flexilla/flexilla": "^2.0.5",
+    "astro": "^4.11.3",
+    "lightningcss": "^1.25.1",
+    "overlayscrollbars": "^2.9.1",
+    "typescript": "^5.2.2",
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "@iconify-json/ph": "^1.1.13",
+    "@julr/unocss-preset-forms": "^0.1.0",
+    "@unocss/transformer-directives": "^0.61.0",
+    "pagefind": "^1.1.0",
+    "shikiji-transformers": "^0.10.2",
+    "unocss": "^0.61.0"
+  }
+}
