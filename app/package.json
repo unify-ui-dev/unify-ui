@@ -4,10 +4,17 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
+    "dev-host": "astro dev --host",
     "start": "astro dev",
     "build": "astro check && astro build --remote",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "page-find": "pagefind",
+    "page-find-build": "npm run build && pagefind",
+    "vercel-deploy-preview": "vercel deploy --prebuilt",
+    "build-deploy-preview": "npm run build && npm run vercel-deploy-preview",
+    "vercel-deploy-prod": "vercel deploy --prebuilt && vercel --prod",
+    "build-deploy-prod": "npm run build && npm run vercel-deploy-prod"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.8",
@@ -25,6 +32,7 @@
   "devDependencies": {
     "@iconify-json/ph": "^1.1.13",
     "@julr/unocss-preset-forms": "^0.1.0",
+    "@unifydev/preset-ui": "^0.0.2-beta.0",
     "@unocss/transformer-directives": "^0.61.0",
     "pagefind": "^1.1.0",
     "shikiji-transformers": "^0.10.2",

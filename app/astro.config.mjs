@@ -3,6 +3,7 @@ import vue from "@astrojs/vue";
 import mdx from "@astrojs/mdx";
 import vercel from "@astrojs/vercel/serverless";
 import { transformerNotationDiff } from "shikiji-transformers";
+import unoCSS from "unocss/astro"
 
 import db from "@astrojs/db";
 
