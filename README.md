@@ -19,9 +19,8 @@
 
 ## 📝 Project Summary
  
-- [ui](./ui/): Contains all UnifyUI blocks.
-- [website](./website/): The main UnifyUI Kit.
-
+- [ui](./ui/): Contains blocks and components
+- [app](./app/): Website and docs.
 
 
 

@@ -14,6 +14,7 @@ import { presetForms } from "@julr/unocss-preset-forms";
 import { presetUI } from "@unifydev/preset-ui";
 
 
+
 export default defineConfig({
   theme: {
     colors: {
@@ -27,7 +28,7 @@ export default defineConfig({
         success: colors.emerald,
         warning: colors.orange,
         info: colors.cyan,
-        gray: colors.stone,
+        gray: colors.slate,
         black: colors.black,
         white: colors.white,
     },
