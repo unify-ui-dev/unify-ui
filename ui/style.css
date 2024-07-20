@@ -1,4 +1,17 @@
 
+:root{
+  --c-primary-50: 239, 238, 255;
+  --c-primary-100: 226, 224, 255;
+  --c-primary-200: 202, 199, 254;
+  --c-primary-300: 170, 165, 252;
+  --c-primary-400: 136, 129, 248;
+  --c-primary-500: 107, 99, 241;
+  --c-primary-600: 79, 70, 229;
+  --c-primary-700: 64, 56, 202;
+  --c-primary-800: 55, 48, 163;
+  --c-primary-900: 51, 46, 129;
+  --c-primary-950: 30, 27, 75;
+}
 
 @media (prefers-color-scheme: dark) {
     .dark:root {
