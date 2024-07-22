@@ -1,11 +1,12 @@
 import { defineConfig } from 'astro/config';
 import vue from "@astrojs/vue";
 import mdx from "@astrojs/mdx";
-import vercel from "@astrojs/vercel/serverless";
 import { transformerNotationDiff } from "shikiji-transformers";
 import unoCSS from "unocss/astro";
 import db from "@astrojs/db";
 import dynamicImport from 'astro-dynamic-import';
+
+import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
@@ -41,5 +42,5 @@ export default defineConfig({
     }
   },
   output: "hybrid",
-  adapter: vercel(),
+  adapter: netlify()
 });
