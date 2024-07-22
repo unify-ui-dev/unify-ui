@@ -1,5 +1,5 @@
 import {
-  defineConfig, presetAttributify, presetIcons, presetUno, presetMini,
+  defineConfig, presetIcons, presetUno, presetMini,
   type Preset,
 } from "unocss";
 
@@ -151,10 +151,11 @@ export default defineConfig({
       'tab-content-ui': 'fixed top-25 right-4 sm-right-8 xl-sticky xl-top-16 flex flex-col wfull overflow-hidden overflow-y-auto',
       'tab-content-ui-states': 'invisible fx-open-visible op0 translate-y-4 fx-open-translate-y-0 fx-open-op100 xl-op100 xl-visible xl-translate-y-0',
       'tab-content-ui-bg': 'b bdr-nm b-op90 dark-b-op60 bg-nm !bg-op70 backdrop-blur-xl !lg-bg-transparent !lg-b-transparent',
-      'mdx-tbody': '[&>tr>td]-px4 [&>tr>td]-py1 divide-y divide-gray200 dark-divide-gray800 [&>tr]-!b-dashed',
-      'mdx-thead': 'relative before-absolute before-inset-0 before-content-empty before-bg-nm-gray before-!bg-op60 before-rd-lg before-b before-bdr-high before-!b-op90 dark-before-!b-op60 text-left [&>tr]-relative [&>tr>th]-px4 [&>tr>th]-py1 text-title [&>tr>th]-font-medium',
+      'mdx-tbody': '[&>tr>td]-px2.5 [&>tr>td]-py1.5 divide-y divide-gray200 dark-divide-gray800 [&>tr]-!b-dashed',
+      'mdx-thead': 'relative text-sm before-absolute before-inset-0 before-content-empty before-bg-nm-gray before-!bg-op60 before-rd-t-md text-left [&>tr]-relative [&>tr>th]-px2.5 [&>tr>th]-py3 text-sub-title [&>tr>th]-font-medium',
       'box-tab-content': 'rd-lg xl-p0 z40 hmax max-h90 xl-max-h-none xl-h[calc(100dvh-4rem)] w60 xl-wfull',
-      'tab-content-animation': "ease-linear duration-20"
+      'tab-content-animation': "ease-linear duration-20",
+      'default-preview-box':'h32 sm-h56 p1.5 md-p10'
 
     }
   ],
@@ -163,8 +164,7 @@ export default defineConfig({
     presetForms({
       strategy: "base", // Only add preflights and not new rules
     }),
-    presetAttributify(),
-    presetUI({}) as Preset,
+    presetUI({}),
 
     presetIcons({
       collections: {
@@ -177,7 +177,6 @@ export default defineConfig({
           'list-broken': '<svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M20 7H4m11 5H4m5 5H4"/></svg>',
           'adobe': '<svg viewBox="0 0 30 26" fill="#E1251B" aria-label="Adobe" height="22"><polygon points="19,0 30,0 30,26"></polygon><polygon points="11.1,0 0,0 0,26"></polygon><polygon points="15,9.6 22.1,26 17.5,26 15.4,20.8 10.2,20.8"></polygon></svg>',
         },
-        ph: () => import('@iconify-json/ph/icons.json').then(i => i.default),
       },
       extraProperties: {
         display: 'inline-block',

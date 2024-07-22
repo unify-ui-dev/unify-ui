@@ -7,11 +7,13 @@ import unoCSS from "unocss/astro"
 
 import db from "@astrojs/db";
 
+import dynamicImport from 'astro-dynamic-import';
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [vue(), mdx(), db(), unoCSS({
     injectReset: true
-  })],
+  }), dynamicImport()],
   redirects: {
     "/docs": {
       status: 302,
@@ -29,9 +31,11 @@ export default defineConfig({
   markdown: {
     shikiConfig: {
       theme: "css-variables",
-      transformers: [transformerNotationDiff()]
+      transformers: [transformerNotationDiff()],
+      
     }
   },
+
   vite: {
     css: {
       transformer: "lightningcss"
@@ -40,6 +44,6 @@ export default defineConfig({
       cssMinify: 'lightningcss'
     }
   },
-  output: "server",
+  output: "hybrid",
   adapter: vercel()
 });
