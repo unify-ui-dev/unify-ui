@@ -1,33 +1,21 @@
 :root {
-  --astro-code-color-text: #24292f;
-  --astro-code-color-background: #ffffff;
-  --astro-code-token-constant: #005cc5;
-  --astro-code-token-string: #032f62;
-  --astro-code-token-comment: #6a737d;
-  --astro-code-token-keyword: #d73a49;
-  --astro-code-token-parameter: #24292f;
-  --astro-code-token-function: #6f42c1;
-  --astro-code-token-string-expression: #005cc5;
-  --astro-code-token-punctuation: #24292f;
-  --astro-code-token-link: #22863a;
-
-  --list-circle-indi: rgb(var(--c-gray-400));
+  --astro-code-color-background: rgb(var(--c-gray-900));
+  --astro-code-background:transparent;
+  --astro-code-token-constant: #C678DD;
+  --astro-code-token-string: #98C379;
+  --astro-code-token-comment: #ABB2BF;
+  --astro-code-token-keyword: #E06C75;
+  --astro-code-token-parameter: #E5C07B;
+  --astro-code-token-function: #61AFEF;
+  --astro-code-token-string-expression: #98C379;
+  --astro-code-token-punctuation: #ABB2BF;
+  --astro-code-token-link: #80cbc4;
+  --astro-code-foreground:rgb(var(--c-gray-400));
+  --astro-code-color-text:rgb(var(--c-gray-400));
 }
 
 html.dark {
-  --astro-code-color-text: #ffffff;
-  --astro-code-color-background: #212121;
-  --astro-code-token-constant: #82aaff;
-  --astro-code-token-string: #c3e88d;
-  --astro-code-token-comment: #546e7a;
-  --astro-code-token-keyword: #ff5370;
-  --astro-code-token-parameter: #ffffff;
-  --astro-code-token-function: #c792ea;
-  --astro-code-token-string-expression: #82aaff;
-  --astro-code-token-punctuation: #eeffff;
-  --astro-code-token-link: #80cbc4;
-
-  --list-circle-indi: rgb(var(--c-gray-800));
+  --astro-code-color-background: rgb(0 0 0 / 0.3);
 }
 
 .line.diff {
@@ -106,12 +94,17 @@ html.dark h3>code, html.dark td>code {
   color: rgb(var(--c-gray-300));
 }
 
-[data-shell-indicator] .line {
-  position: relative;
-  padding-left: 18px;
+figure pre{
+  padding-left: 1.45rem;
+  padding-right: 1.45rem;
 }
 
-[data-shell-indicator] .line:not(:last-child)::before {
+[data-shell-indicator=true] .line {
+  position: relative;
+  padding-left: 24px;
+}
+
+[data-shell-indicator=true] .line:not(:last-child)::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -122,10 +115,20 @@ html.dark h3>code, html.dark td>code {
 }
 
 [data-code-snippet] code{
-  padding-left: 1.5rem; /* 24px */
-  padding-right: 1.5rem; /* 24px */
-  padding-left: 1.5rem; /* 24px */
-  padding-right: 1.5rem; /* 24px */
   padding-top: 0.75rem; /* 12px */
   padding-bottom: 0.75rem; /* 12px */
+}
+
+
+
+[data-invisible-scrollbar] {
+  scrollbar-width: none !important;
+}
+
+[data-invisible-scrollbar]::-webkit-scrollbar{
+  -webkit-appearance: none !important;
+          appearance: none !important;
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
 }
