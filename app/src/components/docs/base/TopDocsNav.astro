@@ -7,11 +7,11 @@ const { hideTableOfContent } = Astro.props;
 ---
 
 <div
-  class={`h12 top-14 sticky ${hideTableOfContent ? "flex md-hidden" : "flex xl-hidden"} z40 lg-pl8 b-b bdr_b-nm`}
+  class={`h12 top-14 sticky ${hideTableOfContent ? "hidden" : "flex xl-hidden"} z40 lg-pl8 b-b bdr_b-nm`}
 >
   <span aria-hidden="true" class="blured-bg-ui"></span>
   <div
-    class="relative hfull wfull flex justify-between items-center px4 sm-px8 md-px0"
+    class="relative hfull wfull flex justify-between items-center px4 sm-px8 lg-px0"
   >
     <button
       data-offcanvas-trigger

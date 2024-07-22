@@ -1,5 +1,6 @@
 {
   "name": "unify-ui-dev",
+  "description": "UnifyUI.dev Official Website",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -12,9 +13,9 @@
     "page-find": "pagefind",
     "page-find-build": "npm run build && pagefind",
     "vercel-deploy-preview": "vercel deploy --prebuilt",
-    "build-deploy-preview": "npm run build && npm run vercel-deploy-preview",
-    "vercel-deploy-prod": "vercel deploy --prebuilt && vercel --prod",
-    "build-deploy-prod": "npm run build && npm run vercel-deploy-prod"
+    "build-deploy-preview": "npm run page-find-build && npm run vercel-deploy-preview",
+    "vercel-deploy-prod": "vercel --prod",
+    "build-deploy-prod": "npm run page-find-build && vercel --prod"
   },
   "dependencies": {
     "@astrojs/check": "^0.8.2",
