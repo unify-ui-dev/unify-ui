@@ -1,6 +1,5 @@
 import {
-  defineConfig, presetIcons, presetUno, presetMini,
-  type Preset,
+  defineConfig, presetIcons, presetUno, presetMini
 } from "unocss";
 
 import { colors } from "@unocss/preset-mini/colors";

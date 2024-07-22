@@ -1,6 +1,4 @@
 ---
-//export const prerender = true;
-
 import { splitSlugUrl } from "@helper/string-helper";
 import { getCollection } from "astro:content";
 import DocLayout from "@layouts/DocsLayout.astro";
@@ -50,7 +48,7 @@ const words = splitSlugUrl(slug);
   description={`${current.description}`}
   keywords={current.keywords}
 >
-  <article data-pagefind-body class="lg-px8 xl-px16 grid text-body h-max">
+  <article data-pagefind-body class="px4 sm-px8 xl-px16 grid text-body h-max">
     <DocPageHeader
       title={title}
       subTitle={description}
