@@ -19,10 +19,29 @@ We need to have `UnoCSS` & `Preset UI` installed.
 npm i -D unocss @unifydev/preset-ui
 ```
 </BoxCode>
+
+To learn more about installing UnoCSS and PresetUI, check [this guide](/preset/installation) 
 </Step>
 <Step>
-### Configuration
+### Add interactivity
 
+If you're willing to use interactive component then make sure to have [Flexilla]() installed or the corresponding Flexilla Package
+
+<BoxCode title={"Shell"} icon={"shell"} shellStyle>
+```bash
+npm i @flexilla/flexilla
+```
+</BoxCode>
+
+To init all components 
+
+<BoxCode title={"script.js"} icon={"js"}>
+```ts
+import {initFlexilla} from "@flexilla/flexilla"
+
+initFlexilla() // This will init all interactive component for all element with data-fx-COmponentName attribute
+```
+</BoxCode>
 </Step>
 </Steps>
 
@@ -35,4 +54,3 @@ You can start even faster with our boilerplate :
 - [AstroJS + VueJS + RadixVue Boilerplate]()
 - [Nuxt + RadixVue Boilerplate]()
 - [Nuxt + Headless UI Boilerplate]()
-- [Laravel Boilerplate]()

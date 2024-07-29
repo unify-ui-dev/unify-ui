@@ -24,7 +24,7 @@
                 Default TextArea
             </h1>
             <div class="p-6 flex flex-wrap gap-3 rd-lg b bdr-high">
-                <textarea placeholder="Your email here" class="input input-md input-bordered bg-body rd-md"></textarea>
+                <textarea placeholder="Your email here" class="form-input form-input-md form-input-bordered bg-body rd-md"></textarea>
             </div>
         </div>
         <div class="space-y-6">
@@ -32,7 +32,7 @@
                 NoResize TextArea
             </h1>
             <div class="p-6 flex flex-wrap gap-3 rd-lg b bdr-high">
-                <textarea placeholder="Your email here" class="resize-none input input-md input-bordered bg-body rd-md"></textarea>
+                <textarea placeholder="Your email here" class="resize-none form-input form-input-md form-input-bordered bg-body rd-md"></textarea>
             </div>
         </div>
         <div class="space-y-6">
@@ -40,7 +40,7 @@
                 AutoResize
             </h1>
             <div class="p-6 flex flex-wrap gap-3 rd-lg b bdr-high">
-                <textarea placeholder="Your email here" data-autoresizable class="w-full input-md input-bordered bg-body rd-md"></textarea>
+                <textarea placeholder="Your email here" data-autoresizable class="w-full form-input-md form-input-bordered bg-body rd-md"></textarea>
             </div>
         </div>
         <div class="space-y-6">
@@ -48,7 +48,7 @@
                 Gray
             </h1>
             <div class="p-6 flex flex-wrap gap-3 rd-lg b bdr-high">
-                <textarea type="text" placeholder="Your email here" class="w-full px-3 py-1.5 rounded-md border border-gray-200 dark:border-gray-800 focus:border-transparent focus:outline focus:outline-2 focus:outline-primary-600 dark:focus:outline-primary-500 placeholder:text-gray-400 dark:placeholder:text-gray-600 text-body ring-0 ring-inset focus:ring-transparent focus:outline-offset-0 bg-gray-100 dark:bg-gray-900  invalid:outline-danger-600 dark:invalid:outline-danger-500input input-md input-bordered bg-high rd-md"></textarea>
+                <textarea placeholder="Your email here" class="form-input form-input-md form-input-bordered-high bg-high rd-md"></textarea>
             </div>
         </div>
         <div class="space-y-6">
@@ -56,10 +56,9 @@
                 With Label
             </h1>
             <div class="p-6 flex flex-col gap-3 rd-lg b bdr-high">
-                <div class="flex flex-col w-max space-y-2">
-                    <label for="message" class="text-sm text-sub-body">Your Message</label>
-                    <textarea id="message" name="message" placeholder="Tell us your ...." class="wfull input input-md input-bordered bg-body rd-md">
-                    </textarea>
+                <div class="flex flex-col space-y-2">
+                    <label for="message" class="w-max text-sm text-sub-body">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us your ...." class="form-input form-input-md form-input-bordered bg-body rd-md"></textarea>
                 </div>
             </div>
         </div>
@@ -68,7 +67,7 @@
                 Disabled
             </h1>
             <div class="p-6 flex flex-wrap gap-3 rd-lg b bdr-high">
-                <textarea disabled placeholder="disabled input" class="w-full input input-md input-bordered bg-body rd-md"></textarea>
+                <textarea disabled placeholder="disabled form-input" class="w-full form-input form-input-md form-input-bordered bg-body rd-md"></textarea>
             </div>
         </div>
     </section>

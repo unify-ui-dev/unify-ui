@@ -12,6 +12,7 @@ import { contribUrl, repoContentLocation } from "@/const/index";
 import DocPageHeader from "@components/docs/DocPageHeader.astro";
 import BoxTableOfContent from "@components/docs/ui/BoxTableOfContent.astro";
 import DefaultModal from "@components/registry/alert-dialog/modals/DefaultModal.astro";
+import SlideOver from "@components/registry/slideover/SlideOver.astro";
 
 export async function getStaticPaths() {
   const componentDocs = await getCollection("components");
@@ -44,7 +45,7 @@ const words = splitSlugUrl(slug);
   activeGroup="components"
   activeItem={`/components/${slug}`}
   headings={headings}
-  title={`${current.title}`}
+  title={`UnifyUI Component - ${current.title}`}
   description={`${current.description}`}
   keywords={current.keywords}
   hideTableOfContent={hideTableOfContent}
@@ -118,6 +119,15 @@ const words = splitSlugUrl(slug);
       <div slot="modalZone" class="z100 fixed">
         <DefaultModal />
       </div>
-    ) : null
+    ) :  id === 'slideover.mdx' ? (
+      <div slot="modalZone" class="z100 fixed">
+        <SlideOver position="top" id="slide-over-top"/>
+        <SlideOver position="bottom" id="slide-over-bottom"/>
+        <SlideOver position="left" id="slide-over-from-left"/>
+        <SlideOver position="right" id="slide-over-from-right"/>
+        <SlideOver position="right" id="slide-over-overlay"  data-offcanvas-backdrop="u-fx-overlay bg-gray-800/80"/>
+        <SlideOver position="right" id="slide-over-overlay1"  data-offcanvas-backdrop="u-fx-overlay backdrop-filter backdrop-blur-xl bg-gray-800/50"/>
+      </div>
+    ):null
   }
 </DocLayout>
