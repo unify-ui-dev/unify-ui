@@ -133,7 +133,7 @@ export default defineConfig({
   },
   shortcuts: [
     {
-      'blured-bg-ui': 'flex absolute inset-0 bg-body !bg-op30 backdrop-blur-sm py',
+      'blured-bg-ui': 'flex absolute inset-0 bg-body !bg-op70 backdrop-blur-sm py',
       'btn-nav-icon': 'flex p1.5 items-center hover-bg-nm rd-lg text-xl duration-200 ease-linear',
       'navbar-ui-states': 'op0 invisible fx-open-ease-linear fx-open-transition-all fx-open-visible fx-open-op100 lg-visible lg-op100 lg-fx-open-transition-none',
       'navbar-ui': 'px4 sm-px8 lg-px0 pt5 xl-pt0 bg-body xl-!bg-transparent fixed lg-relative top-16 lg-top-0 left-0 z130 xl-z-auto',
@@ -141,9 +141,9 @@ export default defineConfig({
       'fx-site-dropdown': 'invisible fx-open-visible op0 fx-open-op100 transition-opacity duration-200 ease-linear',
       'btn-palette': 'wfull flex flex-col items-center text-center gap-1 ring-2 ring-transparent ring-offset-2 ring-offset-white dark-ring-offset-gray-950 focus-visible-ring-[--palette-main-color] b b-transparent aria-checked-b-primary600 aria-checked-bg-nm aria-checked-!bg-op50 rd-md outline-0 focus-outline-0 [&[aria-checked=true]>[data-text]]-text-primary600 dark-[&[aria-checked=true]>[data-text]]-text-primary400',
       'palette-token': 'bg-[var(--palette-token)] wfull hfull flex',
-      'btn-input-search': 'h9 b bdr-nm rd-lg pl3 pr1.5 w50 hidden md-flex items-center justify-between gap-x2 text-sm hover-bdr-high hover-!b-op30 hover-bg-nm hover-!bg-op40',
+      'btn-input-search': 'h9 b bdr-high rd-lg pl3 pr1.5 w50 hidden md-flex items-center justify-between gap-x2 text-sm hover-bdr-high hover-!b-op30 hover-bg-nm hover-!bg-op40',
       'sidebar-states': 'invisible lg-visible -translate-x-full transition lg-transition-none fx-open-visible fx-open-translate-x-0 lg-translate-x-0 left-0',
-      'sidebar-size': 'w11/12 max-w56 sm-w56 lg-max-wnone md-wfull h100dvh md-h-[calc(100dvh-3.5rem)] overflow-hidden',
+      'sidebar-size': 'w11/12 max-w64 lg-max-wnone md-wfull h100dvh md-h-[calc(100dvh-3.5rem)] overflow-hidden',
       'sidebar-position': 'fixed top-0 lg-sticky lg-top-14',
       'sidebar-bg': 'bg-body  !bg-op60 backdrop-blur-xl lg-backdrop-filter-none lg-!bg-transparent',
       'btn-show-table-content': 'b bdr-nm rd-lg py1.5 px2 flex items-center gap-x1 rd-lg text-sm hover-bg-nm ease-linear [&[aria-expanded=true]>span]:rotate-180',

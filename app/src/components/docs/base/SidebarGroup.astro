@@ -7,9 +7,9 @@ type Props = {
   items: {
     title: string;
     path: string;
-    state?: "updated" | "draft" | "new" | "none";
+    state?: "updated" | "draft" | "new" | "none" | "wip";
   }[];
-}
+};
 const { label, items, activeItem } = Astro.props;
 ---
 
@@ -46,6 +46,13 @@ const { label, items, activeItem } = Astro.props;
                     class="badge-sm rd-lg ui-subtle-primary"
                   >
                     new
+                  </span>
+                ) : item.state === "wip" ? (
+                  <span
+                    aria-hidden="true"
+                    class="badge-sm rd-lg ui-subtle-accent"
+                  >
+                    Wip
                   </span>
                 ) : null
               ) : null}

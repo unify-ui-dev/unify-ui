@@ -117,12 +117,6 @@ export const sidebarItems: SidebarGroupCat[] = [
                 label: "Utilities",
                 items: [
                     {
-                        title: "Introduction",
-                        path: "/preset/utilities/introduction",
-                        description: "Generated on demand and follows atomic CSS principles",
-                        keywords: "PresetUI, introduction, UnoCSS, UnifyUI, uno css, preset ui, unify, unify ui",
-                    },
-                    {
                         title: "Button",
                         path: "/preset/utilities/button",
                         description: "Preset UI Button Variants - Customize Colors and Sizes",
@@ -173,7 +167,7 @@ export const sidebarItems: SidebarGroupCat[] = [
                         path: "/preset/utilities/progressbar",
                         description: "",
                         keywords: "",
-                        state: "draft",
+                        state: "wip",
                     },
                     {
                         title: "Foreground",
@@ -258,6 +252,12 @@ export const sidebarItems: SidebarGroupCat[] = [
                         keywords: ""
                     },
                     {
+                        title: "Breadcrumbs",
+                        path: "/components/breadcrumbs",
+                        description: "",
+                        keywords: ""
+                    },
+                    {
                         title: "Button",
                         path: "/components/button",
                         description: "",
@@ -272,6 +272,12 @@ export const sidebarItems: SidebarGroupCat[] = [
                     {
                         title: "Checkbox",
                         path: "/components/checkbox",
+                        description: "",
+                        keywords: ""
+                    },
+                    {
+                        title: "Chip",
+                        path: "/components/chip",
                         description: "",
                         keywords: ""
                     },
@@ -298,42 +304,96 @@ export const sidebarItems: SidebarGroupCat[] = [
                         path: "/components/kbd",
                         description: "",
                         keywords: "",
-                        state: "draft",
+                    },
+                    {
+                        title: "Link",
+                        path: "/components/link",
+                        description: "",
+                        keywords: "",
                     },
                     {
                         title: "Meter",
                         path: "/components/meter",
                         description: "",
                         keywords: "",
-                        state: "draft",
+                    },
+                    {
+                        title: "Pagination",
+                        path: "/components/pagination",
+                        description: "",
+                        keywords: "",
+                    },
+                    {
+                        title: "Popover",
+                        path: "/components/popover",
+                        description: "",
+                        keywords: "",
                     },
                     {
                         title: "Progress",
                         path: "/components/progress",
                         description: "",
                         keywords: "",
-                        state: "draft",
                     },
                     {
                         title: "Radio",
                         path: "/components/radio",
                         description: "",
                         keywords: "",
-                        state: "draft",
                     },
                     {
                         title: "Range",
                         path: "/components/range",
                         description: "",
                         keywords: "",
-                        state: "draft",
+                    },
+                    {
+                        title: "Select",
+                        path: "/components/select",
+                        description: "",
+                        keywords: "",
+                    },
+                    {
+                        title: "Skeleton",
+                        path: "/components/skeleton",
+                        description: "",
+                        keywords: "",
+                    },
+                    {
+                        title: "Slideover",
+                        path: "/components/slideover",
+                        description: "",
+                        keywords: "",
                     },
                     {
                         title: "Switch",
                         path: "/components/switch",
                         description: "",
                         keywords: "",
-                        state: "draft",
+                    },
+                    {
+                        title: "Table",
+                        path: "/components/table",
+                        description: "",
+                        keywords: "",
+                    },
+                    {
+                        title: "Tabs",
+                        path: "/components/tabs",
+                        description: "",
+                        keywords: "",
+                    },
+                    {
+                        title: "Text Area",
+                        path: "/components/text-area",
+                        description: "",
+                        keywords: "",
+                    },
+                    {
+                        title: "Tooltip",
+                        path: "/components/tooltip",
+                        description: "",
+                        keywords: "",
                     },
                 ]
             },

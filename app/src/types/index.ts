@@ -13,7 +13,7 @@ export type SidebarItem = {
     path: string;
     description: string;
     keywords: string;
-    state?: "updated" | "draft" | "new" | "none"
+    state?: "updated" | "draft" | "new" | "none" | "wip"
 }
 type SidebarGroupItems = {
     label: string;

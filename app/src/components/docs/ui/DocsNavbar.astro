@@ -1,5 +1,5 @@
 ---
-import { discordServer, githubUrl } from "@/const/index";
+import { githubUrl } from "@/const/index";
 import AppLogoLink from "@components/atoms/AppLogoLink.astro";
 import Container from "@components/atoms/Container.astro";
 import PageFind from "@components/ui/PageFind.astro";
@@ -7,33 +7,42 @@ import ThemeDropdown from "@components/ui/ThemeSetting.astro";
 
 const navItems = [
   {
-    text: "Documentation",
+    text: "Docs",
     path: "/docs/",
   },
   {
-    text: "Playground",
-    path: "/playground/",
+    text: "Components",
+    path: "/components/",
+  },
+  {
+    text: "Blocks",
+    path: "/blocks/",
   },
   {
     text: "Templates",
     path: "/templates/",
-  },
+  }
 ];
 ---
 
 <header class="sticky top-0 h14 b-b bdr_b-high flex items-center z80">
-  <span aria-hidden="true" class="blured-bg-ui"/>
+  <span aria-hidden="true" class="blured-bg-ui"></span>
   <Container class={"flex justify-between items-center gap-8 relative"}>
     <AppLogoLink />
-    <div data-navbar class="w-full lg-wauto flex items-center flex-1 navbar-ui navbar-ui-h navbar-ui-states overflow-small-device">
-      <ul class="flex flex-col lg-flex-row gap3 md-gap4 text-body hfull wfull">
+    <div
+      data-navbar
+      class="w-full lg-wauto flex items-center flex-1 navbar-ui navbar-ui-h navbar-ui-states overflow-small-device"
+    >
+      <ul class="flex flex-col lg-flex-row gap3 md-gap4 text-sub-body hfull wfull text-sm">
         {
           navItems.map((navItem) => (
-            <li class="flex">
+            <li
+              class={`flex`}
+            >
               <a
                 href={navItem.path}
                 aria-label={`Link to ${navItem.text}`}
-                class="ease-linear duration-200 hover-text-title"
+                class={`ease-linear duration-200 hover-text-title`}
               >
                 {navItem.text}
               </a>
@@ -44,17 +53,8 @@ const navItems = [
     </div>
     <div class="flex items-center gap-x0.5 text-body">
       <div class="pr-2.5 b-r bdr_r-nm mr1.5">
-        <PageFind/>
+        <PageFind />
       </div>
-      <a
-        href={discordServer}
-        target="_blank"
-        aria-label="link to UnifyUIDev Discord Server"
-        rel="noopener noreferrer"
-        class="btn-nav-icon"
-      >
-        <span aria-hidden="true" class="flex i-fx-discord"></span>
-      </a>
       <a
         href={githubUrl}
         target="_blank"
@@ -69,9 +69,19 @@ const navItems = [
         <span class="i-fx-moon-star flex dark-hidden"></span>
       </button>
       <ThemeDropdown />
-      <button data-toggle-navbar aria-label="Toggle Navbar" class="flex flex-col space-y-2 rd-lg hover-bg-nm ease-linear duration-200 px1.5 py2.5 lg-hidden group">
-        <span aria-hidden="true" class="group-fx-open-rotate-45 group-fx-open-translate-y-1.5 w6 h0.5 rd-full bg-current text-sub-body"></span>
-        <span aria-hidden="true" class="group-fx-open--rotate-45 group-fx-open--translate-y-1 w6 h0.5 rd-full bg-current text-sub-body"></span>
+      <button
+        data-toggle-navbar
+        aria-label="Toggle Navbar"
+        class="flex flex-col space-y-2 rd-lg hover-bg-nm ease-linear duration-200 px1.5 py2.5 lg-hidden group"
+      >
+        <span
+          aria-hidden="true"
+          class="group-fx-open-rotate-45 group-fx-open-translate-y-1.5 w6 h0.5 rd-full bg-current text-sub-body"
+        ></span>
+        <span
+          aria-hidden="true"
+          class="group-fx-open--rotate-45 group-fx-open--translate-y-1 w6 h0.5 rd-full bg-current text-sub-body"
+        ></span>
       </button>
     </div>
   </Container>

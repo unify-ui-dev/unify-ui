@@ -1,5 +1,6 @@
 import { $ } from "@assets/js/selector";
-const tabOfContentMob = $("[data-table-of-content]");
+const initTabOfContent = ()=>{
+  const tabOfContentMob = $("[data-table-of-content]");
 const trigger = $("[data-trigger-tab-content]");
 if (tabOfContentMob && trigger) {
   const toggleTabOfContent = () => {
@@ -34,4 +35,5 @@ if (tabOfContentMob && trigger) {
   };
   trigger.addEventListener("click", toggleTabOfContent);
   tabOfContentMob.addEventListener("click", hideTabOfContent);
+}
 }

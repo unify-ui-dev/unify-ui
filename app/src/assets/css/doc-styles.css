@@ -32,7 +32,7 @@ html.dark {
 .line.diff.add::before,
 .line.diff.remove::before {
   position: absolute;
-  left: 0px;
+  left: -4px;
   top: 0px;
   bottom: 0px;
   width: 24px;
@@ -42,9 +42,9 @@ html.dark {
 
 .line.diff.add {
   --fx-gradient-from-position: 0%;
-  --fx-gradient-from: rgb(var(--c-success-900) / 0.02) var(--fx-gradient-from-position);
+  --fx-gradient-from: rgba(var(--c-success-900) , 0.02) var(--fx-gradient-from-position);
   --fx-gradient-to-position: 100%;
-  --fx-gradient-to: rgb(var(--c-success-500) / 0.09) var(--fx-gradient-to-position);
+  --fx-gradient-to: rgba(var(--c-success-500) , 0.09) var(--fx-gradient-to-position);
   --fx-gradient-stops: var(--fx-gradient-from), var(--fx-gradient-to);
   --fx-gradient-shape: to left;
   --fx-gradient: var(--fx-gradient-shape), var(--fx-gradient-stops);
@@ -54,14 +54,15 @@ html.dark {
 .line.diff.add::before {
   content: "+";
   color: rgb(var(--c-info-500));
+  opacity: .5;
   border-left-color: rgb(var(--c-info-500));
 }
 
 .line.diff.remove {
   --fx-gradient-from-position: 0%;
-  --fx-gradient-from: rgb(var(--c-danger-900) / 0.05) var(--fx-gradient-from-position);
+  --fx-gradient-from: rgba(var(--c-danger-900) , 0.05) var(--fx-gradient-from-position);
   --fx-gradient-to-position: 100%;
-  --fx-gradient-to: rgb(var(--c-danger-400) / 0.04) var(--fx-gradient-to-position);
+  --fx-gradient-to: rgba(var(--c-danger-400) , 0.04) var(--fx-gradient-to-position);
   --fx-gradient-stops: var(--fx-gradient-from), var(--fx-gradient-to);
   --fx-gradient-shape: to left;
   --fx-gradient: var(--fx-gradient-shape), var(--fx-gradient-stops);
@@ -70,6 +71,7 @@ html.dark {
 
 .line.diff.remove::before {
   content: "-";
+  opacity: .5;
   color: rgb(var(--c-danger-500));
   border-left-color: rgb(var(--c-danger-500));
 }
@@ -84,6 +86,13 @@ h3>code, td>code {
   border-radius: 0.5rem;
   padding: 0.125rem 0.5rem;
   color: rgb(var(--c-gray-700));
+}
+
+li strong{
+  color:rgb(var(--c-gray-800))
+}
+html.dark li strong{
+  color:rgb(var(--c-gray-100))
 }
 
 html.dark div>code,

@@ -44,7 +44,9 @@ const seo: SeoType = {
 
 <Base seo={seo}>
   <DocNavbar />
-  <div class="max-w7xl grid mx-auto lg-grid-cols-[13rem_minmax(0,1fr)] lg-pl8 xl-pr8">
+  <div
+    class="max-w7xl grid mx-auto lg-grid-cols-[13rem_minmax(0,1fr)] lg-pl8 xl-pr8"
+  >
     <Sidebar activeGroup={activeGroup} activeItem={activeItem} />
     <div class="grid relative">
       <TopDocsNav hideTableOfContent={hideTableOfContent} />
@@ -54,9 +56,16 @@ const seo: SeoType = {
       <DocsFooter />
     </div>
   </div>
-  <slot name="modalZone"/>
+  <slot name="modalZone" />
+  <script>
+    import { initdDocsScript } from "@assets/js/doc-script";
+    import { initScrollbar } from "@assets/js/scrollbar";
+
+    const initMainScript = () => {
+      initScrollbar();
+      initdDocsScript();
+    };
+    initMainScript()
+    document.addEventListener("astro:after-swap", initMainScript);
+  </script>
 </Base>
-<script>
-  import "@assets/js/doc-script";
-  import "@assets/js/scrollbar";
-</script>

@@ -20,11 +20,12 @@ const handleCopy = () => {
     });
   }
 };
+
 </script>
 <template>
-  <div ref="triggerBoxRef" :class="className">
+  <div ref="triggerBoxRef" class="bg-[--astro-code-color-background]" :class="className">
     <button aria-label="copy code to clipboard" :data-state="copiedState" :disabled="copiedState === 'copied'" :class="[
-      'group btn btn-icon-sm rounded-lg hover-bg-gray950 dark-hover-bg-gray900 flex',
+      'group btn btn-icon-sm rd-lg bg-[] hover-bg-gray950 dark-hover-bg-gray900 flex',
       btnClass
     ]" @click="handleCopy">
       <span aria-hidden="true" class="flex relative ease-linear">
