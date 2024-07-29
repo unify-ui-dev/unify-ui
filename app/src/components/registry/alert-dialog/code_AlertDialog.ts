@@ -24,7 +24,7 @@ export const alertDialogCode: ComponentCode = {
         data-enter-animation="fadeInScale .4s linear"
         data-exit-animation="fadeOutScale .1s linear"
         class="u-fx-animated-modal-content relative bg-body rd-lg overflow-hidden w-full max-w-xl p-8 flex flex-col gap-y-4 items-center ease-linear transition-all">
-        <div class="w-max p-3 rounded-full bg-gray-200 dark:bg-gray-800 text-sub-title">
+        <div class="w-max p-3 rd-full bg-gray-200 dark:bg-gray-800 text-sub-title">
            <span aria-hidden="true" class="flex i-ph-question text-xl"></span>
         </div>
         <h2 class="font-semibold text-xl text-title">Confirm your action</h2>

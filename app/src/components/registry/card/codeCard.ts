@@ -44,15 +44,15 @@ export const codeCards: ComponentCode = {
         <div
             class="absolute inset-x-1 top-1 flex justify-between items-center text-body text-xs">
             <span
-                class="ui-subtle dark-text-gray800 px-2 py-px rounded-full">
+                class="ui-subtle dark-text-gray800 px-2 py-px rd-full">
                 -40%
             </span>
             <button aria-label="add to favorite"
-                class="p-1.5 bg-gray-900/80 backdrop-filter backdrop-blur-sm text-white rounded-full">
+                class="p-1.5 bg-gray-900/80 backdrop-filter backdrop-blur-sm text-white rd-full">
                 <span aria-hidden="true" class="flex i-ph-heart"></span>
             </button>
         </div>
-        <img src="/images/bottes-cuir.webp" alt="bottes cuir" class="w-full h-auto rounded-md">
+        <img src="/images/bottes-cuir.webp" alt="bottes cuir" class="w-full h-auto rd-md">
     </div>
     <div class="flex justify-between items-start gap-2 px-4 pt-3 pb-2 text-sm">
         <h2 class="flex-1 text-title font-medium">
@@ -72,7 +72,7 @@ export const codeCards: ComponentCode = {
             Top Seller
         </span>
     </div>
-    <img src="/images/sports-shoe.webp" alt="Sport Shoe" class="w-full h-auto rounded-md">
+    <img src="/images/sports-shoe.webp" alt="Sport Shoe" class="w-full h-auto rd-md">
     <div class="px-4 pb-2 text-sm space-y-2">
         <div class="flex justify-between items-start gap-2">
             <h2 class="flex-1 text-title font-medium">
