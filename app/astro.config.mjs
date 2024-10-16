@@ -1,17 +1,18 @@
 import { defineConfig } from 'astro/config';
 import vue from "@astrojs/vue";
 import mdx from "@astrojs/mdx";
-import vercel from "@astrojs/vercel/serverless";
 import { transformerNotationDiff } from "shikiji-transformers";
-import unoCSS from "unocss/astro"
-
+import unoCSS from "unocss/astro";
 import db from "@astrojs/db";
+import dynamicImport from 'astro-dynamic-import';
+
+import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [vue(), mdx(), db(), unoCSS({
     injectReset: true
-  })],
+  }), dynamicImport()],
   redirects: {
     "/docs": {
       status: 302,
@@ -40,6 +41,6 @@ export default defineConfig({
       cssMinify: 'lightningcss'
     }
   },
-  output: "server",
-  adapter: vercel()
+  output: "hybrid",
+  adapter: netlify()
 });

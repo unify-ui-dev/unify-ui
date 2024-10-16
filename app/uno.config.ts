@@ -1,6 +1,5 @@
 import {
-  defineConfig, presetAttributify, presetIcons, presetUno, presetMini,
-  type Preset,
+  defineConfig, presetIcons, presetUno, presetMini
 } from "unocss";
 
 import { colors } from "@unocss/preset-mini/colors";
@@ -134,7 +133,7 @@ export default defineConfig({
   },
   shortcuts: [
     {
-      'blured-bg-ui': 'flex absolute inset-0 bg-body !bg-op30 backdrop-blur-sm py',
+      'blured-bg-ui': 'flex absolute inset-0 bg-body !bg-op70 backdrop-blur-sm py',
       'btn-nav-icon': 'flex p1.5 items-center hover-bg-nm rd-lg text-xl duration-200 ease-linear',
       'navbar-ui-states': 'op0 invisible fx-open-ease-linear fx-open-transition-all fx-open-visible fx-open-op100 lg-visible lg-op100 lg-fx-open-transition-none',
       'navbar-ui': 'px4 sm-px8 lg-px0 pt5 xl-pt0 bg-body xl-!bg-transparent fixed lg-relative top-16 lg-top-0 left-0 z130 xl-z-auto',
@@ -142,19 +141,20 @@ export default defineConfig({
       'fx-site-dropdown': 'invisible fx-open-visible op0 fx-open-op100 transition-opacity duration-200 ease-linear',
       'btn-palette': 'wfull flex flex-col items-center text-center gap-1 ring-2 ring-transparent ring-offset-2 ring-offset-white dark-ring-offset-gray-950 focus-visible-ring-[--palette-main-color] b b-transparent aria-checked-b-primary600 aria-checked-bg-nm aria-checked-!bg-op50 rd-md outline-0 focus-outline-0 [&[aria-checked=true]>[data-text]]-text-primary600 dark-[&[aria-checked=true]>[data-text]]-text-primary400',
       'palette-token': 'bg-[var(--palette-token)] wfull hfull flex',
-      'btn-input-search': 'h9 b bdr-nm rd-lg pl3 pr1.5 w50 hidden md-flex items-center justify-between gap-x2 text-sm hover-bdr-high hover-!b-op30 hover-bg-nm hover-!bg-op40',
+      'btn-input-search': 'h9 b bdr-high rd-lg pl3 pr1.5 w50 hidden md-flex items-center justify-between gap-x2 text-sm hover-bdr-high hover-!b-op30 hover-bg-nm hover-!bg-op40',
       'sidebar-states': 'invisible lg-visible -translate-x-full transition lg-transition-none fx-open-visible fx-open-translate-x-0 lg-translate-x-0 left-0',
-      'sidebar-size': 'w11/12 max-w56 sm-w56 lg-max-wnone md-wfull h100dvh md-h-[calc(100dvh-3.5rem)] overflow-hidden',
+      'sidebar-size': 'w11/12 max-w64 lg-max-wnone md-wfull h100dvh md-h-[calc(100dvh-3.5rem)] overflow-hidden',
       'sidebar-position': 'fixed top-0 lg-sticky lg-top-14',
       'sidebar-bg': 'bg-body  !bg-op60 backdrop-blur-xl lg-backdrop-filter-none lg-!bg-transparent',
       'btn-show-table-content': 'b bdr-nm rd-lg py1.5 px2 flex items-center gap-x1 rd-lg text-sm hover-bg-nm ease-linear [&[aria-expanded=true]>span]:rotate-180',
       'tab-content-ui': 'fixed top-25 right-4 sm-right-8 xl-sticky xl-top-16 flex flex-col wfull overflow-hidden overflow-y-auto',
       'tab-content-ui-states': 'invisible fx-open-visible op0 translate-y-4 fx-open-translate-y-0 fx-open-op100 xl-op100 xl-visible xl-translate-y-0',
       'tab-content-ui-bg': 'b bdr-nm b-op90 dark-b-op60 bg-nm !bg-op70 backdrop-blur-xl !lg-bg-transparent !lg-b-transparent',
-      'mdx-tbody': '[&>tr>td]-px4 [&>tr>td]-py1 divide-y divide-gray200 dark-divide-gray800 [&>tr]-!b-dashed',
-      'mdx-thead': 'relative before-absolute before-inset-0 before-content-empty before-bg-nm-gray before-!bg-op60 before-rd-lg before-b before-bdr-high before-!b-op90 dark-before-!b-op60 text-left [&>tr]-relative [&>tr>th]-px4 [&>tr>th]-py1 text-title [&>tr>th]-font-medium',
+      'mdx-tbody': '[&>tr>td]-px2.5 [&>tr>td]-py1.5 divide-y divide-gray200 dark-divide-gray800 [&>tr]-!b-dashed',
+      'mdx-thead': 'relative text-sm before-absolute before-inset-0 before-content-empty before-bg-nm-gray before-!bg-op60 before-rd-t-md text-left [&>tr]-relative [&>tr>th]-px2.5 [&>tr>th]-py3 text-sub-title [&>tr>th]-font-medium',
       'box-tab-content': 'rd-lg xl-p0 z40 hmax max-h90 xl-max-h-none xl-h[calc(100dvh-4rem)] w60 xl-wfull',
-      'tab-content-animation': "ease-linear duration-20"
+      'tab-content-animation': "ease-linear duration-20",
+      'default-preview-box':'h32 sm-h56 p1.5 md-p10'
 
     }
   ],
@@ -163,8 +163,7 @@ export default defineConfig({
     presetForms({
       strategy: "base", // Only add preflights and not new rules
     }),
-    presetAttributify(),
-    presetUI({}) as Preset,
+    presetUI({}),
 
     presetIcons({
       collections: {
@@ -177,7 +176,6 @@ export default defineConfig({
           'list-broken': '<svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M20 7H4m11 5H4m5 5H4"/></svg>',
           'adobe': '<svg viewBox="0 0 30 26" fill="#E1251B" aria-label="Adobe" height="22"><polygon points="19,0 30,0 30,26"></polygon><polygon points="11.1,0 0,0 0,26"></polygon><polygon points="15,9.6 22.1,26 17.5,26 15.4,20.8 10.2,20.8"></polygon></svg>',
         },
-        ph: () => import('@iconify-json/ph/icons.json').then(i => i.default),
       },
       extraProperties: {
         display: 'inline-block',

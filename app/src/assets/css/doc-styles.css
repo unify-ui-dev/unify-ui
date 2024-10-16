@@ -1,33 +1,21 @@
 :root {
-  --astro-code-color-text: #24292f;
-  --astro-code-color-background: #ffffff;
-  --astro-code-token-constant: #005cc5;
-  --astro-code-token-string: #032f62;
-  --astro-code-token-comment: #6a737d;
-  --astro-code-token-keyword: #d73a49;
-  --astro-code-token-parameter: #24292f;
-  --astro-code-token-function: #6f42c1;
-  --astro-code-token-string-expression: #005cc5;
-  --astro-code-token-punctuation: #24292f;
-  --astro-code-token-link: #22863a;
-
-  --list-circle-indi: rgb(var(--c-gray-400));
+  --astro-code-color-background: rgb(var(--c-gray-900));
+  --astro-code-background:transparent;
+  --astro-code-token-constant: #C678DD;
+  --astro-code-token-string: #98C379;
+  --astro-code-token-comment: #ABB2BF;
+  --astro-code-token-keyword: #E06C75;
+  --astro-code-token-parameter: #E5C07B;
+  --astro-code-token-function: #61AFEF;
+  --astro-code-token-string-expression: #98C379;
+  --astro-code-token-punctuation: #ABB2BF;
+  --astro-code-token-link: #80cbc4;
+  --astro-code-foreground:rgb(var(--c-gray-400));
+  --astro-code-color-text:rgb(var(--c-gray-400));
 }
 
 html.dark {
-  --astro-code-color-text: #ffffff;
-  --astro-code-color-background: #212121;
-  --astro-code-token-constant: #82aaff;
-  --astro-code-token-string: #c3e88d;
-  --astro-code-token-comment: #546e7a;
-  --astro-code-token-keyword: #ff5370;
-  --astro-code-token-parameter: #ffffff;
-  --astro-code-token-function: #c792ea;
-  --astro-code-token-string-expression: #82aaff;
-  --astro-code-token-punctuation: #eeffff;
-  --astro-code-token-link: #80cbc4;
-
-  --list-circle-indi: rgb(var(--c-gray-800));
+  --astro-code-color-background: rgb(0 0 0 / 0.3);
 }
 
 .line.diff {
@@ -44,7 +32,7 @@ html.dark {
 .line.diff.add::before,
 .line.diff.remove::before {
   position: absolute;
-  left: 0px;
+  left: -4px;
   top: 0px;
   bottom: 0px;
   width: 24px;
@@ -54,9 +42,9 @@ html.dark {
 
 .line.diff.add {
   --fx-gradient-from-position: 0%;
-  --fx-gradient-from: rgb(var(--c-success-900) / 0.02) var(--fx-gradient-from-position);
+  --fx-gradient-from: rgba(var(--c-success-900) , 0.02) var(--fx-gradient-from-position);
   --fx-gradient-to-position: 100%;
-  --fx-gradient-to: rgb(var(--c-success-500) / 0.09) var(--fx-gradient-to-position);
+  --fx-gradient-to: rgba(var(--c-success-500) , 0.09) var(--fx-gradient-to-position);
   --fx-gradient-stops: var(--fx-gradient-from), var(--fx-gradient-to);
   --fx-gradient-shape: to left;
   --fx-gradient: var(--fx-gradient-shape), var(--fx-gradient-stops);
@@ -66,14 +54,15 @@ html.dark {
 .line.diff.add::before {
   content: "+";
   color: rgb(var(--c-info-500));
+  opacity: .5;
   border-left-color: rgb(var(--c-info-500));
 }
 
 .line.diff.remove {
   --fx-gradient-from-position: 0%;
-  --fx-gradient-from: rgb(var(--c-danger-900) / 0.05) var(--fx-gradient-from-position);
+  --fx-gradient-from: rgba(var(--c-danger-900) , 0.05) var(--fx-gradient-from-position);
   --fx-gradient-to-position: 100%;
-  --fx-gradient-to: rgb(var(--c-danger-400) / 0.04) var(--fx-gradient-to-position);
+  --fx-gradient-to: rgba(var(--c-danger-400) , 0.04) var(--fx-gradient-to-position);
   --fx-gradient-stops: var(--fx-gradient-from), var(--fx-gradient-to);
   --fx-gradient-shape: to left;
   --fx-gradient: var(--fx-gradient-shape), var(--fx-gradient-stops);
@@ -82,6 +71,7 @@ html.dark {
 
 .line.diff.remove::before {
   content: "-";
+  opacity: .5;
   color: rgb(var(--c-danger-500));
   border-left-color: rgb(var(--c-danger-500));
 }
@@ -98,6 +88,13 @@ h3>code, td>code {
   color: rgb(var(--c-gray-700));
 }
 
+li strong{
+  color:rgb(var(--c-gray-800))
+}
+html.dark li strong{
+  color:rgb(var(--c-gray-100))
+}
+
 html.dark div>code,
 html.dark li>code,
 html.dark h3>code, html.dark td>code {
@@ -106,12 +103,17 @@ html.dark h3>code, html.dark td>code {
   color: rgb(var(--c-gray-300));
 }
 
-[data-shell-indicator] .line {
-  position: relative;
-  padding-left: 18px;
+figure pre{
+  padding-left: 1.45rem;
+  padding-right: 1.45rem;
 }
 
-[data-shell-indicator] .line:not(:last-child)::before {
+[data-shell-indicator=true] .line {
+  position: relative;
+  padding-left: 24px;
+}
+
+[data-shell-indicator=true] .line:not(:last-child)::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -122,10 +124,20 @@ html.dark h3>code, html.dark td>code {
 }
 
 [data-code-snippet] code{
-  padding-left: 1.5rem; /* 24px */
-  padding-right: 1.5rem; /* 24px */
-  padding-left: 1.5rem; /* 24px */
-  padding-right: 1.5rem; /* 24px */
   padding-top: 0.75rem; /* 12px */
   padding-bottom: 0.75rem; /* 12px */
+}
+
+
+
+[data-invisible-scrollbar] {
+  scrollbar-width: none !important;
+}
+
+[data-invisible-scrollbar]::-webkit-scrollbar{
+  -webkit-appearance: none !important;
+          appearance: none !important;
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
 }

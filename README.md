@@ -5,12 +5,7 @@
 </p>
 
 
-<p align="center">
-<img src="https://img.shields.io/github/contributors/unify-ui-dev/unifyui" alt="GitHub contributors" />
-<img src="https://img.shields.io/github/discussions/unify-ui-dev/unifyui" alt="GitHub discussions" />
-<img src="https://img.shields.io/github/issues/unify-ui-dev/unifyui" alt="GitHub issues" />
-<img src="https://img.shields.io/github/issues-pr/unify-ui-dev/unifyui" alt="GitHub pull request" />
-</p>
+
 
 <p></p>
 <p></p>

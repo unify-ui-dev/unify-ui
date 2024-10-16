@@ -1,5 +1,5 @@
-import "./navbar"
 import { OffCanvas } from "@flexilla/flexilla"
 
-OffCanvas.autoInit("[data-ui-offcanvas]")
-
+export const initCommonScript = ()=>{
+    OffCanvas.autoInit('[data-ui-offcanvas]')
+}
